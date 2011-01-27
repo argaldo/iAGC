@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	0F005C05123750AF0037035B /* iAGC */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = iAGC;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	0F005C17123750CF0037035B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	0F005C18123750CF0037035B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	0F005DF8123F560F0037035B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* iAGC-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/argaldo/Documents/iAGC/iAGC-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	0F005DFA123F560F0037035B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2860E32B111B888700E27156 /* AppDelegate_iPad.h */;
+		name = "AppDelegate_iPad.h: 11";
+		rLen = 0;
+		rLoc = 203;
+		rType = 0;
+		vrLen = 390;
+		vrLoc = 0;
+	};
+	0F005DFB123F560F0037035B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */;
+		name = "AppDelegate_iPad.m: 22";
+		rLen = 134;
+		rLoc = 331;
+		rType = 0;
+		vrLen = 708;
+		vrLoc = 258;
+	};
+	0F005DFE123F560F0037035B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2860E325111B887F00E27156 /* AppDelegate_iPhone.h */;
+		name = "AppDelegate_iPhone.h: 10";
+		rLen = 0;
+		rLoc = 161;
+		rType = 0;
+		vrLen = 626;
+		vrLoc = 0;
+	};
+	0F005E00123F560F0037035B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */;
+		name = "AppDelegate_iPhone.m: 22";
+		rLen = 0;
+		rLoc = 414;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 1006;
+	};
+	0F3768B412C32BD80029C25E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 0F3768B512C32BD80029C25E /* Root.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/argaldo/Documents/iAGC/Settings.bundle/Root.plist;
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	0F3768B512C32BD80029C25E /* Root.plist */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.xml;
+		name = Root.plist;
+		path = /Users/argaldo/Documents/iAGC/Settings.bundle/Root.plist;
+		sourceTree = "<absolute>";
+	};
+	0F3768C012C32BD80029C25E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F3768C112C32BD80029C25E /* DecodeDigitalDownlink.c */;
+		name = "DecodeDigitalDownlink.c: 2032";
+		rLen = 0;
+		rLoc = 66811;
+		rType = 0;
+		vrLen = 369;
+		vrLoc = 72496;
+	};
+	0F3768C112C32BD80029C25E /* DecodeDigitalDownlink.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = DecodeDigitalDownlink.c;
+		path = "/Users/argaldo/virtualagc/svn/virtualagc-read-only/yaAGC/DecodeDigitalDownlink.c";
+		sourceTree = "<absolute>";
+	};
+	0F59B6A112F14BA700E04292 /* AGCSimulator.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 587}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 371}";
+			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
+		};
+	};
+	0F59B6A212F14BA700E04292 /* AGCSimulator.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {665, 2431}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 390}";
+			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
+		};
+	};
+	0F59B6A912F14BDB00E04292 /* Util.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {677, 285}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 417}";
+		};
+	};
+	0F59B87312F14C3B00E04292 /* agc_cli.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {665, 559}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 309}";
+		};
+	};
+	0F59B8D312F14F3500E04292 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F96DACB12F1476C003EDD7C /* yaTelemetry.cpp */;
+		name = "yaTelemetry.cpp: 87";
+		rLen = 6;
+		rLoc = 3191;
+		rType = 0;
+		vrLen = 419;
+		vrLoc = 36490;
+	};
+	0F59B8D412F14F3500E04292 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A112F14BA700E04292 /* AGCSimulator.h */;
+		name = "AGCSimulator.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 371;
+		vrLoc = 0;
+	};
+	0F59B8D512F14F3500E04292 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A912F14BDB00E04292 /* Util.h */;
+		name = "Util.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 417;
+		vrLoc = 0;
+	};
+	0F59B8D612F14F3500E04292 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B87312F14C3B00E04292 /* agc_cli.h */;
+		name = "agc_cli.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 309;
+		vrLoc = 0;
+	};
+	0F59B8D712F14F3500E04292 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0F59B6A212F14BA700E04292 /* AGCSimulator.m */;
+	};
+	0F59B8D812F14F3500E04292 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A212F14BA700E04292 /* AGCSimulator.m */;
+		name = "AGCSimulator.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 390;
+		vrLoc = 0;
+	};
+	0F96DACB12F1476C003EDD7C /* yaTelemetry.cpp */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = yaTelemetry.cpp;
+		path = "/Users/argaldo/virtualagc/svn/virtualagc-read-only/yaTelemetry/yaTelemetry.cpp";
+		sourceTree = "<absolute>";
+	};
+	1D6058900D05DD3D006BFB54 /* iAGC */ = {
+		activeExec = 0;
+		executables = (
+			0F005C05123750AF0037035B /* iAGC */,
+		);
+	};
+	2860E325111B887F00E27156 /* AppDelegate_iPhone.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {670, 331}}";
+			sepNavSelRange = "{161, 0}";
+			sepNavVisRange = "{0, 626}";
+		};
+	};
+	2860E326111B887F00E27156 /* AppDelegate_iPhone.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1508}}";
+			sepNavSelRange = "{414, 0}";
+			sepNavVisRange = "{1006, 1123}";
+			sepNavWindowFrame = "{{202, 52}, {750, 715}}";
+		};
+	};
+	2860E32B111B888700E27156 /* AppDelegate_iPad.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 273}}";
+			sepNavSelRange = "{203, 0}";
+			sepNavVisRange = "{0, 390}";
+		};
+	};
+	2860E32C111B888700E27156 /* AppDelegate_iPad.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1118}}";
+			sepNavSelRange = "{331, 134}";
+			sepNavVisRange = "{257, 1630}";
+			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 0F005C05123750AF0037035B /* iAGC */;
+		activeSDKPreference = iphonesimulator4.0;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* iAGC */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* iAGC */,
+		);
+		codeSenseManager = 0F005C18123750CF0037035B /* Code sense */;
+		executables = (
+			0F005C05123750AF0037035B /* iAGC */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					487,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 317804542;
+			PBXWorkspaceStateSaveDate = 317804542;
+		};
+		perUserProjectItems = {
+			0F005DF8123F560F0037035B = 0F005DF8123F560F0037035B /* PlistBookmark */;
+			0F005DFA123F560F0037035B = 0F005DFA123F560F0037035B /* PBXTextBookmark */;
+			0F005DFB123F560F0037035B = 0F005DFB123F560F0037035B /* PBXTextBookmark */;
+			0F005DFE123F560F0037035B = 0F005DFE123F560F0037035B /* PBXTextBookmark */;
+			0F005E00123F560F0037035B = 0F005E00123F560F0037035B /* PBXTextBookmark */;
+			0F3768B412C32BD80029C25E = 0F3768B412C32BD80029C25E /* PlistBookmark */;
+			0F3768C012C32BD80029C25E = 0F3768C012C32BD80029C25E /* PBXTextBookmark */;
+			0F59B8D312F14F3500E04292 = 0F59B8D312F14F3500E04292 /* PBXTextBookmark */;
+			0F59B8D412F14F3500E04292 = 0F59B8D412F14F3500E04292 /* PBXTextBookmark */;
+			0F59B8D512F14F3500E04292 = 0F59B8D512F14F3500E04292 /* PBXTextBookmark */;
+			0F59B8D612F14F3500E04292 = 0F59B8D612F14F3500E04292 /* PBXTextBookmark */;
+			0F59B8D712F14F3500E04292 = 0F59B8D712F14F3500E04292 /* PBXBookmark */;
+			0F59B8D812F14F3500E04292 = 0F59B8D812F14F3500E04292 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 0F005C17123750CF0037035B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+}
