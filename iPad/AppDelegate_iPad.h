@@ -12,9 +12,11 @@
 
 @interface AppDelegate_iPad : NSObject <UIApplicationDelegate,UpdateDSKYUserInterfaceDelegate> {
     UIWindow *window;
+	IBOutlet UILabel *label;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UILabel *label;
 
 @end
 

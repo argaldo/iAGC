@@ -104,9 +104,7 @@ int _SimInitialize(Options_t* Options) {
 }
 
 static void _SimManageTime(void) {
-	
 	// Simulated time synchronization routine
-	
 	Simulator.RealTime = times (&Simulator.DummyTime);
 	if (Simulator.RealTime != Simulator.LastRealTime)
 	{
@@ -115,7 +113,10 @@ static void _SimManageTime(void) {
 		Simulator.DesiredCycles -= Simulator.RealTimeOffset;
 		Simulator.DesiredCycles *= AGC_PER_SECOND;
 	}
-	else _SimSleep();
+	else {
+		_SimSleep();
+	}
+		
 }
 
 
@@ -137,12 +138,10 @@ static void _SimManageTime(void) {
 		printf("[iAGC] No se ha conseguido iniciar agc_engine %i\n",started);
 	}
 	printf("[iAGC] iniciado: %i\n",started);
-	
 	// infite loop
 	while(1){
 		// manage simulated time
 		_SimManageTime();
-		
 		while (Simulator.CycleCount < Simulator.DesiredCycles)
 		{
 			// Execute a cyle of the AGC  engine 	
@@ -159,7 +158,6 @@ static void _SimManageTime(void) {
 	// Launching simulator thread
 	
 	simulatorThread = [[NSThread alloc] initWithTarget:self selector:@selector(agcSimulator) object:nil];
-	
 	[simulatorThread start];
 }
 
@@ -169,11 +167,9 @@ static void _SimManageTime(void) {
 	// invoking delegate to launch simulator thread on main thread in order to not block the user interface
 
 	[self performSelectorOnMainThread:@selector(launchSimulatorThreadDelegate) withObject:nil waitUntilDone:NO];
-	
 }
 
 - (void) stopSimulationThread {
-	NSLog(@"Parando el simulador");
 	[simulatorThread cancel];
 }
 

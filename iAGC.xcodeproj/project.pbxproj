@@ -69,7 +69,22 @@
 		0F59B7D812F14C0500E04292 /* VerbUp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6F012F14C0500E04292 /* VerbUp.jpg */; };
 		0F59B85E12F14C0500E04292 /* rProgOff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B79812F14C0500E04292 /* rProgOff.jpg */; };
 		0F59B86C12F14C2100E04292 /* Luminary131.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B86B12F14C2100E04292 /* Luminary131.bin */; };
-		0F59BA7112F2994600E04292 /* libyaAGC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F59BA7012F2994600E04292 /* libyaAGC.a */; };
+		0F59BB7112F336BD00E04292 /* agc_cli.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB5612F336BD00E04292 /* agc_cli.c */; };
+		0F59BB7212F336BD00E04292 /* agc_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB5912F336BD00E04292 /* agc_debugger.c */; };
+		0F59BB7312F336BD00E04292 /* agc_disassembler.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB5B12F336BD00E04292 /* agc_disassembler.c */; };
+		0F59BB7412F336BD00E04292 /* agc_engine_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB5D12F336BD00E04292 /* agc_engine_init.c */; };
+		0F59BB7512F336BD00E04292 /* agc_engine.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB5E12F336BD00E04292 /* agc_engine.c */; };
+		0F59BB7612F336BD00E04292 /* agc_gdbmi.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6012F336BD00E04292 /* agc_gdbmi.c */; };
+		0F59BB7712F336BD00E04292 /* agc_help.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6212F336BD00E04292 /* agc_help.c */; };
+		0F59BB7812F336BD00E04292 /* agc_simulator.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6412F336BD00E04292 /* agc_simulator.c */; };
+		0F59BB7912F336BD00E04292 /* agc_symtab.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6612F336BD00E04292 /* agc_symtab.c */; };
+		0F59BB7A12F336BD00E04292 /* agc_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6812F336BD00E04292 /* agc_utilities.c */; };
+		0F59BB7B12F336BD00E04292 /* Backtrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6912F336BD00E04292 /* Backtrace.c */; };
+		0F59BB7C12F336BD00E04292 /* CheckDec.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6A12F336BD00E04292 /* CheckDec.c */; };
+		0F59BB7D12F336BD00E04292 /* nbfgets.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6B12F336BD00E04292 /* nbfgets.c */; };
+		0F59BB7E12F336BD00E04292 /* NormalizeSourceName.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6C12F336BD00E04292 /* NormalizeSourceName.c */; };
+		0F59BB7F12F336BD00E04292 /* rfopen.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6D12F336BD00E04292 /* rfopen.c */; };
+		0F59BB8012F336BD00E04292 /* SocketAPI.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6E12F336BD00E04292 /* SocketAPI.c */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -149,11 +164,33 @@
 		0F59B6F012F14C0500E04292 /* VerbUp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbUp.jpg; sourceTree = "<group>"; };
 		0F59B79812F14C0500E04292 /* rProgOff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rProgOff.jpg; sourceTree = "<group>"; };
 		0F59B86B12F14C2100E04292 /* Luminary131.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = Luminary131.bin; sourceTree = "<group>"; };
-		0F59B99512F294A700E04292 /* agc_cli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_cli.h; sourceTree = "<group>"; };
-		0F59B99612F294A700E04292 /* agc_engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_engine.h; sourceTree = "<group>"; };
-		0F59B99712F294A700E04292 /* agc_simulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_simulator.h; sourceTree = "<group>"; };
-		0F59B99812F294A700E04292 /* yaAGC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaAGC.h; sourceTree = "<group>"; };
-		0F59BA7012F2994600E04292 /* libyaAGC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyaAGC.a; path = yaAGC/libyaAGC.a; sourceTree = "<group>"; };
+		0F59BB5612F336BD00E04292 /* agc_cli.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_cli.c; sourceTree = "<group>"; };
+		0F59BB5712F336BD00E04292 /* agc_cli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_cli.h; sourceTree = "<group>"; };
+		0F59BB5812F336BD00E04292 /* agc_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_debug.h; sourceTree = "<group>"; };
+		0F59BB5912F336BD00E04292 /* agc_debugger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_debugger.c; sourceTree = "<group>"; };
+		0F59BB5A12F336BD00E04292 /* agc_debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_debugger.h; sourceTree = "<group>"; };
+		0F59BB5B12F336BD00E04292 /* agc_disassembler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_disassembler.c; sourceTree = "<group>"; };
+		0F59BB5C12F336BD00E04292 /* agc_disassembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_disassembler.h; sourceTree = "<group>"; };
+		0F59BB5D12F336BD00E04292 /* agc_engine_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_engine_init.c; sourceTree = "<group>"; };
+		0F59BB5E12F336BD00E04292 /* agc_engine.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_engine.c; sourceTree = "<group>"; };
+		0F59BB5F12F336BD00E04292 /* agc_engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_engine.h; sourceTree = "<group>"; };
+		0F59BB6012F336BD00E04292 /* agc_gdbmi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_gdbmi.c; sourceTree = "<group>"; };
+		0F59BB6112F336BD00E04292 /* agc_gdbmi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_gdbmi.h; sourceTree = "<group>"; };
+		0F59BB6212F336BD00E04292 /* agc_help.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_help.c; sourceTree = "<group>"; };
+		0F59BB6312F336BD00E04292 /* agc_help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_help.h; sourceTree = "<group>"; };
+		0F59BB6412F336BD00E04292 /* agc_simulator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_simulator.c; sourceTree = "<group>"; };
+		0F59BB6512F336BD00E04292 /* agc_simulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_simulator.h; sourceTree = "<group>"; };
+		0F59BB6612F336BD00E04292 /* agc_symtab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_symtab.c; sourceTree = "<group>"; };
+		0F59BB6712F336BD00E04292 /* agc_symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_symtab.h; sourceTree = "<group>"; };
+		0F59BB6812F336BD00E04292 /* agc_utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agc_utilities.c; sourceTree = "<group>"; };
+		0F59BB6912F336BD00E04292 /* Backtrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Backtrace.c; sourceTree = "<group>"; };
+		0F59BB6A12F336BD00E04292 /* CheckDec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CheckDec.c; sourceTree = "<group>"; };
+		0F59BB6B12F336BD00E04292 /* nbfgets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nbfgets.c; sourceTree = "<group>"; };
+		0F59BB6C12F336BD00E04292 /* NormalizeSourceName.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NormalizeSourceName.c; sourceTree = "<group>"; };
+		0F59BB6D12F336BD00E04292 /* rfopen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rfopen.c; sourceTree = "<group>"; };
+		0F59BB6E12F336BD00E04292 /* SocketAPI.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SocketAPI.c; sourceTree = "<group>"; };
+		0F59BB6F12F336BD00E04292 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		0F59BB7012F336BD00E04292 /* yaAGC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaAGC.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* iAGC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAGC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -177,7 +214,6 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				0F59BA7112F2994600E04292 /* libyaAGC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +344,33 @@
 		0F59B99412F294A700E04292 /* yaAGC */ = {
 			isa = PBXGroup;
 			children = (
-				0F59B99512F294A700E04292 /* agc_cli.h */,
-				0F59B99612F294A700E04292 /* agc_engine.h */,
-				0F59B99712F294A700E04292 /* agc_simulator.h */,
-				0F59B99812F294A700E04292 /* yaAGC.h */,
+				0F59BB5612F336BD00E04292 /* agc_cli.c */,
+				0F59BB5712F336BD00E04292 /* agc_cli.h */,
+				0F59BB5812F336BD00E04292 /* agc_debug.h */,
+				0F59BB5912F336BD00E04292 /* agc_debugger.c */,
+				0F59BB5A12F336BD00E04292 /* agc_debugger.h */,
+				0F59BB5B12F336BD00E04292 /* agc_disassembler.c */,
+				0F59BB5C12F336BD00E04292 /* agc_disassembler.h */,
+				0F59BB5D12F336BD00E04292 /* agc_engine_init.c */,
+				0F59BB5E12F336BD00E04292 /* agc_engine.c */,
+				0F59BB5F12F336BD00E04292 /* agc_engine.h */,
+				0F59BB6012F336BD00E04292 /* agc_gdbmi.c */,
+				0F59BB6112F336BD00E04292 /* agc_gdbmi.h */,
+				0F59BB6212F336BD00E04292 /* agc_help.c */,
+				0F59BB6312F336BD00E04292 /* agc_help.h */,
+				0F59BB6412F336BD00E04292 /* agc_simulator.c */,
+				0F59BB6512F336BD00E04292 /* agc_simulator.h */,
+				0F59BB6612F336BD00E04292 /* agc_symtab.c */,
+				0F59BB6712F336BD00E04292 /* agc_symtab.h */,
+				0F59BB6812F336BD00E04292 /* agc_utilities.c */,
+				0F59BB6912F336BD00E04292 /* Backtrace.c */,
+				0F59BB6A12F336BD00E04292 /* CheckDec.c */,
+				0F59BB6B12F336BD00E04292 /* nbfgets.c */,
+				0F59BB6C12F336BD00E04292 /* NormalizeSourceName.c */,
+				0F59BB6D12F336BD00E04292 /* rfopen.c */,
+				0F59BB6E12F336BD00E04292 /* SocketAPI.c */,
+				0F59BB6F12F336BD00E04292 /* Util.h */,
+				0F59BB7012F336BD00E04292 /* yaAGC.h */,
 			);
 			path = yaAGC;
 			sourceTree = "<group>";
@@ -358,7 +417,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				0F59BA7012F2994600E04292 /* libyaAGC.a */,
 				0F005DD01238AEFF0037035B /* Util */,
 				0F005CC7123751890037035B /* AGCSimulation */,
 				2860E32A111B888700E27156 /* iPad */,
@@ -510,6 +568,22 @@
 				0F59B6A612F14BA700E04292 /* AGCSimulator.m in Sources */,
 				0F59B6A712F14BA700E04292 /* DSKYSimulationClient.m in Sources */,
 				0F59B6AB12F14BDB00E04292 /* Util.m in Sources */,
+				0F59BB7112F336BD00E04292 /* agc_cli.c in Sources */,
+				0F59BB7212F336BD00E04292 /* agc_debugger.c in Sources */,
+				0F59BB7312F336BD00E04292 /* agc_disassembler.c in Sources */,
+				0F59BB7412F336BD00E04292 /* agc_engine_init.c in Sources */,
+				0F59BB7512F336BD00E04292 /* agc_engine.c in Sources */,
+				0F59BB7612F336BD00E04292 /* agc_gdbmi.c in Sources */,
+				0F59BB7712F336BD00E04292 /* agc_help.c in Sources */,
+				0F59BB7812F336BD00E04292 /* agc_simulator.c in Sources */,
+				0F59BB7912F336BD00E04292 /* agc_symtab.c in Sources */,
+				0F59BB7A12F336BD00E04292 /* agc_utilities.c in Sources */,
+				0F59BB7B12F336BD00E04292 /* Backtrace.c in Sources */,
+				0F59BB7C12F336BD00E04292 /* CheckDec.c in Sources */,
+				0F59BB7D12F336BD00E04292 /* nbfgets.c in Sources */,
+				0F59BB7E12F336BD00E04292 /* NormalizeSourceName.c in Sources */,
+				0F59BB7F12F336BD00E04292 /* rfopen.c in Sources */,
+				0F59BB8012F336BD00E04292 /* SocketAPI.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +642,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos3.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -585,7 +659,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos3.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

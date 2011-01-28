@@ -43,8 +43,7 @@ struct tms {
 #define SIM_CYCLECOUNT_AGC	2
 
 
-typedef struct
-{
+typedef struct {
 	Options_t* Options;
 	DebugRule_t* DebugRules;
 	clock_t DumpInterval;
@@ -58,9 +57,11 @@ typedef struct
 	agc_t State;
 } Simulator_t;
 
+
 extern void SimSetCycleCount(int Mode);
 extern int SimInitialize(Options_t* Options);
 extern void SimExecute(void);
 extern void SimUpdateTime(void);
+
 
 #endif /* AGC_SIMULATOR_H_ */

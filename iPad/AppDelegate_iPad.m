@@ -14,6 +14,7 @@
 @implementation AppDelegate_iPad
 
 @synthesize window;
+@synthesize label;
 
 
 #pragma mark -
@@ -30,18 +31,17 @@
 	NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
 	
 	if ( [preferences boolForKey:@"sim_start_preference"] ) {
-		NSLog(@"Lanzando simulator thread");
 		AGCSimulator *simulator = [[AGCSimulator alloc] initWithROM:[preferences stringForKey:@"core_rope"]];
 		[simulator launchSimulatorThread];
 	}
 	
 	
-	if ( [preferences boolForKey:@"autoconnect_preference"] ) {
+	/*if ( [preferences boolForKey:@"autoconnect_preference"] ) {
 		NSLog(@"Lanzando DSKY thread");
 		//DSKYSimulationClient *dskyClient = [[DSKYSimulationClient alloc] initWithHost:@"localhost" withPort:19700];
 		DSKYSimulationClient *dskyClient = [[DSKYSimulationClient alloc] initWithDelegate:self];
 		[dskyClient launchDSKYIOListeningThread];
-	}
+	}*/
 	
 	
 	
