@@ -8,6 +8,7 @@
 
 #import "AGCSimulator.h"
 #include "agc_simulator.h"
+#include "agc_cli.h"
 
 
 
@@ -29,6 +30,7 @@ NSString *coreRopeROM = @"2222";
 - (BOOL) isSimulationRunning {
 	return (simulating)?YES:NO;
 }
+
 
 static void _CliInitializeOptions(void) {
 	// Default AGC simulator options
@@ -147,7 +149,7 @@ static void _SimManageTime(void) {
 			_SimExecuteEngine();
 
 			//Adjust the CycleCount 
-			_SimSetCycleCount(SIM_CYCLECOUNT_INC);
+			SimSetCycleCount(SIM_CYCLECOUNT_INC);
 		}
 	}
 	
