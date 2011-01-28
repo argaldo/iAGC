@@ -69,7 +69,7 @@
 		0F59B7D812F14C0500E04292 /* VerbUp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6F012F14C0500E04292 /* VerbUp.jpg */; };
 		0F59B85E12F14C0500E04292 /* rProgOff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B79812F14C0500E04292 /* rProgOff.jpg */; };
 		0F59B86C12F14C2100E04292 /* Luminary131.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B86B12F14C2100E04292 /* Luminary131.bin */; };
-		0F59B90D12F28D6200E04292 /* libyaAGC in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F59B90C12F28D6200E04292 /* libyaAGC */; };
+		0F59BA7112F2994600E04292 /* libyaAGC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F59BA7012F2994600E04292 /* libyaAGC.a */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -149,11 +149,11 @@
 		0F59B6F012F14C0500E04292 /* VerbUp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbUp.jpg; sourceTree = "<group>"; };
 		0F59B79812F14C0500E04292 /* rProgOff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rProgOff.jpg; sourceTree = "<group>"; };
 		0F59B86B12F14C2100E04292 /* Luminary131.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = Luminary131.bin; sourceTree = "<group>"; };
-		0F59B90C12F28D6200E04292 /* libyaAGC */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyaAGC; path = "../../virtualagc/svn/virtualagc-read-only/yaAGC/universal/libyaAGC"; sourceTree = SOURCE_ROOT; };
 		0F59B99512F294A700E04292 /* agc_cli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_cli.h; sourceTree = "<group>"; };
 		0F59B99612F294A700E04292 /* agc_engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_engine.h; sourceTree = "<group>"; };
 		0F59B99712F294A700E04292 /* agc_simulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc_simulator.h; sourceTree = "<group>"; };
 		0F59B99812F294A700E04292 /* yaAGC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaAGC.h; sourceTree = "<group>"; };
+		0F59BA7012F2994600E04292 /* libyaAGC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyaAGC.a; path = yaAGC/libyaAGC.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* iAGC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAGC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -177,7 +177,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				0F59B90D12F28D6200E04292 /* libyaAGC in Frameworks */,
+				0F59BA7112F2994600E04292 /* libyaAGC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +358,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				0F59B90C12F28D6200E04292 /* libyaAGC */,
+				0F59BA7012F2994600E04292 /* libyaAGC.a */,
 				0F005DD01238AEFF0037035B /* Util */,
 				0F005CC7123751890037035B /* AGCSimulation */,
 				2860E32A111B888700E27156 /* iPad */,
@@ -531,6 +531,7 @@
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC\"",
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC/x86\"",
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC/universal\"",
+					"\"$(SRCROOT)/yaAGC\"",
 				);
 				PRODUCT_NAME = iAGC;
 			};
@@ -549,6 +550,7 @@
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC\"",
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC/x86\"",
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC/universal\"",
+					"\"$(SRCROOT)/yaAGC\"",
 				);
 				PRODUCT_NAME = iAGC;
 				VALIDATE_PRODUCT = YES;

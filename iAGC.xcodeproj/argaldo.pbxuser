@@ -180,7 +180,7 @@
 	};
 	0F59B6A512F14BA700E04292 /* UpdateDSKYUserInterfaceDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 253}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 276}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 250}";
 			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
