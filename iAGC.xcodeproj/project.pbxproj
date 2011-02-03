@@ -10,6 +10,8 @@
 		0F005C4D123751190037035B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F005C4C123751190037035B /* Settings.bundle */; };
 		0F4AA68812FAB48F00BA81BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */; };
 		0F4AA6B212FAB5E400BA81BB /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA6B112FAB5E400BA81BB /* alert.png */; };
+		0F4AA6C512FAB72900BA81BB /* IPhoneSimulationConfigurationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA6C312FAB72900BA81BB /* IPhoneSimulationConfigurationView.m */; };
+		0F4AA6C612FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA6C412FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib */; };
 		0F59B69C12F14B7100E04292 /* AGCTelemetryUIIphoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B69612F14B7100E04292 /* AGCTelemetryUIIphoneView.xib */; };
 		0F59B69D12F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B69812F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m */; };
 		0F59B69E12F14B7100E04292 /* DSKYUIIphoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B69912F14B7100E04292 /* DSKYUIIphoneView.xib */; };
@@ -105,6 +107,9 @@
 		0F005C4C123751190037035B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F4AA6B112FAB5E400BA81BB /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alert.png; path = Shared/Resources/Images/alert.png; sourceTree = "<group>"; };
+		0F4AA6C212FAB72900BA81BB /* IPhoneSimulationConfigurationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhoneSimulationConfigurationView.h; sourceTree = "<group>"; };
+		0F4AA6C312FAB72900BA81BB /* IPhoneSimulationConfigurationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPhoneSimulationConfigurationView.m; sourceTree = "<group>"; };
+		0F4AA6C412FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPhoneSimulationConfigurationView.xib; sourceTree = "<group>"; };
 		0F59B69612F14B7100E04292 /* AGCTelemetryUIIphoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AGCTelemetryUIIphoneView.xib; sourceTree = "<group>"; };
 		0F59B69712F14B7100E04292 /* AGCTelemetryUIIphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCTelemetryUIIphoneViewController.h; sourceTree = "<group>"; };
 		0F59B69812F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCTelemetryUIIphoneViewController.m; sourceTree = "<group>"; };
@@ -289,6 +294,9 @@
 				0F59B69912F14B7100E04292 /* DSKYUIIphoneView.xib */,
 				0F59B69A12F14B7100E04292 /* DSKYUIIphoneViewController.h */,
 				0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */,
+				0F4AA6C212FAB72900BA81BB /* IPhoneSimulationConfigurationView.h */,
+				0F4AA6C312FAB72900BA81BB /* IPhoneSimulationConfigurationView.m */,
+				0F4AA6C412FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -589,6 +597,7 @@
 				0F60610012F9D55C00725DAD /* Colossus249.bin in Resources */,
 				0F60610112F9D55C00725DAD /* Comanche055.bin in Resources */,
 				0F4AA6B212FAB5E400BA81BB /* alert.png in Resources */,
+				0F4AA6C612FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +632,7 @@
 				0F59BB7E12F336BD00E04292 /* NormalizeSourceName.c in Sources */,
 				0F59BB7F12F336BD00E04292 /* rfopen.c in Sources */,
 				0F59BB8012F336BD00E04292 /* SocketAPI.c in Sources */,
+				0F4AA6C512FAB72900BA81BB /* IPhoneSimulationConfigurationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

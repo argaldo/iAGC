@@ -309,9 +309,9 @@
 	};
 	0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 3523}}";
-			sepNavSelRange = "{910, 0}";
-			sepNavVisRange = "{336, 1102}";
+			sepNavIntBoundsRect = "{{0, 0}, {1433, 3172}}";
+			sepNavSelRange = "{143, 0}";
+			sepNavVisRange = "{0, 941}";
 			sepNavWindowFrame = "{{297, 63}, {750, 715}}";
 		};
 	};
