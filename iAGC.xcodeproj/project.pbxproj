@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F005C4D123751190037035B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F005C4C123751190037035B /* Settings.bundle */; };
+		0F4AA68812FAB48F00BA81BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */; };
+		0F4AA6B212FAB5E400BA81BB /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA6B112FAB5E400BA81BB /* alert.png */; };
 		0F59B69C12F14B7100E04292 /* AGCTelemetryUIIphoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B69612F14B7100E04292 /* AGCTelemetryUIIphoneView.xib */; };
 		0F59B69D12F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B69812F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m */; };
 		0F59B69E12F14B7100E04292 /* DSKYUIIphoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B69912F14B7100E04292 /* DSKYUIIphoneView.xib */; };
@@ -101,6 +103,8 @@
 
 /* Begin PBXFileReference section */
 		0F005C4C123751190037035B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0F4AA6B112FAB5E400BA81BB /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alert.png; path = Shared/Resources/Images/alert.png; sourceTree = "<group>"; };
 		0F59B69612F14B7100E04292 /* AGCTelemetryUIIphoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AGCTelemetryUIIphoneView.xib; sourceTree = "<group>"; };
 		0F59B69712F14B7100E04292 /* AGCTelemetryUIIphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCTelemetryUIIphoneViewController.h; sourceTree = "<group>"; };
 		0F59B69812F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCTelemetryUIIphoneViewController.m; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				0F4AA68812FAB48F00BA81BB /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +244,7 @@
 		0F005CC6123751570037035B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F4AA6B012FAB5CF00BA81BB /* Images */,
 				0F59B86A12F14C2100E04292 /* Core_rope */,
 				0F005C591237514D0037035B /* DSKY */,
 			);
@@ -264,6 +270,14 @@
 				0F59B6AA12F14BDB00E04292 /* Util.m */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		0F4AA6B012FAB5CF00BA81BB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0F4AA6B112FAB5E400BA81BB /* alert.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		0F59B69512F14B7100E04292 /* Views */ = {
@@ -457,6 +471,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -573,6 +588,7 @@
 				0F6060FF12F9D55C00725DAD /* Artemis072.bin in Resources */,
 				0F60610012F9D55C00725DAD /* Colossus249.bin in Resources */,
 				0F60610112F9D55C00725DAD /* Comanche055.bin in Resources */,
+				0F4AA6B212FAB5E400BA81BB /* alert.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

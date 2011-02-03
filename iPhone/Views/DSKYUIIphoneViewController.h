@@ -13,7 +13,8 @@
 
 
 @interface DSKYUIIphoneViewController : UIViewController <UpdateDSKYUserInterfaceDelegate>{
-	
+	UIView *alertView;
+	UILabel *alertMessageLabel;
 	DSKYSimulationClient *dskySimulationClient;
 @private	
 	NSMutableDictionary *segments;
@@ -73,6 +74,9 @@
 
 @property (nonatomic,retain) NSMutableDictionary *segments;
 @property (nonatomic,retain) DSKYSimulationClient *dskySimulationClient;
+
+@property (nonatomic,retain) IBOutlet UIView *alertView;
+@property (nonatomic,retain) IBOutlet UILabel *alertMessageLabel;
 
 
 // action delegates for dsky keyboard click
