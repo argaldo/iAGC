@@ -15,7 +15,7 @@
 @interface DSKYUIIphoneViewController : UIViewController <UpdateDSKYUserInterfaceDelegate>{
 	
 	DSKYSimulationClient *dskySimulationClient;
-	
+@private	
 	NSMutableDictionary *segments;
 	
 	// segment display outlets
@@ -68,7 +68,6 @@
 	IBOutlet UIImageView *_33Outlet;
 	IBOutlet UIImageView *_34Outlet;
 	IBOutlet UIImageView *_35Outlet;
-	
 	
 }
 

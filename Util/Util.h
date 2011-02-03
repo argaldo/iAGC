@@ -13,8 +13,8 @@
 
 }
 
-- (NSString *) getImageNameForSegmentValue: (int) segmentValue;
-- (NSString *) getImageNameForSignValue: (int) signValue; 
-- (NSString *) getImageNameForIndicatorType:(int) indicatorType withValue:(int) indicatorValue;
++ (NSString *) getImageNameForSegmentValue: (int) segmentValue;
++ (NSString *) getImageNameForSignValue: (int) signValue; 
++ (NSString *) getImageNameForIndicatorType:(int) indicatorType withValue:(int) indicatorValue;
 
 @end

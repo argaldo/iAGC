@@ -10,8 +10,14 @@
 
 
 @interface AGCSimulator : NSObject {
+@private
 	NSThread *simulatorThread;
+@private
+	NSString *coreRopeROM;
 }
+
+@property (nonatomic,retain) NSThread *simulatorThread;
+@property (nonatomic,retain) NSString *coreRopeROM;
 
 - (id) initWithROM:(NSString *)rom;
 - (void) launchSimulatorThread;

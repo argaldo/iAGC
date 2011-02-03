@@ -85,6 +85,10 @@
 		0F59BB7E12F336BD00E04292 /* NormalizeSourceName.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6C12F336BD00E04292 /* NormalizeSourceName.c */; };
 		0F59BB7F12F336BD00E04292 /* rfopen.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6D12F336BD00E04292 /* rfopen.c */; };
 		0F59BB8012F336BD00E04292 /* SocketAPI.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F59BB6E12F336BD00E04292 /* SocketAPI.c */; };
+		0F6060C612F9D0F600725DAD /* Luminary099.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F6060C512F9D0F600725DAD /* Luminary099.bin */; };
+		0F6060FF12F9D55C00725DAD /* Artemis072.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F6060FC12F9D55C00725DAD /* Artemis072.bin */; };
+		0F60610012F9D55C00725DAD /* Colossus249.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F6060FD12F9D55C00725DAD /* Colossus249.bin */; };
+		0F60610112F9D55C00725DAD /* Comanche055.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F6060FE12F9D55C00725DAD /* Comanche055.bin */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -191,6 +195,10 @@
 		0F59BB6E12F336BD00E04292 /* SocketAPI.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SocketAPI.c; sourceTree = "<group>"; };
 		0F59BB6F12F336BD00E04292 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		0F59BB7012F336BD00E04292 /* yaAGC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaAGC.h; sourceTree = "<group>"; };
+		0F6060C512F9D0F600725DAD /* Luminary099.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = Luminary099.bin; sourceTree = "<group>"; };
+		0F6060FC12F9D55C00725DAD /* Artemis072.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = Artemis072.bin; sourceTree = "<group>"; };
+		0F6060FD12F9D55C00725DAD /* Colossus249.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = Colossus249.bin; sourceTree = "<group>"; };
+		0F6060FE12F9D55C00725DAD /* Comanche055.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = Comanche055.bin; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* iAGC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAGC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -335,6 +343,10 @@
 		0F59B86A12F14C2100E04292 /* Core_rope */ = {
 			isa = PBXGroup;
 			children = (
+				0F6060FC12F9D55C00725DAD /* Artemis072.bin */,
+				0F6060FD12F9D55C00725DAD /* Colossus249.bin */,
+				0F6060FE12F9D55C00725DAD /* Comanche055.bin */,
+				0F6060C512F9D0F600725DAD /* Luminary099.bin */,
 				0F59B86B12F14C2100E04292 /* Luminary131.bin */,
 			);
 			name = Core_rope;
@@ -476,7 +488,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iAGC" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -550,6 +569,10 @@
 				0F59B7D812F14C0500E04292 /* VerbUp.jpg in Resources */,
 				0F59B85E12F14C0500E04292 /* rProgOff.jpg in Resources */,
 				0F59B86C12F14C2100E04292 /* Luminary131.bin in Resources */,
+				0F6060C612F9D0F600725DAD /* Luminary099.bin in Resources */,
+				0F6060FF12F9D55C00725DAD /* Artemis072.bin in Resources */,
+				0F60610012F9D55C00725DAD /* Colossus249.bin in Resources */,
+				0F60610112F9D55C00725DAD /* Comanche055.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +629,7 @@
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC/x86\"",
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC/universal\"",
 					"\"$(SRCROOT)/yaAGC\"",
+					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = iAGC;
 			};
@@ -625,6 +649,7 @@
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC/x86\"",
 					"\"$(SRCROOT)/../../virtualagc/svn/virtualagc-read-only/yaAGC/universal\"",
 					"\"$(SRCROOT)/yaAGC\"",
+					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = iAGC;
 				VALIDATE_PRODUCT = YES;
@@ -642,7 +667,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -659,7 +684,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

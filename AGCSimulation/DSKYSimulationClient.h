@@ -12,7 +12,7 @@
 
 
 @interface DSKYSimulationClient : NSObject {
-	id<UpdateDSKYUserInterfaceDelegate> _delegate;
+	id<UpdateDSKYUserInterfaceDelegate> delegate;
 }
 
 - (id) initWithHost:(NSString *)host withPort:(u_short) port;

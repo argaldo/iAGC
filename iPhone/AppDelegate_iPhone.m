@@ -13,13 +13,9 @@
 
 @implementation AppDelegate_iPhone
 
-@synthesize window;
-@synthesize tabBarController;
-@synthesize dskyUIIPhoneViewController;
+@synthesize window,tabBarController,dskyUIIPhoneViewController,simulator,dskyClient;
 
 
-AGCSimulator *simulator;
-DSKYSimulationClient *dskyClient;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -36,20 +32,20 @@ DSKYSimulationClient *dskyClient;
 	
 	if ( [preferences boolForKey:@"sim_start_preference"] ) {
 		NSLog(@"Lanzando simulator thread");
-		simulator = [[AGCSimulator alloc] initWithROM:[preferences stringForKey:@"core_rope"]];
-		[simulator launchSimulatorThread];
+		self.simulator = [[AGCSimulator alloc] initWithROM:[preferences stringForKey:@"core_rope"]];
+		[self.simulator launchSimulatorThread];
 	}
 	
 	
 	if ( [preferences boolForKey:@"autoconnect_preference"] ) {
 		NSLog(@"Lanzando DSKY thread");
 		//DSKYSimulationClient *dskyClient = [[DSKYSimulationClient alloc] initWithHost:@"localhost" withPort:19700];
-		dskyClient = [[DSKYSimulationClient alloc] initWithDelegate:dskyUIIPhoneViewController];
-		[dskyClient launchDSKYIOListeningThread];
+		self.dskyClient = [[DSKYSimulationClient alloc] initWithDelegate:dskyUIIPhoneViewController];
+		[self.dskyClient launchDSKYIOListeningThread];
 	}
 	
 	
-	dskyUIIPhoneViewController.dskySimulationClient = dskyClient;
+	dskyUIIPhoneViewController.dskySimulationClient = self.dskyClient;
 	
     // Override point for customization after application launch.
 	[window addSubview:tabBarController.view];

@@ -11,19 +11,18 @@
 #include "agc_cli.h"
 
 
-
 @implementation AGCSimulator
+
+@synthesize simulatorThread,coreRopeROM;
 
 static Options_t Options;  // AGC simulator options
 static Simulator_t Simulator; // Simulator data structure
 static int simulating = 0;
 
-NSString *coreRopeROM = @"2222";
-
 
 - (id) initWithROM:(NSString *)rom{
 	[super init];
-	coreRopeROM = rom;
+	self.coreRopeROM = rom;
 	return self;
 }
 
@@ -131,7 +130,7 @@ static void _SimManageTime(void) {
 	_SimInitialize(&Options);
 	
 	// Core-rope rom reference
-	NSString *romPath = [[NSBundle mainBundle] pathForResource:coreRopeROM ofType:@"bin"];
+	NSString *romPath = [[NSBundle mainBundle] pathForResource:self.coreRopeROM ofType:@"bin"];
 	
 	started = agc_engine_init(&Simulator.State,[romPath fileSystemRepresentation],NULL,1);
 	if (started) {
@@ -146,7 +145,6 @@ static void _SimManageTime(void) {
 		{
 			// Execute a cyle of the AGC  engine 	
 			_SimExecuteEngine();
-
 			//Adjust the CycleCount 
 			SimSetCycleCount(SIM_CYCLECOUNT_INC);
 		}
@@ -157,8 +155,8 @@ static void _SimManageTime(void) {
 - (void) launchSimulatorThreadDelegate {
 	// Launching simulator thread
 	
-	simulatorThread = [[NSThread alloc] initWithTarget:self selector:@selector(agcSimulator) object:nil];
-	[simulatorThread start];
+	self.simulatorThread = [[NSThread alloc] initWithTarget:self selector:@selector(agcSimulator) object:nil];
+	[self.simulatorThread start];
 }
 
 
@@ -170,7 +168,7 @@ static void _SimManageTime(void) {
 }
 
 - (void) stopSimulationThread {
-	[simulatorThread cancel];
+	[self.simulatorThread cancel];
 }
 
 @end

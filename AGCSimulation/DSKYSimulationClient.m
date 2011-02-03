@@ -17,7 +17,7 @@
 
 @implementation DSKYSimulationClient
 
-@synthesize delegate = _delegate;
+@synthesize delegate;
 
 int dskyIOSocket = -1;
 NSThread *dskyThread;
@@ -38,10 +38,9 @@ u_short agcSimulatorPort = 19700;
 	return self;
 }
  
-- (id) initWithDelegate:(id) delegate {
+- (id) initWithDelegate:(id) aDelegate {
 	// connecting view controller delegate for updates on the user interface...
-	self.delegate = delegate;
-	[self setDelegate:_delegate];
+	self.delegate = aDelegate;
 	return self;
 }
 
@@ -63,19 +62,19 @@ u_short agcSimulatorPort = 19700;
 	switch (*value & 0x7800){
 		// 7-segment display control
 		case 0x5800:    // AAAA=11D
-			NSLog(@"M1,M2");
+			//NSLog(@"M1,M2");
 			*leftSegmentKey = @"M1";*rightSegmentKey = @"M2";break;
 		case 0x5000:	// AAAA=10D
-			NSLog(@"V1,V2");
+			//NSLog(@"V1,V2");
 			*leftSegmentKey = @"V1";*rightSegmentKey = @"V2";break;
 		case 0x4800:	// AAAA=9
-			NSLog(@"N1,N2");
+			//NSLog(@"N1,N2");
 			*leftSegmentKey = @"N1";*rightSegmentKey = @"N2";break;
 		case 0x4000:	// AAAA=8
-			NSLog(@"11");
+			//NSLog(@"11");
 			*leftSegmentKey = NULL;*rightSegmentKey = @"11";break;
 		case 0x3800:	// AAAA=7
-			NSLog(@"12,13");
+			//NSLog(@"12,13");
 			*sign = @"R1";
 			if (0 != (*value & 0x0400))
 				R1Sign |= 2;
@@ -85,7 +84,7 @@ u_short agcSimulatorPort = 19700;
 			*leftSegmentKey = @"12";*rightSegmentKey = @"13";
 			break;
 		case 0x3000:	// AAAA=6
-			NSLog(@"14,15");
+			//NSLog(@"14,15");
 			*sign = @"R1";
 			if (0 != (*value & 0x0400))
 				R1Sign |= 1;
@@ -95,7 +94,7 @@ u_short agcSimulatorPort = 19700;
 			*leftSegmentKey = @"14";*rightSegmentKey = @"15";
 			break;
 		case 0x2800:	// AAAA=5
-			NSLog(@"21,22");
+			//NSLog(@"21,22");
 			*sign = @"R2";
 			if (0 != (*value & 0x0400))
 				R2Sign |= 2;
@@ -105,7 +104,7 @@ u_short agcSimulatorPort = 19700;
 			*leftSegmentKey = @"21"; *rightSegmentKey = @"22";
 			break;
 		case 0x2000:	// AAAA=4
-			NSLog(@"23,24");
+			//NSLog(@"23,24");
 			*sign = @"R2";
 			if (0 != (*value & 0x0400))
 				R2Sign |= 1;
@@ -118,7 +117,7 @@ u_short agcSimulatorPort = 19700;
 			NSLog(@"25,31");
 			*leftSegmentKey = @"25"; *rightSegmentKey = @"31";break;
 		case 0x1000:	// AAAA=2	
-			NSLog(@"32,33");
+			//NSLog(@"32,33");
 			*sign = @"R3";
 			if (0 != (*value & 0x0400))
 				R3Sign |= 2;
@@ -128,7 +127,7 @@ u_short agcSimulatorPort = 19700;
 			*leftSegmentKey = @"32"; *rightSegmentKey = @"33";
 			break;
 		case 0x0800:	// AAAA=1
-			NSLog(@"34,35");
+			//NSLog(@"34,35");
 			*sign = @"R3";
 			if (0 != (*value & 0x0400))
 				R3Sign |= 1;
@@ -174,18 +173,18 @@ u_short agcSimulatorPort = 19700;
 	if ( channel == 8 ) {
 		// calling delegate with an interpretation of the received packet as a sign or segment value change
 		if ( sign != NULL )
-			[_delegate updateUserInterface:&sign withValue:signValue withComponentType:SIGN];
+			[self.delegate updateUserInterface:&sign withValue:signValue withComponentType:SIGN];
 		if ( leftSegmentKey != NULL )
-			[_delegate updateUserInterface:&leftSegmentKey withValue:[self getLeftSegmentValue:&value] withComponentType:SEGMENT];
+			[self.delegate updateUserInterface:&leftSegmentKey withValue:[self getLeftSegmentValue:&value] withComponentType:SEGMENT];
 		if ( rightSegmentKey != NULL )
-			[_delegate updateUserInterface:&rightSegmentKey withValue:[self getRightSegmentValue:&value] withComponentType:SEGMENT];
+			[self.delegate updateUserInterface:&rightSegmentKey withValue:[self getRightSegmentValue:&value] withComponentType:SEGMENT];
 	}
 	
 	if (channel == 9 ) {
 		// calling delegate with an interpretation of the received packet as a sign or segment value change
 		if ((value & 2) != (lastValue & 2)) {
 			NSString *imagen = @"CompActInd";
-			[_delegate updateUserInterface:&imagen withValue:value withComponentType:INDICATOR];
+			[self.delegate updateUserInterface:&imagen withValue:value withComponentType:INDICATOR];
 		} 
 		lastValue = value;
 		
@@ -194,7 +193,7 @@ u_short agcSimulatorPort = 19700;
 	
 	// Digital downling. Telemetry.
 	if (channel == 11 || channel == 28 || channel == 29 ) {
-		NSLog(@"digital downlink");
+		//NSLog(@"digital downlink");
 	}
 	
 	
@@ -222,7 +221,7 @@ u_short agcSimulatorPort = 19700;
 			if ((dskyIOSocket = socket(AF_INET, SOCK_STREAM, 0))>= 0){
 				// connecting the socket
 				connect(dskyIOSocket,(struct sockaddr_in *) &sa, sizeof(sa));
-				fcntl(dskyIOSocket,F_SETFL, O_NONBLOCK);  // make the socket non blocking			
+				fcntl(dskyIOSocket,F_SETFL, O_NONBLOCK);  // make the socket non blocking	
 			}
 		} else {
 			// Can't resolve AGC simulator host, closing socket
@@ -275,8 +274,6 @@ u_short agcSimulatorPort = 19700;
 
 - (void) launchDSKYIOListeningThread {
 	// call thread launching delegate on main thread to avoid bloking user's interface
-	NSLog(@"Que voy");
-	
 	[self performSelectorOnMainThread:@selector(launchDSKYThreadDelegate) withObject:nil waitUntilDone:NO];
 }
 
@@ -296,7 +293,6 @@ u_short agcSimulatorPort = 19700;
 }
 
 - (void) sendDSKYCode:(int) code{
-	NSLog(@"Construyendo paquete");
 	unsigned char packet[4];
 	// uplink channel 15 (octal)
 	[self buildPacket:015 withValue:code forPacket:packet];

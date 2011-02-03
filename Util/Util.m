@@ -11,7 +11,7 @@
 
 @implementation Util
 
-- (NSString *) getImageNameForSegmentValue: (int) segmentValue {
++ (NSString *) getImageNameForSegmentValue: (int) segmentValue {
 	switch(segmentValue){
 		case 0:return @"7Seg-0.jpg";break;
 		case 3:return @"7Seg-3.jpg";break;
@@ -28,7 +28,7 @@
 	}
 }
 
-- (NSString *) getImageNameForSignValue: (int) signValue {
++ (NSString *) getImageNameForSignValue: (int) signValue {
 	if (0 != (signValue & 1))
 		return @"MinusOn.jpg";
 	else if (0 != (signValue & 2))
@@ -37,7 +37,7 @@
 		return @"PlusMinusOff.jpg";
 }
 
-- (NSString *) getImageNameForIndicatorType:(int) indicatorType withValue:(int) indicatorValue {
++ (NSString *) getImageNameForIndicatorType:(int) indicatorType withValue:(int) indicatorValue {
 	switch(indicatorType){
 		case 0:
 			if ((indicatorValue & 2) == 0) {

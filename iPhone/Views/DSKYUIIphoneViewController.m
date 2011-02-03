@@ -14,8 +14,6 @@
 @synthesize segments;
 @synthesize dskySimulationClient;
 
-Util *util;
-
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -31,7 +29,6 @@ Util *util;
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self initSegmentDictionary];
-	util = [[Util alloc] init];
 }
 
 
@@ -63,10 +60,10 @@ Util *util;
 	NSLog(@"Recibido update!");
 	switch (componentType){
 		case SEGMENT:
-			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[util getImageNameForSegmentValue:value],nil] waitUntilDone:YES];
+			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSegmentValue:value],nil] waitUntilDone:YES];
 			break;
 		case SIGN:
-			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[util getImageNameForSignValue:value],nil] waitUntilDone:YES];
+			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSignValue:value],nil] waitUntilDone:YES];
 			break;
 		/*case INDICATOR:
 			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[util getImageNameForIndicatorType:0 withValue:value],nil] waitUntilDone:YES];

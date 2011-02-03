@@ -55,8 +55,11 @@
 			<string>Luminary131</string>
 			<key>Titles</key>
 			<array>
-				<string>Luminary131</string>
-				<string>Luminary099</string>
+				<string>Apollo IX Command module</string>
+				<string>Apollo XI Command Module</string>
+				<string>Apollo XI Lunar module</string>
+				<string>Apollo XIII Lunar module</string>
+				<string>Apollo XV Command module</string>
 			</array>
 			<key>Type</key>
 			<string>PSMultiValueSpecifier</string>
@@ -66,8 +69,11 @@
 			<string>core_rope</string>
 			<key>Values</key>
 			<array>
-				<string>Luminary131</string>
+				<string>Colossus249</string>
+				<string>Comanche055</string>
 				<string>Luminary099</string>
+				<string>Luminary131</string>
+				<string>Artemis072</string>
 			</array>
 		</dict>
 	</array>
