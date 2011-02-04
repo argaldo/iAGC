@@ -253,7 +253,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 117";
 		rLen = 146;
-		rLoc = 4038;
+		rLoc = 4087;
 		rType = 0;
 		vrLen = 549;
 		vrLoc = 3894;
@@ -543,9 +543,9 @@
 	};
 	0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 4056}}";
-			sepNavSelRange = "{8299, 0}";
-			sepNavVisRange = "{7626, 724}";
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 4043}}";
+			sepNavSelRange = "{8300, 0}";
+			sepNavVisRange = "{8019, 331}";
 			sepNavWindowFrame = "{{16, 58}, {750, 715}}";
 		};
 	};
@@ -981,7 +981,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {902, 416}}";
 			sepNavSelRange = "{494, 347}";
-			sepNavVisRange = "{28, 821}";
+			sepNavVisRange = "{3, 846}";
 			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
 		};
 	};

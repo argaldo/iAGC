@@ -77,6 +77,8 @@
 
 
 - (void) initSegmentDictionary {
+	
+	//TODO change this to use a NSDictionary ... 
 	// initializing segment dictionary
 	segments = [[NSMutableDictionary alloc] init];
 	[segments setObject:M1Outlet forKey:@"M1"];
