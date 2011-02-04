@@ -300,6 +300,7 @@ u_short agcSimulatorPort = 19700;
 }
 
 - (void)dealloc {
+	[dskyThread release];
 	[delegate release];
     [super dealloc];
 }

@@ -279,7 +279,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {295, 612}}</string>
+							<string>{{0, 51}, {295, 612}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -309,14 +309,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DSKYSimulationClient.m</string>
+								<string>AppDelegate_iPhone.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DSKYSimulationClient.m</string>
+										<string>AppDelegate_iPhone.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0F5287E712FBDD9800F44492</string>
+										<string>0F5287F112FBE0A000F44492</string>
 										<key>history</key>
 										<array>
 											<string>0F3768B412C32BD80029C25E</string>
@@ -339,8 +337,6 @@
 											<string>0F59BBD812F33E4100E04292</string>
 											<string>0F59BBDA12F33E4100E04292</string>
 											<string>0FFCC9C312F71DA20002B905</string>
-											<string>0F60604E12F9CBEC00725DAD</string>
-											<string>0F60604F12F9CBEC00725DAD</string>
 											<string>0F60605312F9CBEC00725DAD</string>
 											<string>0F60605412F9CBEC00725DAD</string>
 											<string>0F6060DD12F9D2FB00725DAD</string>
@@ -351,16 +347,18 @@
 											<string>0F5287CD12FBDD7300F44492</string>
 											<string>0F5287CE12FBDD7300F44492</string>
 											<string>0F5287CF12FBDD7300F44492</string>
-											<string>0F5287D012FBDD7300F44492</string>
 											<string>0F5287D112FBDD7300F44492</string>
-											<string>0F5287D212FBDD7300F44492</string>
-											<string>0F5287D312FBDD7300F44492</string>
 											<string>0F5287D412FBDD7300F44492</string>
 											<string>0F5287D512FBDD7300F44492</string>
 											<string>0F5287D612FBDD7300F44492</string>
-											<string>0F5287D712FBDD7300F44492</string>
+											<string>0F5287EA12FBE0A000F44492</string>
+											<string>0F5287EB12FBE0A000F44492</string>
+											<string>0F5287EC12FBE0A000F44492</string>
+											<string>0F5287ED12FBE0A000F44492</string>
+											<string>0F5287EE12FBE0A000F44492</string>
+											<string>0F5287EF12FBE0A000F44492</string>
+											<string>0F5287F012FBE0A000F44492</string>
 											<string>0F5287D812FBDD7300F44492</string>
-											<string>0F5287D912FBDD7300F44492</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

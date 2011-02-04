@@ -167,7 +167,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 302;
+		rLoc = 303;
 		rType = 1;
 	};
 	0F5287BC12FBDD2600F44492 /* PBXTextBookmark */ = {
@@ -175,7 +175,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 303";
 		rLen = 0;
-		rLoc = 8277;
+		rLoc = 8300;
 		rType = 0;
 		vrLen = 179;
 		vrLoc = 8148;
@@ -186,7 +186,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 302;
+		rLoc = 303;
 		rType = 1;
 	};
 	0F5287C812FBDD5B00F44492 /* XCBuildMessageTextBookmark */ = {
@@ -195,7 +195,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 302;
+		rLoc = 303;
 		rType = 1;
 	};
 	0F5287C912FBDD5B00F44492 /* PBXTextBookmark */ = {
@@ -203,7 +203,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 303";
 		rLen = 0;
-		rLoc = 8277;
+		rLoc = 8300;
 		rType = 0;
 		vrLen = 179;
 		vrLoc = 8148;
@@ -362,7 +362,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 303";
 		rLen = 0;
-		rLoc = 8277;
+		rLoc = 8300;
 		rType = 0;
 		vrLen = 1317;
 		vrLoc = 7010;
@@ -372,7 +372,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 303";
 		rLen = 0;
-		rLoc = 8277;
+		rLoc = 8300;
 		rType = 0;
 		vrLen = 235;
 		vrLoc = 8092;
@@ -392,7 +392,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 303";
 		rLen = 0;
-		rLoc = 8277;
+		rLoc = 8300;
 		rType = 0;
 		vrLen = 1317;
 		vrLoc = 7010;
@@ -406,6 +406,86 @@
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 5750;
+	};
+	0F5287EA12FBE0A000F44492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A912F14BDB00E04292 /* Util.h */;
+		name = "Util.h: 7";
+		rLen = 0;
+		rLoc = 121;
+		rType = 0;
+		vrLen = 417;
+		vrLoc = 0;
+	};
+	0F5287EB12FBE0A000F44492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
+		name = "Util.m: 40";
+		rLen = 0;
+		rLoc = 912;
+		rType = 0;
+		vrLen = 704;
+		vrLoc = 0;
+	};
+	0F5287EC12FBE0A000F44492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A112F14BA700E04292 /* AGCSimulator.h */;
+		name = "AGCSimulator.h: 19";
+		rLen = 107;
+		rLoc = 278;
+		rType = 0;
+		vrLen = 522;
+		vrLoc = 0;
+	};
+	0F5287ED12FBE0A000F44492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A212F14BA700E04292 /* AGCSimulator.m */;
+		name = "AGCSimulator.m: 174";
+		rLen = 92;
+		rLoc = 4111;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 3570;
+	};
+	0F5287EE12FBE0A000F44492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
+		name = "DSKYSimulationClient.m: 303";
+		rLen = 0;
+		rLoc = 8299;
+		rType = 0;
+		vrLen = 724;
+		vrLoc = 7626;
+	};
+	0F5287EF12FBE0A000F44492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
+		name = "DSKYUIIphoneViewController.m: 81";
+		rLen = 0;
+		rLoc = 2685;
+		rType = 0;
+		vrLen = 1226;
+		vrLoc = 2602;
+	};
+	0F5287F012FBE0A000F44492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2860E325111B887F00E27156 /* AppDelegate_iPhone.h */;
+		name = "AppDelegate_iPhone.h: 24";
+		rLen = 347;
+		rLoc = 494;
+		rType = 0;
+		vrLen = 821;
+		vrLoc = 28;
+	};
+	0F5287F112FBE0A000F44492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */;
+		name = "AppDelegate_iPhone.m: 2";
+		rLen = 0;
+		rLoc = 27;
+		rType = 0;
+		vrLen = 568;
+		vrLoc = 3101;
 	};
 	0F59B69712F14B7100E04292 /* AGCTelemetryUIIphoneViewController.h */ = {
 		uiCtxt = {
@@ -431,15 +511,15 @@
 	};
 	0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1433, 3237}}";
-			sepNavSelRange = "{4038, 146}";
-			sepNavVisRange = "{3894, 549}";
+			sepNavIntBoundsRect = "{{0, 0}, {1433, 3250}}";
+			sepNavSelRange = "{2685, 0}";
+			sepNavVisRange = "{2602, 1226}";
 			sepNavWindowFrame = "{{297, 63}, {750, 715}}";
 		};
 	};
 	0F59B6A112F14BA700E04292 /* AGCSimulator.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 364}}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 367}}";
 			sepNavSelRange = "{278, 107}";
 			sepNavVisRange = "{0, 522}";
 			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
@@ -447,9 +527,9 @@
 	};
 	0F59B6A212F14BA700E04292 /* AGCSimulator.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 2522}}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 2496}}";
 			sepNavSelRange = "{4111, 92}";
-			sepNavVisRange = "{3572, 638}";
+			sepNavVisRange = "{3570, 640}";
 			sepNavWindowFrame = "{{119, 61}, {750, 715}}";
 		};
 	};
@@ -463,9 +543,9 @@
 	};
 	0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 3926}}";
-			sepNavSelRange = "{6005, 0}";
-			sepNavVisRange = "{5750, 945}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 4056}}";
+			sepNavSelRange = "{8299, 0}";
+			sepNavVisRange = "{7626, 724}";
 			sepNavWindowFrame = "{{16, 58}, {750, 715}}";
 		};
 	};
@@ -479,7 +559,7 @@
 	};
 	0F59B6A912F14BDB00E04292 /* Util.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 409}}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 367}}";
 			sepNavSelRange = "{121, 0}";
 			sepNavVisRange = "{0, 417}";
 		};
@@ -488,7 +568,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {902, 741}}";
 			sepNavSelRange = "{912, 0}";
-			sepNavVisRange = "{521, 685}";
+			sepNavVisRange = "{0, 704}";
 		};
 	};
 	0F59B8D312F14F3500E04292 /* PBXTextBookmark */ = {
@@ -901,15 +981,15 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {902, 416}}";
 			sepNavSelRange = "{494, 347}";
-			sepNavVisRange = "{74, 775}";
+			sepNavVisRange = "{28, 821}";
 			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
 		};
 	};
 	2860E326111B887F00E27156 /* AppDelegate_iPhone.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 1508}}";
-			sepNavSelRange = "{3503, 0}";
-			sepNavVisRange = "{3164, 505}";
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1521}}";
+			sepNavSelRange = "{27, 0}";
+			sepNavVisRange = "{3101, 568}";
 			sepNavWindowFrame = "{{202, 52}, {750, 715}}";
 		};
 	};
@@ -1061,6 +1141,14 @@
 			0F5287E312FBDD8700F44492 /* PBXTextBookmark */ = 0F5287E312FBDD8700F44492 /* PBXTextBookmark */;
 			0F5287E412FBDD8700F44492 /* PBXTextBookmark */ = 0F5287E412FBDD8700F44492 /* PBXTextBookmark */;
 			0F5287E712FBDD9800F44492 /* PBXTextBookmark */ = 0F5287E712FBDD9800F44492 /* PBXTextBookmark */;
+			0F5287EA12FBE0A000F44492 /* PBXTextBookmark */ = 0F5287EA12FBE0A000F44492 /* PBXTextBookmark */;
+			0F5287EB12FBE0A000F44492 /* PBXTextBookmark */ = 0F5287EB12FBE0A000F44492 /* PBXTextBookmark */;
+			0F5287EC12FBE0A000F44492 /* PBXTextBookmark */ = 0F5287EC12FBE0A000F44492 /* PBXTextBookmark */;
+			0F5287ED12FBE0A000F44492 /* PBXTextBookmark */ = 0F5287ED12FBE0A000F44492 /* PBXTextBookmark */;
+			0F5287EE12FBE0A000F44492 /* PBXTextBookmark */ = 0F5287EE12FBE0A000F44492 /* PBXTextBookmark */;
+			0F5287EF12FBE0A000F44492 /* PBXTextBookmark */ = 0F5287EF12FBE0A000F44492 /* PBXTextBookmark */;
+			0F5287F012FBE0A000F44492 /* PBXTextBookmark */ = 0F5287F012FBE0A000F44492 /* PBXTextBookmark */;
+			0F5287F112FBE0A000F44492 /* PBXTextBookmark */ = 0F5287F112FBE0A000F44492 /* PBXTextBookmark */;
 			0F59B8D312F14F3500E04292 = 0F59B8D312F14F3500E04292 /* PBXTextBookmark */;
 			0F59BBD612F33E4100E04292 = 0F59BBD612F33E4100E04292 /* PBXTextBookmark */;
 			0F59BBD712F33E4100E04292 = 0F59BBD712F33E4100E04292 /* PBXTextBookmark */;
