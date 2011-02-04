@@ -299,4 +299,9 @@ u_short agcSimulatorPort = 19700;
 	send (dskyIOSocket, (const char *) packet, 4, 0);
 }
 
+- (void)dealloc {
+	[delegate release];
+    [super dealloc];
+}
+
 @end

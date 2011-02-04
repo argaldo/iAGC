@@ -104,6 +104,10 @@
 
 
 - (void)dealloc {
+	[tabBarController release];
+	[dskyUIIPhoneViewController release];
+	[simulator release];
+	[dskyClient release];
     [window release];
     [super dealloc];
 }

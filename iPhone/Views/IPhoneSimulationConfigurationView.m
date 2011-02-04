@@ -7,6 +7,7 @@
 //
 
 #import "IPhoneSimulationConfigurationView.h"
+#import "MTStatusBarOverlay.h"
 
 
 @implementation IPhoneSimulationConfigurationView
@@ -22,12 +23,22 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	
+	MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];   
+	overlay.animation = MTStatusBarOverlayAnimationFallDown;  // MTStatusBarOverlayAnimationShrink
+	overlay.detailViewMode = MTDetailViewModeHistory;      // enable automatic history-tracking and show in detail-view
+	overlay.delegate = self;
+	[overlay postMessage:@"Following @myell0w on Twitter..."]; 
+	// ...
+	[overlay postMessage:@"Following myell0w on Github..." animated:NO];  
+	// ...
+	[overlay postImmediateFinishMessage:@"Following was a good idea!" duration:20.0 animated:YES];
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

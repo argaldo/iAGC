@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F005C4D123751190037035B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F005C4C123751190037035B /* Settings.bundle */; };
+		0F29581712FB0B86009FAA3A /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F29581612FB0B86009FAA3A /* MTStatusBarOverlay.m */; };
 		0F4AA68812FAB48F00BA81BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */; };
 		0F4AA6B212FAB5E400BA81BB /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA6B112FAB5E400BA81BB /* alert.png */; };
 		0F4AA6C512FAB72900BA81BB /* IPhoneSimulationConfigurationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA6C312FAB72900BA81BB /* IPhoneSimulationConfigurationView.m */; };
@@ -105,6 +106,8 @@
 
 /* Begin PBXFileReference section */
 		0F005C4C123751190037035B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		0F29581512FB0B86009FAA3A /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlay.h; sourceTree = "<group>"; };
+		0F29581612FB0B86009FAA3A /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlay.m; sourceTree = "<group>"; };
 		0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F4AA6B112FAB5E400BA81BB /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alert.png; path = Shared/Resources/Images/alert.png; sourceTree = "<group>"; };
 		0F4AA6C212FAB72900BA81BB /* IPhoneSimulationConfigurationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhoneSimulationConfigurationView.h; sourceTree = "<group>"; };
@@ -451,6 +454,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0F29581512FB0B86009FAA3A /* MTStatusBarOverlay.h */,
+				0F29581612FB0B86009FAA3A /* MTStatusBarOverlay.m */,
 				0F005DD01238AEFF0037035B /* Util */,
 				0F005CC7123751890037035B /* AGCSimulation */,
 				2860E32A111B888700E27156 /* iPad */,
@@ -633,6 +638,7 @@
 				0F59BB7F12F336BD00E04292 /* rfopen.c in Sources */,
 				0F59BB8012F336BD00E04292 /* SocketAPI.c in Sources */,
 				0F4AA6C512FAB72900BA81BB /* IPhoneSimulationConfigurationView.m in Sources */,
+				0F29581712FB0B86009FAA3A /* MTStatusBarOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,7 +692,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = argaldo;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = GDBMI;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -702,7 +709,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = argaldo;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = GDBMI;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

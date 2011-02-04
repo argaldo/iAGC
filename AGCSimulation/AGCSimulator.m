@@ -171,4 +171,10 @@ static void _SimManageTime(void) {
 	[self.simulatorThread cancel];
 }
 
+- (void)dealloc {
+	[simulatorThread release];
+	[coreRopeROM release];
+    [super dealloc];
+}
+
 @end

@@ -115,6 +115,10 @@
 
 
 - (void)dealloc {
+	[segments release];
+	[dskySimulationClient release];
+	[alertView release];
+	[alertMessageLabel release];
     [super dealloc];
 }
 
