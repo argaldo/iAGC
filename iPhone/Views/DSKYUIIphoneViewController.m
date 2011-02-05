@@ -113,57 +113,57 @@
 
 - (void) releaseOutlets
 {	
-	[self.alertView release];
-	[self.alertMessageLabel release];
+	self.alertView = nil;
+	self.alertMessageLabel = nil;
 	
 	
-	[self.M1Outlet release];
-	[self.M2Outlet release];
+	self.M1Outlet = nil;
+	self.M2Outlet = nil;
 	
-	[self.V1Outlet release];
-	[self.V2Outlet release];
+	self.V1Outlet = nil;
+	self.V2Outlet = nil;
 	
-	[self.N1Outlet release];
-	[self.N2Outlet release];
+	self.N1Outlet = nil;
+	self.N2Outlet = nil;
 	
-	[self.CompActIndOutlet release];
+	self.CompActIndOutlet = nil;
 	
-	[self.uplinkActivity release];
-	[self.noAttitude release];
-	[self.standBy release];
-	[self.keyRelease release];
-	[self.operationError release];
-	[self.priorityDisplay release];
-	[self.noDAP release];
-	[self.temp release];
-	[self.gimbalLock release];
-	[self.prog release];
-	[self.restart release];
-	[self.tracker release];
-	[self.alt release];
-	[self.vel release];
+	self.uplinkActivity = nil;
+	self.noAttitude = nil;
+	self.standBy = nil;
+	self.keyRelease = nil;
+	self.operationError = nil;
+	self.priorityDisplay = nil;
+	self.noDAP = nil;
+	self.temp = nil;
+	self.gimbalLock = nil;
+	self.prog = nil;
+	self.restart = nil;
+	self.tracker = nil;
+	self.alt = nil;
+	self.vel = nil;
 	
 	
-	[self._r1plusminus release];
-	[self._11Outlet release];	
-	[self._12Outlet release];
-	[self._13Outlet release];
-	[self._14Outlet release];
-	[self._15Outlet release];
+	self._r1plusminus = nil;
+	self._11Outlet = nil;	
+	self._12Outlet = nil;
+	self._13Outlet = nil;
+	self._14Outlet = nil;
+	self._15Outlet = nil;
 	
-	[self._r2plusminus release];
-	[self._21Outlet release];	
-	[self._22Outlet release];
-	[self._23Outlet release];
-	[self._24Outlet release];
-	[self._25Outlet release];
+	self._r2plusminus = nil;
+	self._21Outlet = nil;	
+	self._22Outlet = nil;
+	self._23Outlet = nil;
+	self._24Outlet = nil;
+	self._25Outlet = nil;
 	
-	[self._r3plusminus release];
-	[self._31Outlet release];	
-	[self._32Outlet release];
-	[self._33Outlet release];
-	[self._34Outlet release];
-	[self._35Outlet release];
+	self._r3plusminus = nil;
+	self._31Outlet = nil;	
+	self._32Outlet = nil;
+	self._33Outlet = nil;
+	self._34Outlet = nil;
+	self._35Outlet = nil;
 }
 
 
