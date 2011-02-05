@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0F84BDAB12FDC14A00C4674D</string>
+										<string>0F84BDB412FDC23200C4674D</string>
 										<key>history</key>
 										<array>
 											<string>0F3768B412C32BD80029C25E</string>
@@ -586,7 +586,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>nbfgets.c</string>
+								<string>DSKYSimulationClient.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

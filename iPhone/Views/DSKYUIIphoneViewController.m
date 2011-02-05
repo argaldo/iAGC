@@ -30,6 +30,39 @@
 */
 
 
+- (void) initSegmentDictionary {
+	
+	//TODO change this to use a NSDictionary ... 
+	// initializing segment dictionary
+	segments = [[NSMutableDictionary alloc] init];
+	[segments setObject:self.M1Outlet forKey:@"M1"];
+	[segments setObject:self.M2Outlet forKey:@"M2"];
+	[segments setObject:self.V1Outlet forKey:@"V1"];
+	[segments setObject:self.V2Outlet forKey:@"V2"];
+	[segments setObject:self.N1Outlet forKey:@"N1"];
+	[segments setObject:self.N2Outlet forKey:@"N2"];
+	[segments setObject:self._11Outlet forKey:@"11"];
+	[segments setObject:self._12Outlet forKey:@"12"];
+	[segments setObject:self._13Outlet forKey:@"13"];
+	[segments setObject:self._14Outlet forKey:@"14"];
+	[segments setObject:self._15Outlet forKey:@"15"];
+	[segments setObject:self._21Outlet forKey:@"21"];
+	[segments setObject:self._22Outlet forKey:@"22"];
+	[segments setObject:self._23Outlet forKey:@"23"];
+	[segments setObject:self._24Outlet forKey:@"24"];
+	[segments setObject:self._25Outlet forKey:@"25"];
+	[segments setObject:self._31Outlet forKey:@"31"];
+	[segments setObject:self._32Outlet forKey:@"32"];
+	[segments setObject:self._33Outlet forKey:@"33"];
+	[segments setObject:self._34Outlet forKey:@"34"];
+	[segments setObject:self._35Outlet forKey:@"35"];
+	[segments setObject:self._r1plusminus forKey:@"R1"];
+	[segments setObject:self._r2plusminus forKey:@"R2"];
+	[segments setObject:self._r3plusminus forKey:@"R3"];
+	//[segments setObject:self.self.CompActIndOutlet forKey:@"CompActInd"];
+}
+
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -78,38 +111,6 @@
 	}
 }
 
-
-- (void) initSegmentDictionary {
-	
-	//TODO change this to use a NSDictionary ... 
-	// initializing segment dictionary
-	segments = [[NSMutableDictionary alloc] init];
-	[segments setObject:self.M1Outlet forKey:@"M1"];
-	[segments setObject:self.M2Outlet forKey:@"M2"];
-	[segments setObject:self.V1Outlet forKey:@"V1"];
-	[segments setObject:self.V2Outlet forKey:@"V2"];
-	[segments setObject:self.N1Outlet forKey:@"N1"];
-	[segments setObject:self.N2Outlet forKey:@"N2"];
-	[segments setObject:self._11Outlet forKey:@"11"];
-	[segments setObject:self._12Outlet forKey:@"12"];
-	[segments setObject:self._13Outlet forKey:@"13"];
-	[segments setObject:self._14Outlet forKey:@"14"];
-	[segments setObject:self._15Outlet forKey:@"15"];
-	[segments setObject:self._21Outlet forKey:@"21"];
-	[segments setObject:self._22Outlet forKey:@"22"];
-	[segments setObject:self._23Outlet forKey:@"23"];
-	[segments setObject:self._24Outlet forKey:@"24"];
-	[segments setObject:self._25Outlet forKey:@"25"];
-	[segments setObject:self._31Outlet forKey:@"31"];
-	[segments setObject:self._32Outlet forKey:@"32"];
-	[segments setObject:self._33Outlet forKey:@"33"];
-	[segments setObject:self._34Outlet forKey:@"34"];
-	[segments setObject:self._35Outlet forKey:@"35"];
-	[segments setObject:self._r1plusminus forKey:@"R1"];
-	[segments setObject:self._r2plusminus forKey:@"R2"];
-	[segments setObject:self._r3plusminus forKey:@"R3"];
-	//[segments setObject:self.self.CompActIndOutlet forKey:@"CompActInd"];
-}
 
 - (void) releaseOutlets
 {	
@@ -189,6 +190,39 @@
 	[dskySimulationClient sendDSKYCode:code];
 }
 
+- (void)showAlert
+{
+	[self.view addSubview:alertView];
+	alertView.backgroundColor = [UIColor clearColor];
+    alertView.center = self.view.superview.center;
+    
+    CALayer *viewLayer = self.alertView.layer;
+    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    
+    animation.duration = 0.35555555;
+    animation.values = [NSArray arrayWithObjects:
+                        [NSNumber numberWithFloat:0.6],
+                        [NSNumber numberWithFloat:1.1],
+                        [NSNumber numberWithFloat:.9],
+                        [NSNumber numberWithFloat:1],
+                        nil];
+    animation.keyTimes = [NSArray arrayWithObjects:
+                          [NSNumber numberWithFloat:0.0],
+                          [NSNumber numberWithFloat:0.6],
+                          [NSNumber numberWithFloat:0.8],
+                          [NSNumber numberWithFloat:1.0], 
+                          nil];    
+    
+    [viewLayer addAnimation:animation forKey:@"transform.scale"];
+    
+    [self performSelector:@selector(updateText:) withObject:@"Getting there…" afterDelay:1.0];
+    [self performSelector:@selector(updateText:) withObject:@"Really…" afterDelay:2.0];
+    [self performSelector:@selector(updateText:) withObject:@"Just about there…" afterDelay:3.0];
+    [self performSelector:@selector(updateText:) withObject:@"Done" afterDelay:4.5];
+    [self performSelector:@selector(finalUpdate) withObject:nil afterDelay:5.0];
+}
+
+
 
 // key handling code
 - (IBAction) pressedVerb: (id) sender{
@@ -253,37 +287,7 @@
 }
 
 
-- (void)showAlert
-{
-	[self.view addSubview:alertView];
-	alertView.backgroundColor = [UIColor clearColor];
-    alertView.center = self.view.superview.center;
-    
-    CALayer *viewLayer = self.alertView.layer;
-    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-    
-    animation.duration = 0.35555555;
-    animation.values = [NSArray arrayWithObjects:
-                        [NSNumber numberWithFloat:0.6],
-                        [NSNumber numberWithFloat:1.1],
-                        [NSNumber numberWithFloat:.9],
-                        [NSNumber numberWithFloat:1],
-                        nil];
-    animation.keyTimes = [NSArray arrayWithObjects:
-                          [NSNumber numberWithFloat:0.0],
-                          [NSNumber numberWithFloat:0.6],
-                          [NSNumber numberWithFloat:0.8],
-                          [NSNumber numberWithFloat:1.0], 
-                          nil];    
-    
-    [viewLayer addAnimation:animation forKey:@"transform.scale"];
-    
-    [self performSelector:@selector(updateText:) withObject:@"Getting there…" afterDelay:1.0];
-    [self performSelector:@selector(updateText:) withObject:@"Really…" afterDelay:2.0];
-    [self performSelector:@selector(updateText:) withObject:@"Just about there…" afterDelay:3.0];
-    [self performSelector:@selector(updateText:) withObject:@"Done" afterDelay:4.5];
-    [self performSelector:@selector(finalUpdate) withObject:nil afterDelay:5.0];
-}
+
 
 
 - (void)updateText:(NSString *)newText
