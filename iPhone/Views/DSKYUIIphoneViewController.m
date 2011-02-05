@@ -16,6 +16,9 @@
 @synthesize dskySimulationClient;
 @synthesize alertView,alertMessageLabel;
 
+
+@synthesize M1Outlet,M2Outlet,V1Outlet,V2Outlet,N1Outlet,N2Outlet,CompActIndOutlet,uplinkActivity,noAttitude,standBy,keyRelease,operationError,priorityDisplay,noDAP,temp,gimbalLock,prog,restart,tracker,alt,vel,_r1plusminus,_11Outlet,	_12Outlet,_13Outlet,_14Outlet,_15Outlet,_r2plusminus,_21Outlet,_22Outlet,_23Outlet,_24Outlet,_25Outlet,_r3plusminus,_31Outlet,_32Outlet,_33Outlet,_34Outlet,_35Outlet;
+
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -81,35 +84,92 @@
 	//TODO change this to use a NSDictionary ... 
 	// initializing segment dictionary
 	segments = [[NSMutableDictionary alloc] init];
-	[segments setObject:M1Outlet forKey:@"M1"];
-	[segments setObject:M2Outlet forKey:@"M2"];
-	[segments setObject:V1Outlet forKey:@"V1"];
-	[segments setObject:V2Outlet forKey:@"V2"];
-	[segments setObject:N1Outlet forKey:@"N1"];
-	[segments setObject:N2Outlet forKey:@"N2"];
-	[segments setObject:_11Outlet forKey:@"11"];
-	[segments setObject:_12Outlet forKey:@"12"];
-	[segments setObject:_13Outlet forKey:@"13"];
-	[segments setObject:_14Outlet forKey:@"14"];
-	[segments setObject:_15Outlet forKey:@"15"];
-	[segments setObject:_21Outlet forKey:@"21"];
-	[segments setObject:_22Outlet forKey:@"22"];
-	[segments setObject:_23Outlet forKey:@"23"];
-	[segments setObject:_24Outlet forKey:@"24"];
-	[segments setObject:_25Outlet forKey:@"25"];
-	[segments setObject:_31Outlet forKey:@"31"];
-	[segments setObject:_32Outlet forKey:@"32"];
-	[segments setObject:_33Outlet forKey:@"33"];
-	[segments setObject:_34Outlet forKey:@"34"];
-	[segments setObject:_35Outlet forKey:@"35"];
-	[segments setObject:_r1plusminus forKey:@"R1"];
-	[segments setObject:_r2plusminus forKey:@"R2"];
-	[segments setObject:_r3plusminus forKey:@"R3"];
-	//[segments setObject:CompActIndOutlet forKey:@"CompActInd"];
+	[segments setObject:self.M1Outlet forKey:@"M1"];
+	[segments setObject:self.M2Outlet forKey:@"M2"];
+	[segments setObject:self.V1Outlet forKey:@"V1"];
+	[segments setObject:self.V2Outlet forKey:@"V2"];
+	[segments setObject:self.N1Outlet forKey:@"N1"];
+	[segments setObject:self.N2Outlet forKey:@"N2"];
+	[segments setObject:self._11Outlet forKey:@"11"];
+	[segments setObject:self._12Outlet forKey:@"12"];
+	[segments setObject:self._13Outlet forKey:@"13"];
+	[segments setObject:self._14Outlet forKey:@"14"];
+	[segments setObject:self._15Outlet forKey:@"15"];
+	[segments setObject:self._21Outlet forKey:@"21"];
+	[segments setObject:self._22Outlet forKey:@"22"];
+	[segments setObject:self._23Outlet forKey:@"23"];
+	[segments setObject:self._24Outlet forKey:@"24"];
+	[segments setObject:self._25Outlet forKey:@"25"];
+	[segments setObject:self._31Outlet forKey:@"31"];
+	[segments setObject:self._32Outlet forKey:@"32"];
+	[segments setObject:self._33Outlet forKey:@"33"];
+	[segments setObject:self._34Outlet forKey:@"34"];
+	[segments setObject:self._35Outlet forKey:@"35"];
+	[segments setObject:self._r1plusminus forKey:@"R1"];
+	[segments setObject:self._r2plusminus forKey:@"R2"];
+	[segments setObject:self._r3plusminus forKey:@"R3"];
+	//[segments setObject:self.self.CompActIndOutlet forKey:@"CompActInd"];
+}
+
+- (void) releaseOutlets
+{	
+	[self.alertView release];
+	[self.alertMessageLabel release];
+	
+	
+	[self.M1Outlet release];
+	[self.M2Outlet release];
+	
+	[self.V1Outlet release];
+	[self.V2Outlet release];
+	
+	[self.N1Outlet release];
+	[self.N2Outlet release];
+	
+	[self.CompActIndOutlet release];
+	
+	[self.uplinkActivity release];
+	[self.noAttitude release];
+	[self.standBy release];
+	[self.keyRelease release];
+	[self.operationError release];
+	[self.priorityDisplay release];
+	[self.noDAP release];
+	[self.temp release];
+	[self.gimbalLock release];
+	[self.prog release];
+	[self.restart release];
+	[self.tracker release];
+	[self.alt release];
+	[self.vel release];
+	
+	
+	[self._r1plusminus release];
+	[self._11Outlet release];	
+	[self._12Outlet release];
+	[self._13Outlet release];
+	[self._14Outlet release];
+	[self._15Outlet release];
+	
+	[self._r2plusminus release];
+	[self._21Outlet release];	
+	[self._22Outlet release];
+	[self._23Outlet release];
+	[self._24Outlet release];
+	[self._25Outlet release];
+	
+	[self._r3plusminus release];
+	[self._31Outlet release];	
+	[self._32Outlet release];
+	[self._33Outlet release];
+	[self._34Outlet release];
+	[self._35Outlet release];
 }
 
 
+
 - (void)viewDidUnload {
+	[self releaseOutlets];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -117,10 +177,9 @@
 
 
 - (void)dealloc {
+	[self releaseOutlets];
 	[segments release];
 	[dskySimulationClient release];
-	[alertView release];
-	[alertMessageLabel release];
     [super dealloc];
 }
 
@@ -239,6 +298,7 @@
     [UIView setAnimationDuration:0.35];
     [self performSelector:@selector(removeAlert) withObject:nil afterDelay:0.5];
 }
+
 
 - (void)removeAlert
 {

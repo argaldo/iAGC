@@ -20,6 +20,6 @@
 - (void) launchDSKYIOListeningThread;
 - (void) sendDSKYCode:(int) code;
 
-@property (nonatomic, retain) id<UpdateDSKYUserInterfaceDelegate> delegate;
+@property (assign) id<UpdateDSKYUserInterfaceDelegate> delegate;
 
 @end

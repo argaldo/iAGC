@@ -79,6 +79,56 @@
 @property (nonatomic,retain) IBOutlet UILabel *alertMessageLabel;
 
 
+@property (nonatomic,retain) IBOutlet UIImageView *M1Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *M2Outlet;
+
+@property (nonatomic,retain) IBOutlet UIImageView *V1Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *V2Outlet;
+
+@property (nonatomic,retain) IBOutlet UIImageView *N1Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *N2Outlet;
+
+@property (nonatomic,retain) IBOutlet UIImageView *CompActIndOutlet;
+
+@property (nonatomic,retain) IBOutlet UIImageView *uplinkActivity;
+@property (nonatomic,retain) IBOutlet UIImageView *noAttitude;
+@property (nonatomic,retain) IBOutlet UIImageView *standBy;
+@property (nonatomic,retain) IBOutlet UIImageView *keyRelease;
+@property (nonatomic,retain) IBOutlet UIImageView *operationError;
+@property (nonatomic,retain) IBOutlet UIImageView *priorityDisplay;
+@property (nonatomic,retain) IBOutlet UIImageView *noDAP;
+@property (nonatomic,retain) IBOutlet UIImageView *temp;
+@property (nonatomic,retain) IBOutlet UIImageView *gimbalLock;
+@property (nonatomic,retain) IBOutlet UIImageView *prog;
+@property (nonatomic,retain) IBOutlet UIImageView *restart;
+@property (nonatomic,retain) IBOutlet UIImageView *tracker;
+@property (nonatomic,retain) IBOutlet UIImageView *alt;
+@property (nonatomic,retain) IBOutlet UIImageView *vel;
+
+
+@property (nonatomic,retain) IBOutlet UIImageView *_r1plusminus;
+@property (nonatomic,retain) IBOutlet UIImageView *_11Outlet;	
+@property (nonatomic,retain) IBOutlet UIImageView *_12Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *_13Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *_14Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *_15Outlet;
+
+@property (nonatomic,retain) IBOutlet UIImageView *_r2plusminus;
+@property (nonatomic,retain) IBOutlet UIImageView *_21Outlet;	
+@property (nonatomic,retain) IBOutlet UIImageView *_22Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *_23Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *_24Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *_25Outlet;
+
+@property (nonatomic,retain) IBOutlet UIImageView *_r3plusminus;
+@property (nonatomic,retain) IBOutlet UIImageView *_31Outlet;	
+@property (nonatomic,retain) IBOutlet UIImageView *_32Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *_33Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *_34Outlet;
+@property (nonatomic,retain) IBOutlet UIImageView *_35Outlet;
+
+
+
 // action delegates for dsky keyboard click
 - (IBAction) pressedVerb: (id) sender;
 - (IBAction) pressedNoun: (id) sender;
