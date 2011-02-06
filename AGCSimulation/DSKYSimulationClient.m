@@ -27,6 +27,8 @@ int R2Sign = 0;
 int R3Sign = 0;
 
 static int lastValue = 0;
+static int verbNounFlashing = 0;
+static int lit = 1;
 
 NSString *agcSimulatorHost = @"localhost";
 u_short agcSimulatorPort = 19700;
@@ -180,12 +182,23 @@ u_short agcSimulatorPort = 19700;
 			[self.delegate updateUserInterface:&rightSegmentKey withValue:[self getRightSegmentValue:&value] withComponentType:SEGMENT];
 	}
 	
+	// channel = 011 ( octal ) indicator value changes
 	if (channel == 9 ) {
-		// calling delegate with an interpretation of the received packet as a sign or segment value change
-		if ((value & 2) != (lastValue & 2)) {
+		// computer activity indicator
+		if ((value & (1<<1)) != (lastValue & (1<<1))) {
 			NSString *imagen = @"CompActInd";
-			[self.delegate updateUserInterface:&imagen withValue:value withComponentType:INDICATOR];
+			[self.delegate updateUserInterface:&imagen withValue:value withComponentType:INDICATOR withComponentSubtype:0];
 		} 
+		
+		// op error indicator
+		if ((value & (1<<6)) != (lastValue & (1<<6))){
+			NSString *image = @"opError";
+			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:1];		}
+		int flashStatus = (0 != (value & 32));
+		if (verbNounFlashing && flashStatus){
+			
+		}
+		verbNounFlashing = flashStatus;
 		lastValue = value;
 		
 	}

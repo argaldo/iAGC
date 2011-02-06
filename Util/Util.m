@@ -53,12 +53,21 @@
 	switch(indicatorType){
 		// Computer activity indicator
 		case 0:
-			if ((indicatorValue & 2) == 0) {
+			if ((indicatorValue & (1<<1)) == 0) {
 				return @"dsky-compacty-off.jpg";
 			} else {
 				return @"dsky-compacty-on.jpg";
 			}
 			break;
+		// operator error indicator
+		case 1:
+			if ((indicatorValue & (1<<6)) == 0){
+				return @"OprErrOff.jpg";
+			} else {
+				return @"OprErrOn.jpg";
+			}
+			break;
+			
 		default:
 			break;
 	}

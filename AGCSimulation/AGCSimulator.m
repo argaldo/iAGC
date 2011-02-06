@@ -107,7 +107,6 @@ static void _SimManageTime(void) {
 	Simulator.RealTime = times (&Simulator.DummyTime);
 	if (Simulator.RealTime != Simulator.LastRealTime)
 	{
-		NSLog(@"Synchro!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		Simulator.LastRealTime = Simulator.RealTime;
 		Simulator.DesiredCycles = Simulator.RealTime;
 		Simulator.DesiredCycles -= Simulator.RealTimeOffset;

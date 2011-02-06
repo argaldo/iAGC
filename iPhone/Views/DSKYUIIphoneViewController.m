@@ -60,6 +60,7 @@
 	[segments setObject:self._r2plusminus forKey:@"R2"];
 	[segments setObject:self._r3plusminus forKey:@"R3"];
 	[segments setObject:self.CompActIndOutlet forKey:@"CompActInd"];
+	[segments setObject:self.operationError forKey:@"opError"];
 }
 
 
@@ -93,8 +94,11 @@
 		[[segments objectForKey:component] setImage:[UIImage imageNamed:imageName]];
 }
 
-
 - (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType {
+	[self updateUserInterface:component withValue:value withComponentType:componentType withComponentSubtype:0];
+}
+
+- (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType withComponentSubtype:(int) componentSubtype{
 	NSLog(@"Recibido update!");
 	switch (componentType){
 		case SEGMENT:
@@ -104,7 +108,7 @@
 			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSignValue:value],nil] waitUntilDone:YES];
 			break;
 		case INDICATOR:
-			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForIndicatorType:0 withValue:value],nil] waitUntilDone:YES];
+			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForIndicatorType:componentSubtype withValue:value],nil] waitUntilDone:YES];
 			break;
 		default:
 			break;
