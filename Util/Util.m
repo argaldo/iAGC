@@ -67,6 +67,14 @@
 				return @"OprErrOn.jpg";
 			}
 			break;
+		// key release
+		case 2:
+			if ((indicatorValue & (1<<4)) == 0){
+				return @"KeyRelOff.jpg";
+			} else {
+				return @"KeyRelOn.jpg";
+			}
+			break;
 			
 		default:
 			break;

@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -278,13 +280,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>3</integer>
+									<integer>10</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {295, 612}}</string>
+							<string>{{0, 144}, {295, 612}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -314,14 +316,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Util.m</string>
+								<string>DSKYSimulationClient.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Util.m</string>
+										<string>DSKYSimulationClient.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0FA82F7F12FF155700B08B34</string>
+										<string>0FA82F9D12FF171B00B08B34</string>
 										<key>history</key>
 										<array>
 											<string>0F3768B412C32BD80029C25E</string>
@@ -362,17 +362,11 @@
 											<string>0FA82E2012FEDE4100B08B34</string>
 											<string>0FA82E2212FEDE4100B08B34</string>
 											<string>0FA82E2312FEDE4100B08B34</string>
-											<string>0FA82E2612FEDE4100B08B34</string>
 											<string>0FA82E2812FEDE4100B08B34</string>
 											<string>0FA82E3712FEF1B600B08B34</string>
 											<string>0FA82E3812FEF1B600B08B34</string>
 											<string>0FA82F1112FF0D3400B08B34</string>
-											<string>0FA82F4212FF133000B08B34</string>
-											<string>0FA82F4312FF133000B08B34</string>
 											<string>0FA82F4512FF133000B08B34</string>
-											<string>0FA82F6412FF150A00B08B34</string>
-											<string>0FA82F6512FF150A00B08B34</string>
-											<string>0FA82F6612FF150A00B08B34</string>
 											<string>0FA82F6712FF150A00B08B34</string>
 											<string>0FA82F6812FF150A00B08B34</string>
 											<string>0FA82F6912FF150A00B08B34</string>
@@ -380,7 +374,19 @@
 											<string>0FA82F6B12FF150A00B08B34</string>
 											<string>0FA82F6C12FF150A00B08B34</string>
 											<string>0FA82F6D12FF150A00B08B34</string>
-											<string>0FA82F6E12FF150A00B08B34</string>
+											<string>0FA82F8A12FF16D700B08B34</string>
+											<string>0FA82F8B12FF16D700B08B34</string>
+											<string>0FA82F8C12FF16D700B08B34</string>
+											<string>0FA82F8D12FF16D700B08B34</string>
+											<string>0FA82F8E12FF16D700B08B34</string>
+											<string>0FA82F8F12FF16D700B08B34</string>
+											<string>0FA82F9012FF16D700B08B34</string>
+											<string>0FA82F9112FF16D700B08B34</string>
+											<string>0FA82F9212FF16D700B08B34</string>
+											<string>0FA82F9312FF16D700B08B34</string>
+											<string>0FA82F9412FF16D700B08B34</string>
+											<string>0FA82F9512FF16D700B08B34</string>
+											<string>0FA82F9612FF16D700B08B34</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -578,7 +584,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0FA82F8012FF155700B08B34</string>
 		<string>0FA82E9012FEF70900B08B34</string>
 		<string>0FA82C7012FE8C0400B08B34</string>
 		<string>0FA82C7112FE8C0400B08B34</string>

@@ -61,6 +61,7 @@
 	[segments setObject:self._r3plusminus forKey:@"R3"];
 	[segments setObject:self.CompActIndOutlet forKey:@"CompActInd"];
 	[segments setObject:self.operationError forKey:@"opError"];
+	[segments setObject:self.keyRelease forKey:@"keyRel"];
 }
 
 

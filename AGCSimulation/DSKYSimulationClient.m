@@ -184,16 +184,23 @@ u_short agcSimulatorPort = 19700;
 	
 	// channel = 011 ( octal ) indicator value changes
 	if (channel == 9 ) {
-		// computer activity indicator
+		// computer activity indicator bit 1
 		if ((value & (1<<1)) != (lastValue & (1<<1))) {
 			NSString *imagen = @"CompActInd";
 			[self.delegate updateUserInterface:&imagen withValue:value withComponentType:INDICATOR withComponentSubtype:0];
 		} 
 		
-		// op error indicator
+		// op error indicator bit 6
 		if ((value & (1<<6)) != (lastValue & (1<<6))){
 			NSString *image = @"opError";
-			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:1];		}
+			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:1];
+		}
+		
+		// key release  bit 4
+		if ((value & (1<<4)) != (lastValue & (1<<4))){
+			NSString *image = @"keyRel";
+			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:2];
+		}
 		int flashStatus = (0 != (value & 32));
 		if (verbNounFlashing && flashStatus){
 			
