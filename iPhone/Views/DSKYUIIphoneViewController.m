@@ -59,7 +59,7 @@
 	[segments setObject:self._r1plusminus forKey:@"R1"];
 	[segments setObject:self._r2plusminus forKey:@"R2"];
 	[segments setObject:self._r3plusminus forKey:@"R3"];
-	//[segments setObject:self.self.CompActIndOutlet forKey:@"CompActInd"];
+	[segments setObject:self.CompActIndOutlet forKey:@"CompActInd"];
 }
 
 
