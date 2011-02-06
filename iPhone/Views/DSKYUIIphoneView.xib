@@ -904,7 +904,7 @@
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage" id="1050565853">
+						<object class="NSCustomResource" key="IBUIImage" id="493289879">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">BlankOff.jpg</string>
 						</object>
@@ -928,7 +928,7 @@
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="1050565853"/>
+						<reference key="IBUIImage" ref="493289879"/>
 					</object>
 					<object class="IBUIImageView" id="423075238">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -1394,6 +1394,110 @@
 						<reference key="destination" ref="227486860"/>
 					</object>
 					<int key="connectionID">208</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">uplinkActivity</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="290907820"/>
+					</object>
+					<int key="connectionID">222</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">temp</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="64474696"/>
+					</object>
+					<int key="connectionID">223</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">noAttitude</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="531941935"/>
+					</object>
+					<int key="connectionID">224</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">gimbalLock</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1071535937"/>
+					</object>
+					<int key="connectionID">225</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">standBy</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="511845076"/>
+					</object>
+					<int key="connectionID">226</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">prog</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="725273609"/>
+					</object>
+					<int key="connectionID">227</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">keyRelease</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="263184815"/>
+					</object>
+					<int key="connectionID">228</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">restart</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="760403824"/>
+					</object>
+					<int key="connectionID">229</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">operationError</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="543806656"/>
+					</object>
+					<int key="connectionID">230</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">tracker</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="479822035"/>
+					</object>
+					<int key="connectionID">231</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">alt</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="486346211"/>
+					</object>
+					<int key="connectionID">232</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">vel</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="423075238"/>
+					</object>
+					<int key="connectionID">233</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">CompActIndOutlet</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="99077968"/>
+					</object>
+					<int key="connectionID">234</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1991,7 +2095,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>DSKYUIIphoneViewController</string>
 					<string>UIResponder</string>
-					<string>{{416, 189}, {320, 480}}</string>
+					<string>{{438, 201}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -2279,7 +2383,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">221</int>
+			<int key="maxID">234</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
