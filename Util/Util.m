@@ -13,18 +13,6 @@
 
 + (NSString *) getImageNameForSegmentValue: (int) segmentValue {
 	switch(segmentValue){
-		/*case 0:return @"7Seg-0.jpg";break;
-		case 3:return @"7Seg-3.jpg";break;
-		case 15:return @"7Seg-15.jpg";break;
-		case 19:return @"7Seg-19.jpg";break;
-		case 21:return @"7Seg-21.jpg";break;
-		case 25:return @"7Seg-25.jpg";break;
-		case 27:return @"7Seg-27.jpg";break;
-		case 28:return @"7Seg-28.jpg";break;
-		case 29:return @"7Seg-29.jpg";break;
-		case 30:return @"7Seg-30.jpg";break;
-		case 31:return @"7Seg-31.jpg";break;
-		default:return @"";*/
 		// off	
 		case 0:return @"digit-off.jpg";break;
 		// 1
@@ -63,11 +51,12 @@
 
 + (NSString *) getImageNameForIndicatorType:(int) indicatorType withValue:(int) indicatorValue {
 	switch(indicatorType){
+		// Computer activity indicator
 		case 0:
 			if ((indicatorValue & 2) == 0) {
-				return @"CompActyOff.jpg";
+				return @"dsky-compacty-off.jpg";
 			} else {
-				return @"CompActyOn.jpg";
+				return @"dsky-compacty-on.jpg";
 			}
 			break;
 		default:

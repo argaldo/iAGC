@@ -103,9 +103,9 @@
 		case SIGN:
 			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSignValue:value],nil] waitUntilDone:YES];
 			break;
-		/*case INDICATOR:
-			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[util getImageNameForIndicatorType:0 withValue:value],nil] waitUntilDone:YES];
-			break;*/
+		case INDICATOR:
+			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForIndicatorType:0 withValue:value],nil] waitUntilDone:YES];
+			break;
 		default:
 			break;
 	}

@@ -137,7 +137,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">dsky-compacty-on.jpg</string>
+							<string key="NSResourceName">dsky-compacty-off.jpg</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="321803628">
@@ -822,7 +822,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">GimbalLockOn.jpg</string>
+							<string key="NSResourceName">GimbalLockOff.jpg</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="511845076">
@@ -904,7 +904,7 @@
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage" id="493289879">
+						<object class="NSCustomResource" key="IBUIImage" id="487236341">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">BlankOff.jpg</string>
 						</object>
@@ -928,7 +928,7 @@
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="493289879"/>
+						<reference key="IBUIImage" ref="487236341"/>
 					</object>
 					<object class="IBUIImageView" id="423075238">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -3105,7 +3105,7 @@
 				<string>BlankOff.jpg</string>
 				<string>ClrUp.jpg</string>
 				<string>EntrUp.jpg</string>
-				<string>GimbalLockOn.jpg</string>
+				<string>GimbalLockOff.jpg</string>
 				<string>KeyRelOff.jpg</string>
 				<string>KeyRelUp.jpg</string>
 				<string>MinusUp.jpg</string>
@@ -3125,7 +3125,7 @@
 				<string>VerbUp.jpg</string>
 				<string>alert.png</string>
 				<string>digit-off.jpg</string>
-				<string>dsky-compacty-on.jpg</string>
+				<string>dsky-compacty-off.jpg</string>
 				<string>dsky-line1.jpg</string>
 				<string>dsky-line3.jpg</string>
 				<string>dsky-noun.jpg</string>
