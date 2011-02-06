@@ -138,6 +138,7 @@
 - (IBAction) pressedKeyRel: (id) sender;
 - (IBAction) pressedPlus: (id) sender;
 - (IBAction) pressedMinus: (id) sender;
+- (IBAction) pressedReset: (id) sender;
 - (IBAction) pressed1: (id) sender;
 - (IBAction) pressed2: (id) sender;
 - (IBAction) pressed3: (id) sender;

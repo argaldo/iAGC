@@ -288,7 +288,11 @@
 }
 - (IBAction) pressedMinus: (id) sender{
 	[self sendDSKYCode:27];
-	[self showAlert];
+	//[self showAlert];
+}
+
+- (IBAction) pressedReset: (id) sender{
+	[self sendDSKYCode:18];
 }
 
 

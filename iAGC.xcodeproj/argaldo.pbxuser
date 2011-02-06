@@ -7,7 +7,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -104,9 +104,9 @@
 	};
 	0F4AA6C312FAB72900BA81BB /* IPhoneSimulationConfigurationView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 962}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 845}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 796}";
+			sepNavVisRange = "{796, 1083}";
 			sepNavWindowFrame = "{{305, 57}, {750, 715}}";
 		};
 	};
@@ -176,17 +176,17 @@
 	};
 	0F59B69A12F14B7100E04292 /* DSKYUIIphoneViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 2067}}";
-			sepNavSelRange = "{758, 462}";
-			sepNavVisRange = "{2301, 1364}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 1794}}";
+			sepNavSelRange = "{4929, 0}";
+			sepNavVisRange = "{4419, 891}";
 			sepNavWindowFrame = "{{219, 63}, {750, 715}}";
 		};
 	};
 	0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2826, 3770}}";
-			sepNavSelRange = "{2739, 0}";
-			sepNavVisRange = "{1438, 1314}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 4719}}";
+			sepNavSelRange = "{8980, 0}";
+			sepNavVisRange = "{8632, 482}";
 			sepNavWindowFrame = "{{297, 63}, {750, 715}}";
 		};
 	};
@@ -216,9 +216,9 @@
 	};
 	0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1489, 4342}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1489, 4420}}";
 			sepNavSelRange = "{5113, 0}";
-			sepNavVisRange = "{5164, 892}";
+			sepNavVisRange = "{3390, 505}";
 			sepNavWindowFrame = "{{16, 58}, {750, 715}}";
 		};
 	};
@@ -1884,6 +1884,86 @@
 		vrLen = 892;
 		vrLoc = 5164;
 	};
+	0FA82FA012FF2A6500B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
+		name = "DSKYSimulationClient.m: 187";
+		rLen = 0;
+		rLoc = 5113;
+		rType = 0;
+		vrLen = 505;
+		vrLoc = 3390;
+	};
+	0FA82FA112FF2A6500B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F4AA6C312FAB72900BA81BB /* IPhoneSimulationConfigurationView.m */;
+		name = "IPhoneSimulationConfigurationView.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1083;
+		vrLoc = 796;
+	};
+	0FA82FA212FF2A6500B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B69A12F14B7100E04292 /* DSKYUIIphoneViewController.h */;
+		name = "DSKYUIIphoneViewController.h: 141";
+		rLen = 0;
+		rLoc = 4929;
+		rType = 0;
+		vrLen = 891;
+		vrLoc = 4419;
+	};
+	0FA82FA312FF2A6500B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
+		name = "DSKYUIIphoneViewController.m: 294";
+		rLen = 0;
+		rLoc = 9026;
+		rType = 0;
+		vrLen = 484;
+		vrLoc = 8604;
+	};
+	0FA82FA412FF2A6500B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
+		name = "DSKYUIIphoneViewController.m: 294";
+		rLen = 0;
+		rLoc = 9026;
+		rType = 0;
+		vrLen = 483;
+		vrLoc = 8604;
+	};
+	0FA82FA712FF2A9B00B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
+		name = "DSKYUIIphoneViewController.m: 295";
+		rLen = 0;
+		rLoc = 9063;
+		rType = 0;
+		vrLen = 483;
+		vrLoc = 8604;
+	};
+	0FA82FAA12FF2AB500B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
+		name = "DSKYUIIphoneViewController.m: 295";
+		rLen = 0;
+		rLoc = 9063;
+		rType = 0;
+		vrLen = 483;
+		vrLoc = 8604;
+	};
+	0FA82FAF12FF2B4300B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
+		name = "DSKYUIIphoneViewController.m: 291";
+		rLen = 0;
+		rLoc = 8980;
+		rType = 0;
+		vrLen = 482;
+		vrLoc = 8632;
+	};
 	0FFCC9C312F71DA20002B905 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0F59BB5912F336BD00E04292 /* agc_debugger.c */;
@@ -2224,6 +2304,14 @@
 			0FA82F9612FF16D700B08B34 /* PBXTextBookmark */ = 0FA82F9612FF16D700B08B34 /* PBXTextBookmark */;
 			0FA82F9712FF16D700B08B34 /* PBXTextBookmark */ = 0FA82F9712FF16D700B08B34 /* PBXTextBookmark */;
 			0FA82F9D12FF171B00B08B34 /* PBXTextBookmark */ = 0FA82F9D12FF171B00B08B34 /* PBXTextBookmark */;
+			0FA82FA012FF2A6500B08B34 /* PBXTextBookmark */ = 0FA82FA012FF2A6500B08B34 /* PBXTextBookmark */;
+			0FA82FA112FF2A6500B08B34 /* PBXTextBookmark */ = 0FA82FA112FF2A6500B08B34 /* PBXTextBookmark */;
+			0FA82FA212FF2A6500B08B34 /* PBXTextBookmark */ = 0FA82FA212FF2A6500B08B34 /* PBXTextBookmark */;
+			0FA82FA312FF2A6500B08B34 /* PBXTextBookmark */ = 0FA82FA312FF2A6500B08B34 /* PBXTextBookmark */;
+			0FA82FA412FF2A6500B08B34 /* PBXTextBookmark */ = 0FA82FA412FF2A6500B08B34 /* PBXTextBookmark */;
+			0FA82FA712FF2A9B00B08B34 /* PBXTextBookmark */ = 0FA82FA712FF2A9B00B08B34 /* PBXTextBookmark */;
+			0FA82FAA12FF2AB500B08B34 /* PBXTextBookmark */ = 0FA82FAA12FF2AB500B08B34 /* PBXTextBookmark */;
+			0FA82FAF12FF2B4300B08B34 /* PBXTextBookmark */ = 0FA82FAF12FF2B4300B08B34 /* PBXTextBookmark */;
 			0FFCC9C312F71DA20002B905 = 0FFCC9C312F71DA20002B905 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 0F005C17123750CF0037035B /* Source Control */;
