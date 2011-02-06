@@ -107,6 +107,7 @@ static void _SimManageTime(void) {
 	Simulator.RealTime = times (&Simulator.DummyTime);
 	if (Simulator.RealTime != Simulator.LastRealTime)
 	{
+		NSLog(@"Synchro!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		Simulator.LastRealTime = Simulator.RealTime;
 		Simulator.DesiredCycles = Simulator.RealTime;
 		Simulator.DesiredCycles -= Simulator.RealTimeOffset;
@@ -146,7 +147,7 @@ static void _SimManageTime(void) {
 			// Execute a cyle of the AGC  engine 	
 			_SimExecuteEngine();
 			//Adjust the CycleCount 
-			SimSetCycleCount(SIM_CYCLECOUNT_INC);
+			_SimSetCycleCount(SIM_CYCLECOUNT_INC);
 		}
 	}
 	
