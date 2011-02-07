@@ -184,9 +184,9 @@
 	};
 	0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 4719}}";
-			sepNavSelRange = "{8980, 0}";
-			sepNavVisRange = "{8632, 482}";
+			sepNavIntBoundsRect = "{{0, 0}, {2826, 4238}}";
+			sepNavSelRange = "{2870, 0}";
+			sepNavVisRange = "{9192, 451}";
 			sepNavWindowFrame = "{{297, 63}, {750, 715}}";
 		};
 	};
@@ -200,9 +200,9 @@
 	};
 	0F59B6A212F14BA700E04292 /* AGCSimulator.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 2392}}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 2353}}";
 			sepNavSelRange = "{2562, 0}";
-			sepNavVisRange = "{1829, 964}";
+			sepNavVisRange = "{3573, 638}";
 			sepNavWindowFrame = "{{119, 61}, {750, 715}}";
 		};
 	};
@@ -216,9 +216,9 @@
 	};
 	0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1489, 4420}}";
-			sepNavSelRange = "{5113, 0}";
-			sepNavVisRange = "{3390, 505}";
+			sepNavIntBoundsRect = "{{0, 0}, {2021, 4433}}";
+			sepNavSelRange = "{6252, 0}";
+			sepNavVisRange = "{3390, 447}";
 			sepNavWindowFrame = "{{16, 58}, {750, 715}}";
 		};
 	};
@@ -239,9 +239,9 @@
 	};
 	0F59B6AA12F14BDB00E04292 /* Util.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 1131}}";
-			sepNavSelRange = "{1484, 0}";
-			sepNavVisRange = "{1204, 458}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 1339}}";
+			sepNavSelRange = "{1749, 0}";
+			sepNavVisRange = "{1413, 485}";
 		};
 	};
 	0F59B6D012F14C0500E04292 /* KeyRelOff.jpg */ = {
@@ -378,7 +378,7 @@
 		vrLen = 1270;
 		vrLoc = 601;
 	};
-	0F6060A712F9CEFD00725DAD /* DSKYSimulationClient.m:247 */ = {
+	0F6060A712F9CEFD00725DAD /* DSKYSimulationClient.m:260 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -390,12 +390,12 @@
 		functionName = "-dskyIOListener";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 247;
+		lineNumber = 260;
 		modificationTime = 318707416.677165;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
-	0F6060A912F9CEFE00725DAD /* DSKYSimulationClient.m:246 */ = {
+	0F6060A912F9CEFE00725DAD /* DSKYSimulationClient.m:259 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -407,7 +407,7 @@
 		functionName = "-dskyIOListener";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 246;
+		lineNumber = 259;
 		modificationTime = 318707416.678253;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
@@ -524,7 +524,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 303";
 		rLen = 0;
-		rLoc = 8956;
+		rLoc = 9438;
 		rType = 0;
 		vrLen = 609;
 		vrLoc = 7720;
@@ -544,7 +544,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 223";
 		rLen = 0;
-		rLoc = 7783;
+		rLoc = 7906;
 		rType = 0;
 		vrLen = 1170;
 		vrLoc = 0;
@@ -704,7 +704,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 303";
 		rLen = 0;
-		rLoc = 8956;
+		rLoc = 9438;
 		rType = 0;
 		vrLen = 1176;
 		vrLoc = 856;
@@ -724,7 +724,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 101";
 		rLen = 11;
-		rLoc = 4254;
+		rLoc = 4377;
 		rType = 0;
 		vrLen = 1163;
 		vrLoc = 3314;
@@ -748,6 +748,13 @@
 		rType = 0;
 		vrLen = 555;
 		vrLoc = 679;
+	};
+	0FA82D5712FEA9AF00B08B34 /* Makefile */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {902, 1586}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{54, 1036}";
+		};
 	};
 	0FA82E1212FEDE4100B08B34 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -930,7 +937,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 103";
 		rLen = 0;
-		rLoc = 4411;
+		rLoc = 4534;
 		rType = 0;
 		vrLen = 1134;
 		vrLoc = 36;
@@ -940,7 +947,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 107";
 		rLen = 0;
-		rLoc = 4737;
+		rLoc = 4860;
 		rType = 0;
 		vrLen = 868;
 		vrLoc = 3758;
@@ -950,7 +957,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 106";
 		rLen = 98;
-		rLoc = 4618;
+		rLoc = 4741;
 		rType = 0;
 		vrLen = 868;
 		vrLoc = 3758;
@@ -1049,7 +1056,7 @@
 		isa = PBXTextBookmark;
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		rLen = 0;
-		rLoc = 81;
+		rLoc = 97;
 		rType = 1;
 	};
 	0FA82E4712FEF22A00B08B34 /* PBXTextBookmark */ = {
@@ -1057,7 +1064,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 65";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1967;
 		rType = 0;
 		vrLen = 446;
 		vrLoc = 899;
@@ -1067,7 +1074,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 65";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1967;
 		rType = 0;
 		vrLen = 446;
 		vrLoc = 899;
@@ -1077,7 +1084,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 65";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1967;
 		rType = 0;
 		vrLen = 502;
 		vrLoc = 843;
@@ -1177,7 +1184,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 107";
 		rLen = 0;
-		rLoc = 4703;
+		rLoc = 4826;
 		rType = 0;
 		vrLen = 868;
 		vrLoc = 3758;
@@ -1187,7 +1194,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 107";
 		rLen = 0;
-		rLoc = 4703;
+		rLoc = 4826;
 		rType = 0;
 		vrLen = 814;
 		vrLoc = 3812;
@@ -1197,7 +1204,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 121";
 		rLen = 8;
-		rLoc = 4958;
+		rLoc = 5081;
 		rType = 0;
 		vrLen = 822;
 		vrLoc = 3828;
@@ -1207,7 +1214,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 65";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1967;
 		rType = 0;
 		vrLen = 502;
 		vrLoc = 843;
@@ -1217,7 +1224,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 65";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1967;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 870;
@@ -1227,7 +1234,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 107";
 		rLen = 0;
-		rLoc = 4619;
+		rLoc = 4742;
 		rType = 0;
 		vrLen = 640;
 		vrLoc = 4010;
@@ -1237,7 +1244,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 65";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1967;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 870;
@@ -1247,7 +1254,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 65";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1967;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 870;
@@ -1257,7 +1264,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 65";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1967;
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 784;
@@ -1267,7 +1274,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 65";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1967;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 870;
@@ -1287,7 +1294,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 107";
 		rLen = 0;
-		rLoc = 4693;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 1261;
 		vrLoc = 3205;
@@ -1297,7 +1304,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 107";
 		rLen = 0;
-		rLoc = 4693;
+		rLoc = 4816;
 		rType = 0;
 		vrLen = 1219;
 		vrLoc = 3247;
@@ -1327,7 +1334,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 186";
 		rLen = 10;
-		rLoc = 5188;
+		rLoc = 5189;
 		rType = 0;
 		vrLen = 1066;
 		vrLoc = 4333;
@@ -1357,7 +1364,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 107";
 		rLen = 0;
-		rLoc = 4618;
+		rLoc = 4741;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 3448;
@@ -1367,7 +1374,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 106";
 		rLen = 0;
-		rLoc = 4618;
+		rLoc = 4741;
 		rType = 0;
 		vrLen = 993;
 		vrLoc = 3554;
@@ -1377,7 +1384,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 101";
 		rLen = 0;
-		rLoc = 4244;
+		rLoc = 4367;
 		rType = 0;
 		vrLen = 997;
 		vrLoc = 3554;
@@ -1387,7 +1394,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 101";
 		rLen = 0;
-		rLoc = 4244;
+		rLoc = 4367;
 		rType = 0;
 		vrLen = 997;
 		vrLoc = 3554;
@@ -1407,7 +1414,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 193";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 930;
 		vrLoc = 4657;
@@ -1417,7 +1424,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 191";
 		rLen = 0;
-		rLoc = 5786;
+		rLoc = 6268;
 		rType = 0;
 		vrLen = 812;
 		vrLoc = 4815;
@@ -1437,7 +1444,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 101";
 		rLen = 0;
-		rLoc = 4244;
+		rLoc = 4367;
 		rType = 0;
 		vrLen = 1160;
 		vrLoc = 3306;
@@ -1447,7 +1454,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 194";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 740;
 		vrLoc = 4979;
@@ -1457,7 +1464,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 197";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 947;
 		vrLoc = 4981;
@@ -1467,7 +1474,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 195";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 1006;
 		vrLoc = 4981;
@@ -1477,7 +1484,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 212";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 1034;
 		vrLoc = 5533;
@@ -1487,7 +1494,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 194";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 461;
 		vrLoc = 5351;
@@ -1497,7 +1504,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 213";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 1121;
 		vrLoc = 5351;
@@ -1537,7 +1544,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 210";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 5392;
@@ -1547,7 +1554,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 213";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 1043;
 		vrLoc = 5452;
@@ -1557,7 +1564,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 194";
 		rLen = 0;
-		rLoc = 5864;
+		rLoc = 6346;
 		rType = 0;
 		vrLen = 445;
 		vrLoc = 5346;
@@ -1567,7 +1574,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 193";
 		rLen = 0;
-		rLoc = 5845;
+		rLoc = 6327;
 		rType = 0;
 		vrLen = 634;
 		vrLoc = 4999;
@@ -1577,7 +1584,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 193";
 		rLen = 0;
-		rLoc = 5845;
+		rLoc = 6327;
 		rType = 0;
 		vrLen = 635;
 		vrLoc = 5001;
@@ -1587,7 +1594,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 188";
 		rLen = 0;
-		rLoc = 5159;
+		rLoc = 5160;
 		rType = 0;
 		vrLen = 645;
 		vrLoc = 5001;
@@ -1597,7 +1604,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 188";
 		rLen = 0;
-		rLoc = 5158;
+		rLoc = 5159;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 5075;
@@ -1657,7 +1664,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 108";
 		rLen = 0;
-		rLoc = 4786;
+		rLoc = 4909;
 		rType = 0;
 		vrLen = 1098;
 		vrLoc = 3568;
@@ -1677,7 +1684,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 190";
 		rLen = 22;
-		rLoc = 5291;
+		rLoc = 5292;
 		rType = 0;
 		vrLen = 1394;
 		vrLoc = 4147;
@@ -1697,7 +1704,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 98";
 		rLen = 0;
-		rLoc = 3952;
+		rLoc = 4075;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 3568;
@@ -1707,7 +1714,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 196";
 		rLen = 0;
-		rLoc = 5538;
+		rLoc = 5540;
 		rType = 0;
 		vrLen = 949;
 		vrLoc = 4868;
@@ -1765,7 +1772,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 67";
 		rLen = 0;
-		rLoc = 1446;
+		rLoc = 1447;
 		rType = 0;
 		vrLen = 535;
 		vrLoc = 961;
@@ -1849,7 +1856,7 @@
 		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
 		name = "Util.m: 70";
 		rLen = 0;
-		rLoc = 1484;
+		rLoc = 1485;
 		rType = 0;
 		vrLen = 458;
 		vrLoc = 1204;
@@ -1859,7 +1866,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 187";
 		rLen = 0;
-		rLoc = 5113;
+		rLoc = 5114;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 5114;
@@ -1869,7 +1876,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 187";
 		rLen = 0;
-		rLoc = 5113;
+		rLoc = 5114;
 		rType = 0;
 		vrLen = 803;
 		vrLoc = 5164;
@@ -1879,7 +1886,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 187";
 		rLen = 0;
-		rLoc = 5113;
+		rLoc = 5114;
 		rType = 0;
 		vrLen = 892;
 		vrLoc = 5164;
@@ -1889,7 +1896,7 @@
 		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
 		name = "DSKYSimulationClient.m: 187";
 		rLen = 0;
-		rLoc = 5113;
+		rLoc = 5114;
 		rType = 0;
 		vrLen = 505;
 		vrLoc = 3390;
@@ -1919,7 +1926,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 294";
 		rLen = 0;
-		rLoc = 9026;
+		rLoc = 9149;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 8604;
@@ -1929,7 +1936,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 294";
 		rLen = 0;
-		rLoc = 9026;
+		rLoc = 9149;
 		rType = 0;
 		vrLen = 483;
 		vrLoc = 8604;
@@ -1939,7 +1946,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 295";
 		rLen = 0;
-		rLoc = 9063;
+		rLoc = 9186;
 		rType = 0;
 		vrLen = 483;
 		vrLoc = 8604;
@@ -1949,7 +1956,7 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 295";
 		rLen = 0;
-		rLoc = 9063;
+		rLoc = 9186;
 		rType = 0;
 		vrLen = 483;
 		vrLoc = 8604;
@@ -1959,10 +1966,82 @@
 		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
 		name = "DSKYUIIphoneViewController.m: 291";
 		rLen = 0;
-		rLoc = 8980;
+		rLoc = 9103;
 		rType = 0;
 		vrLen = 482;
 		vrLoc = 8632;
+	};
+	0FA82FB012FFD2E600B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A312F14BA700E04292 /* DSKYSimulationClient.h */;
+		name = "DSKYSimulationClient.h: 23";
+		rLen = 0;
+		rLoc = 507;
+		rType = 0;
+		vrLen = 561;
+		vrLoc = 0;
+	};
+	0FA82FB112FFD2E600B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A212F14BA700E04292 /* AGCSimulator.m */;
+		name = "AGCSimulator.m: 109";
+		rLen = 0;
+		rLoc = 2562;
+		rType = 0;
+		vrLen = 637;
+		vrLoc = 3574;
+	};
+	0FA82FB212FFD2E600B08B34 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0FA82D6C12FEA9AF00B08B34 /* UplinkActyOn.jpg */;
+	};
+	0FA82FB312FFD2E600B08B34 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0FA82D6D12FEA9AF00B08B34 /* UplinkActyOnO.jpg */;
+	};
+	0FA82FB412FFD2E600B08B34 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0F59B6EC12F14C0500E04292 /* UplinkActyOff.jpg */;
+	};
+	0FA82FB512FFD2E600B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6AA12F14BDB00E04292 /* Util.m */;
+		name = "Util.m: 67";
+		rLen = 0;
+		rLoc = 1447;
+		rType = 0;
+		vrLen = 410;
+		vrLoc = 1413;
+	};
+	0FA82FB612FFD2E600B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */;
+		name = "DSKYSimulationClient.m: 208";
+		rLen = 0;
+		rLoc = 6013;
+		rType = 0;
+		vrLen = 746;
+		vrLoc = 5556;
+	};
+	0FA82FB712FFD2E600B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
+		name = "DSKYUIIphoneViewController.m: 291";
+		rLen = 0;
+		rLoc = 9103;
+		rType = 0;
+		vrLen = 482;
+		vrLoc = 8632;
+	};
+	0FA82FB812FFD2E600B08B34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */;
+		name = "DSKYUIIphoneViewController.m: 65";
+		rLen = 0;
+		rLoc = 2870;
+		rType = 0;
+		vrLen = 1189;
+		vrLoc = 2097;
 	};
 	0FFCC9C312F71DA20002B905 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -2022,8 +2101,8 @@
 			1D6058900D05DD3D006BFB54 /* iAGC */,
 		);
 		breakpoints = (
-			0F6060A712F9CEFD00725DAD /* DSKYSimulationClient.m:247 */,
-			0F6060A912F9CEFE00725DAD /* DSKYSimulationClient.m:246 */,
+			0F6060A712F9CEFD00725DAD /* DSKYSimulationClient.m:260 */,
+			0F6060A912F9CEFE00725DAD /* DSKYSimulationClient.m:259 */,
 		);
 		codeSenseManager = 0F005C18123750CF0037035B /* Code sense */;
 		executables = (
@@ -2312,6 +2391,15 @@
 			0FA82FA712FF2A9B00B08B34 /* PBXTextBookmark */ = 0FA82FA712FF2A9B00B08B34 /* PBXTextBookmark */;
 			0FA82FAA12FF2AB500B08B34 /* PBXTextBookmark */ = 0FA82FAA12FF2AB500B08B34 /* PBXTextBookmark */;
 			0FA82FAF12FF2B4300B08B34 /* PBXTextBookmark */ = 0FA82FAF12FF2B4300B08B34 /* PBXTextBookmark */;
+			0FA82FB012FFD2E600B08B34 /* PBXTextBookmark */ = 0FA82FB012FFD2E600B08B34 /* PBXTextBookmark */;
+			0FA82FB112FFD2E600B08B34 /* PBXTextBookmark */ = 0FA82FB112FFD2E600B08B34 /* PBXTextBookmark */;
+			0FA82FB212FFD2E600B08B34 /* PBXBookmark */ = 0FA82FB212FFD2E600B08B34 /* PBXBookmark */;
+			0FA82FB312FFD2E600B08B34 /* PBXBookmark */ = 0FA82FB312FFD2E600B08B34 /* PBXBookmark */;
+			0FA82FB412FFD2E600B08B34 /* PBXBookmark */ = 0FA82FB412FFD2E600B08B34 /* PBXBookmark */;
+			0FA82FB512FFD2E600B08B34 /* PBXTextBookmark */ = 0FA82FB512FFD2E600B08B34 /* PBXTextBookmark */;
+			0FA82FB612FFD2E600B08B34 /* PBXTextBookmark */ = 0FA82FB612FFD2E600B08B34 /* PBXTextBookmark */;
+			0FA82FB712FFD2E600B08B34 /* PBXTextBookmark */ = 0FA82FB712FFD2E600B08B34 /* PBXTextBookmark */;
+			0FA82FB812FFD2E600B08B34 /* PBXTextBookmark */ = 0FA82FB812FFD2E600B08B34 /* PBXTextBookmark */;
 			0FFCC9C312F71DA20002B905 = 0FFCC9C312F71DA20002B905 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 0F005C17123750CF0037035B /* Source Control */;

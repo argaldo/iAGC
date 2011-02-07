@@ -64,7 +64,7 @@
 			if ((indicatorValue & (1<<6)) == 0){
 				return @"OprErrOff.jpg";
 			} else {
-				return @"OprErrOn.jpg";
+				return @"OprErrOnO.jpg";
 			}
 			break;
 		// key release
@@ -73,6 +73,22 @@
 				return @"KeyRelOff.jpg";
 			} else {
 				return @"KeyRelOn.jpg";
+			}
+			break;
+		// uplink activity
+		case 3:
+			if ((indicatorValue & (1<<2)) == 0){
+				return @"UplinkActyOff.jpg";
+			} else {
+				return @"UplinkActyOnO.jpg";
+			}
+			break;
+		// temperature caution
+		case 4:
+			if ((indicatorValue & (1<<3)) == 0){
+				return @"TempOff.jpg";
+			} else {
+				return @"TempOn.jpg";
 			}
 			break;
 			

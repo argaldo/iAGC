@@ -62,6 +62,8 @@
 	[segments setObject:self.CompActIndOutlet forKey:@"CompActInd"];
 	[segments setObject:self.operationError forKey:@"opError"];
 	[segments setObject:self.keyRelease forKey:@"keyRel"];
+	[segments setObject:self.uplinkActivity forKey:@"uplinkActivity"];
+	[segments setObject:self.temp forKey:@"tempCaution"];
 }
 
 
