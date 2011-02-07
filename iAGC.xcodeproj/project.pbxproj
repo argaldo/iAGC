@@ -247,7 +247,6 @@
 		0FA82DE712FEA9AF00B08B34 /* hVerbOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D5412FEA9AF00B08B34 /* hVerbOn.jpg */; };
 		0FA82DE812FEA9AF00B08B34 /* hVerbUp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D5512FEA9AF00B08B34 /* hVerbUp.jpg */; };
 		0FA82DE912FEA9AF00B08B34 /* KeyRelOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D5612FEA9AF00B08B34 /* KeyRelOn.jpg */; };
-		0FA82DEA12FEA9AF00B08B34 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 0FA82D5712FEA9AF00B08B34 /* Makefile */; };
 		0FA82DEB12FEA9AF00B08B34 /* NoAttOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D5812FEA9AF00B08B34 /* NoAttOn.jpg */; };
 		0FA82DEC12FEA9AF00B08B34 /* NoAttOnO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D5912FEA9AF00B08B34 /* NoAttOnO.jpg */; };
 		0FA82DED12FEA9AF00B08B34 /* NoDapOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D5A12FEA9AF00B08B34 /* NoDapOn.jpg */; };
@@ -273,6 +272,7 @@
 		0FA82E0112FEA9AF00B08B34 /* VelOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D6E12FEA9AF00B08B34 /* VelOn.jpg */; };
 		0FA82E0212FEA9AF00B08B34 /* VerbOff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D6F12FEA9AF00B08B34 /* VerbOff.jpg */; };
 		0FA82E0312FEA9AF00B08B34 /* VerbOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */; };
+		0FA830AF12FFFBAD00B08B34 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA830AE12FFFBAD00B08B34 /* Queue.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -543,7 +543,6 @@
 		0FA82D5412FEA9AF00B08B34 /* hVerbOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hVerbOn.jpg; sourceTree = "<group>"; };
 		0FA82D5512FEA9AF00B08B34 /* hVerbUp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hVerbUp.jpg; sourceTree = "<group>"; };
 		0FA82D5612FEA9AF00B08B34 /* KeyRelOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KeyRelOn.jpg; sourceTree = "<group>"; };
-		0FA82D5712FEA9AF00B08B34 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		0FA82D5812FEA9AF00B08B34 /* NoAttOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NoAttOn.jpg; sourceTree = "<group>"; };
 		0FA82D5912FEA9AF00B08B34 /* NoAttOnO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NoAttOnO.jpg; sourceTree = "<group>"; };
 		0FA82D5A12FEA9AF00B08B34 /* NoDapOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NoDapOn.jpg; sourceTree = "<group>"; };
@@ -569,6 +568,8 @@
 		0FA82D6E12FEA9AF00B08B34 /* VelOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VelOn.jpg; sourceTree = "<group>"; };
 		0FA82D6F12FEA9AF00B08B34 /* VerbOff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbOff.jpg; sourceTree = "<group>"; };
 		0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbOn.jpg; sourceTree = "<group>"; };
+		0FA830AD12FFFBAD00B08B34 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = Util/Queue.h; sourceTree = "<group>"; };
+		0FA830AE12FFFBAD00B08B34 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Queue.m; path = Util/Queue.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* iAGC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAGC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -632,6 +633,8 @@
 		0F005DD01238AEFF0037035B /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				0FA830AD12FFFBAD00B08B34 /* Queue.h */,
+				0FA830AE12FFFBAD00B08B34 /* Queue.m */,
 				0F59B6A912F14BDB00E04292 /* Util.h */,
 				0F59B6AA12F14BDB00E04292 /* Util.m */,
 			);
@@ -786,7 +789,6 @@
 				0FA82D5412FEA9AF00B08B34 /* hVerbOn.jpg */,
 				0FA82D5512FEA9AF00B08B34 /* hVerbUp.jpg */,
 				0FA82D5612FEA9AF00B08B34 /* KeyRelOn.jpg */,
-				0FA82D5712FEA9AF00B08B34 /* Makefile */,
 				0FA82D5812FEA9AF00B08B34 /* NoAttOn.jpg */,
 				0FA82D5912FEA9AF00B08B34 /* NoAttOnO.jpg */,
 				0FA82D5A12FEA9AF00B08B34 /* NoDapOn.jpg */,
@@ -1354,7 +1356,7 @@
 				0F59BB8012F336BD00E04292 /* SocketAPI.c in Sources */,
 				0F4AA6C512FAB72900BA81BB /* IPhoneSimulationConfigurationView.m in Sources */,
 				0F29581712FB0B86009FAA3A /* MTStatusBarOverlay.m in Sources */,
-				0FA82DEA12FEA9AF00B08B34 /* Makefile in Sources */,
+				0FA830AF12FFFBAD00B08B34 /* Queue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

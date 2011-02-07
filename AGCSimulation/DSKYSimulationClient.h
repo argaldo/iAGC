@@ -19,6 +19,7 @@
 - (id) initWithDelegate:(id) delegate;
 - (void) launchDSKYIOListeningThread;
 - (void) sendDSKYCode:(int) code;
+- (void) sendUplinkCode:(int) code;
 
 @property (assign) id<UpdateDSKYUserInterfaceDelegate> delegate;
 

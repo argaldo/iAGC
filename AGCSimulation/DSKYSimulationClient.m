@@ -7,7 +7,7 @@
 //
 
 #import "DSKYSimulationClient.h"
-
+#import "Queue.h"
 #include <netdb.h>
 #include <netinet/in.h>
 #include <sys/types.h>
@@ -21,6 +21,7 @@
 
 int dskyIOSocket = -1;
 NSThread *dskyThread;
+NSThread *uplinkThread;
 
 int R1Sign = 0;
 int R2Sign = 0;
@@ -28,10 +29,10 @@ int R3Sign = 0;
 
 static int lastValue = 0;
 static int verbNounFlashing = 0;
-static int lit = 1;
 
 NSString *agcSimulatorHost = @"localhost";
 u_short agcSimulatorPort = 19700;
+Queue *dataUplinkQueue;
 
 - (id) initWithHost:(NSString *)host withPort:(u_short) port {
 	[super init];
@@ -43,6 +44,7 @@ u_short agcSimulatorPort = 19700;
 - (id) initWithDelegate:(id) aDelegate {
 	// connecting view controller delegate for updates on the user interface...
 	self.delegate = aDelegate;
+	dataUplinkQueue = [[Queue alloc] init];
 	return self;
 }
 
@@ -63,10 +65,13 @@ u_short agcSimulatorPort = 19700;
 	// segment characterization
 	switch (*value & 0x7800){
 		// 7-segment display control
-		case 0x5800:    // AAAA=11D
+		case 0x6000:
+			NSLog(@"indicatorooororororororororororororororrororororoor");
+			return 1;
+		case 0x5800:    // AAAA=11
 			//NSLog(@"M1,M2");
 			*leftSegmentKey = @"M1";*rightSegmentKey = @"M2";break;
-		case 0x5000:	// AAAA=10D
+		case 0x5000:	// AAAA=10
 			//NSLog(@"V1,V2");
 			*leftSegmentKey = @"V1";*rightSegmentKey = @"V2";break;
 		case 0x4800:	// AAAA=9
@@ -288,9 +293,19 @@ u_short agcSimulatorPort = 19700;
 	}
 }
 
+- (void) uplinkDataTimer{
+	// sending uplink data in a 100 ms interval
+	[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(sendUplinkData) userInfo:nil repeats:YES];
+}
+
 - (void) dskyReceiveTimer {
 	// Checking DSKY socket receival buffer in a 100 ms interval
 	[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(dskyIOListener) userInfo:nil repeats:YES];
+}
+
+- (void) launchUplinkDataTimer {
+	// launching uplink Data Timer
+	[self performSelectorOnMainThread:@selector(uplinkDataTimer) withObject:nil waitUntilDone:NO];
 }
 
 - (void) launchDSKYReceiveTimer {
@@ -303,6 +318,9 @@ u_short agcSimulatorPort = 19700;
 	
 	dskyThread = [[NSThread alloc] initWithTarget:self selector:@selector(launchDSKYReceiveTimer) object:nil];
 	[dskyThread start];
+	
+	uplinkThread = [[NSThread alloc] initWithTarget:self selector:@selector(launchUplinkDataTimer) object:nil];
+	[uplinkThread start];
 }
 
 - (void) launchDSKYIOListeningThread {
@@ -325,11 +343,33 @@ u_short agcSimulatorPort = 19700;
 	return 0;
 }
 
+- (void) sendPacketToSimulator:(unsigned char *) packet {
+	send (dskyIOSocket, packet, 4, 0);
+}
+
 - (void) sendDSKYCode:(int) code{
 	unsigned char packet[4];
-	// uplink channel 15 (octal)
+	// uplink channel for dsky 15 (octal)
 	[self buildPacket:015 withValue:code forPacket:packet];
-	send (dskyIOSocket, (const char *) packet, 4, 0);
+	[self sendPacketToSimulator:packet];
+	
+}
+
+- (void) sendUplinkData {
+	id firstObject = [dataUplinkQueue takeObject];
+	if (firstObject != nil) {
+		int code = [firstObject intValue];
+		unsigned char packet[4];
+		// data uplink channel
+		code &= 037;
+		code |= ((code << 10) | (( code ^ 037) << 5));
+		[self buildPacket:0173 withValue:code forPacket:packet];
+		[self sendPacketToSimulator:packet];
+	}
+}
+
+- (void) sendUplinkCode:(int) code {
+	[dataUplinkQueue addObject:[NSNumber numberWithInt:code]];
 }
 
 - (void)dealloc {

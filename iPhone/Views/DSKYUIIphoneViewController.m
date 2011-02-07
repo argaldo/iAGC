@@ -191,9 +191,13 @@
     [super dealloc];
 }
 
+- (void) sendUplinkCode:(int) code {
+	// wrapper over DSKYSimulationClient instance to send uplink data
+	[dskySimulationClient sendUplinkCode:code];
+}
 
 - (void) sendDSKYCode:(int) code {
-	// wrapper over DSKYSimulationClient instance
+	// wrapper over DSKYSimulationClient instance to send dsky data
 	[dskySimulationClient sendDSKYCode:code];
 }
 
@@ -290,7 +294,7 @@
 }
 - (IBAction) pressedMinus: (id) sender{
 	[self sendDSKYCode:27];
-	//[self showAlert];
+	//[self showAlert];	
 }
 
 - (IBAction) pressedReset: (id) sender{
