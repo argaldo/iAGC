@@ -273,6 +273,10 @@
 		0FA82E0212FEA9AF00B08B34 /* VerbOff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D6F12FEA9AF00B08B34 /* VerbOff.jpg */; };
 		0FA82E0312FEA9AF00B08B34 /* VerbOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */; };
 		0FA830AF12FFFBAD00B08B34 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA830AE12FFFBAD00B08B34 /* Queue.m */; };
+		0FA831C613006E4900B08B34 /* DSKYUIIPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA831C113006E4900B08B34 /* DSKYUIIPadViewController.m */; };
+		0FA831C713006E4900B08B34 /* DSKYUIIPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA831C213006E4900B08B34 /* DSKYUIIPadViewController.xib */; };
+		0FA831C813006E4900B08B34 /* IPadSimulationMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA831C413006E4900B08B34 /* IPadSimulationMenuController.m */; };
+		0FA831C913006E4900B08B34 /* IPadSimulationMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA831C513006E4900B08B34 /* IPadSimulationMenuController.xib */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -570,6 +574,12 @@
 		0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbOn.jpg; sourceTree = "<group>"; };
 		0FA830AD12FFFBAD00B08B34 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = Util/Queue.h; sourceTree = "<group>"; };
 		0FA830AE12FFFBAD00B08B34 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Queue.m; path = Util/Queue.m; sourceTree = "<group>"; };
+		0FA831C013006E4900B08B34 /* DSKYUIIPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSKYUIIPadViewController.h; path = Views/DSKYUIIPadViewController.h; sourceTree = "<group>"; };
+		0FA831C113006E4900B08B34 /* DSKYUIIPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSKYUIIPadViewController.m; path = Views/DSKYUIIPadViewController.m; sourceTree = "<group>"; };
+		0FA831C213006E4900B08B34 /* DSKYUIIPadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DSKYUIIPadViewController.xib; path = Views/DSKYUIIPadViewController.xib; sourceTree = "<group>"; };
+		0FA831C313006E4900B08B34 /* IPadSimulationMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPadSimulationMenuController.h; path = Views/IPadSimulationMenuController.h; sourceTree = "<group>"; };
+		0FA831C413006E4900B08B34 /* IPadSimulationMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPadSimulationMenuController.m; path = Views/IPadSimulationMenuController.m; sourceTree = "<group>"; };
+		0FA831C513006E4900B08B34 /* IPadSimulationMenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = IPadSimulationMenuController.xib; path = Views/IPadSimulationMenuController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* iAGC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAGC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -951,6 +961,19 @@
 			path = yaAGC;
 			sourceTree = "<group>";
 		};
+		0FA831A513006BDA00B08B34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FA831C013006E4900B08B34 /* DSKYUIIPadViewController.h */,
+				0FA831C113006E4900B08B34 /* DSKYUIIPadViewController.m */,
+				0FA831C213006E4900B08B34 /* DSKYUIIPadViewController.xib */,
+				0FA831C313006E4900B08B34 /* IPadSimulationMenuController.h */,
+				0FA831C413006E4900B08B34 /* IPadSimulationMenuController.m */,
+				0FA831C513006E4900B08B34 /* IPadSimulationMenuController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -973,6 +996,7 @@
 		2860E32A111B888700E27156 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				0FA831A513006BDA00B08B34 /* Views */,
 				2860E32B111B888700E27156 /* AppDelegate_iPad.h */,
 				2860E32C111B888700E27156 /* AppDelegate_iPad.m */,
 				2860E32D111B888700E27156 /* MainWindow_iPad.xib */,
@@ -1320,6 +1344,8 @@
 				0FA82E0112FEA9AF00B08B34 /* VelOn.jpg in Resources */,
 				0FA82E0212FEA9AF00B08B34 /* VerbOff.jpg in Resources */,
 				0FA82E0312FEA9AF00B08B34 /* VerbOn.jpg in Resources */,
+				0FA831C713006E4900B08B34 /* DSKYUIIPadViewController.xib in Resources */,
+				0FA831C913006E4900B08B34 /* IPadSimulationMenuController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1357,6 +1383,8 @@
 				0F4AA6C512FAB72900BA81BB /* IPhoneSimulationConfigurationView.m in Sources */,
 				0F29581712FB0B86009FAA3A /* MTStatusBarOverlay.m in Sources */,
 				0FA830AF12FFFBAD00B08B34 /* Queue.m in Sources */,
+				0FA831C613006E4900B08B34 /* DSKYUIIPadViewController.m in Sources */,
+				0FA831C813006E4900B08B34 /* IPadSimulationMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

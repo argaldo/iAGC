@@ -10,11 +10,12 @@
 
 #import "AGCSimulator.h"
 #import "DSKYSimulationClient.h"
+#import "DSKYUIIPadViewController.h"
+#import "IPadSimulationMenuController.h"
 
 @implementation AppDelegate_iPad
 
 @synthesize window;
-@synthesize label;
 
 
 #pragma mark -
@@ -42,10 +43,21 @@
 		DSKYSimulationClient *dskyClient = [[DSKYSimulationClient alloc] initWithDelegate:self];
 		[dskyClient launchDSKYIOListeningThread];
 	}*/
-	
-	
-	
+	UINavigationController *navcon = [[UINavigationController alloc] init];
+	DSKYUIIPadViewController *dskyViewController = [[DSKYUIIPadViewController alloc] init];
+	IPadSimulationMenuController *iPadSimulationMenuController = [[IPadSimulationMenuController alloc] init];
+	[navcon pushViewController:iPadSimulationMenuController animated:NO];
+	UISplitViewController *svc = [[UISplitViewController alloc] init];
+	UINavigationController *rightNav = [[UINavigationController alloc] init];
+	[rightNav pushViewController:dskyViewController animated:NO];
+	svc.delegate = dskyViewController;
+	svc.viewControllers = [NSArray arrayWithObjects:navcon,rightNav,nil];
+	[window addSubview:svc.view];
     [window makeKeyAndVisible];
+	
+	[dskyViewController release];
+	[iPadSimulationMenuController release];
+	[navcon release];
 	
 	return YES;
 }

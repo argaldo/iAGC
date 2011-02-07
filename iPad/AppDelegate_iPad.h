@@ -10,13 +10,11 @@
 
 #import "UpdateDSKYUserInterfaceDelegate.h"
 
-@interface AppDelegate_iPad : NSObject <UIApplicationDelegate,UpdateDSKYUserInterfaceDelegate> {
+@interface AppDelegate_iPad : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	IBOutlet UILabel *label;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet UILabel *label;
 
 @end
 
