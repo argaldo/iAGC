@@ -363,6 +363,22 @@
 	[self parseUplinkDataString:@"V16N36E"];
 }
 
+- (IBAction) setCurrentTime: (id) sender {
+	NSDate *now = [NSDate date];
+	NSDateFormatter *date_formatter=[[NSDateFormatter alloc]init];
+	[self parseUplinkDataString:@"V25N36E+000"];
+	[date_formatter setDateFormat:@"HH24"];
+	[self parseUplinkDataString:[date_formatter stringFromDate:now]];
+	[self parseUplinkDataString:@"E+000"];
+	[date_formatter setDateFormat:@"mm"];
+	[self parseUplinkDataString:[date_formatter stringFromDate:now]];
+	[self parseUplinkDataString:@"E+0"];
+	[date_formatter setDateFormat:@"ss"];
+	[self parseUplinkDataString:[date_formatter stringFromDate:now]];
+	[self parseUplinkDataString:@"00E"];
+	[date_formatter release];
+}
+
 - (IBAction) showUplinkDataView: (id) sender {
 	[self showUplinkView];
 }

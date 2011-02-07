@@ -161,4 +161,5 @@
 - (IBAction) monitorTimeUplink: (id) sender;
 
 - (IBAction) sendCustomUplinkData: (id) sender;
+- (IBAction) setCurrentTime: (id) sender;
 @end
