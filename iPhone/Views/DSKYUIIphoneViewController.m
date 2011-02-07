@@ -14,7 +14,8 @@
 
 @synthesize segments;
 @synthesize dskySimulationClient;
-@synthesize alertView,alertMessageLabel;
+@synthesize alertView,uplinkView,alertMessageLabel;
+@synthesize uplinkDataText;
 
 
 @synthesize M1Outlet,M2Outlet,V1Outlet,V2Outlet,N1Outlet,N2Outlet,CompActIndOutlet,uplinkActivity,noAttitude,standBy,keyRelease,operationError,priorityDisplay,noDAP,temp,gimbalLock,prog,restart,tracker,alt,vel,_r1plusminus,_11Outlet,	_12Outlet,_13Outlet,_14Outlet,_15Outlet,_r2plusminus,_21Outlet,_22Outlet,_23Outlet,_24Outlet,_25Outlet,_r3plusminus,_31Outlet,_32Outlet,_33Outlet,_34Outlet,_35Outlet;
@@ -201,6 +202,33 @@
 	[dskySimulationClient sendDSKYCode:code];
 }
 
+
+- (void)showUplinkView
+{
+	[self.view addSubview:uplinkView];
+	uplinkView.backgroundColor = [UIColor clearColor];
+    uplinkView.center = self.view.superview.center;
+    
+    CALayer *viewLayer = self.uplinkView.layer;
+    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    
+    animation.duration = 0.35555555;
+    animation.values = [NSArray arrayWithObjects:
+                        [NSNumber numberWithFloat:0.6],
+                        [NSNumber numberWithFloat:1.1],
+                        [NSNumber numberWithFloat:.9],
+                        [NSNumber numberWithFloat:1],
+                        nil];
+    animation.keyTimes = [NSArray arrayWithObjects:
+                          [NSNumber numberWithFloat:0.0],
+                          [NSNumber numberWithFloat:0.6],
+                          [NSNumber numberWithFloat:0.8],
+                          [NSNumber numberWithFloat:1.0], 
+                          nil];    
+    
+    [viewLayer addAnimation:animation forKey:@"transform.scale"];
+}
+
 - (void)showAlert
 {
 	[self.view addSubview:alertView];
@@ -292,13 +320,56 @@
 - (IBAction) pressedPlus: (id) sender{
 	[self sendDSKYCode:26];
 }
+
+- (void) parseUplinkDataString: (NSString *) uplinkData {
+	int tam = [uplinkData length];
+	int code;
+	for (int i=0;i<tam;i++){
+		switch([uplinkData characterAtIndex:i]) {
+			case 'V': code = 17;break;
+			case 'N': code = 31;break;
+			case '1': code = 1;break;
+			case '2': code = 2;break;
+			case '3': code = 3;break;
+			case '4': code = 4;break;
+			case '5': code = 5;break;
+			case '6': code = 6;break;
+			case '7': code = 7;break;
+			case '8': code = 8;break;
+			case '9': code = 9;break;
+			case '0': code = 16;break;
+			case 'E': code = 28;break;
+			case '+': code = 26;break;
+		}
+		[self sendUplinkCode:code];
+	}
+}
+
 - (IBAction) pressedMinus: (id) sender{
 	[self sendDSKYCode:27];
-	//[self showAlert];	
+	//[self showAlert];
 }
 
 - (IBAction) pressedReset: (id) sender{
 	[self sendDSKYCode:18];
+}
+
+
+- (IBAction) sendCustomUplinkData: (id) sender{
+	[self parseUplinkDataString:[self.uplinkDataText text]];
+}
+
+- (IBAction) monitorTimeUplink: (id) sender {
+	[self parseUplinkDataString:@"V16N36E"];
+}
+
+- (IBAction) showUplinkDataView: (id) sender {
+	[self showUplinkView];
+}
+
+- (IBAction) closeUplinkDataView: (id) sender {
+	[self.uplinkView removeFromSuperview];
+    self.uplinkView.alpha = 1.0;
 }
 
 

@@ -14,6 +14,7 @@
 
 @interface DSKYUIIphoneViewController : UIViewController <UpdateDSKYUserInterfaceDelegate>{
 	UIView *alertView;
+	UIView *uplinkView;
 	UILabel *alertMessageLabel;
 	DSKYSimulationClient *dskySimulationClient;
 @private	
@@ -70,12 +71,15 @@
 	IBOutlet UIImageView *_34Outlet;
 	IBOutlet UIImageView *_35Outlet;
 	
+	IBOutlet UITextView *uplinkDataText;
+	
 }
 
 @property (nonatomic,retain) NSMutableDictionary *segments;
 @property (nonatomic,retain) DSKYSimulationClient *dskySimulationClient;
 
 @property (nonatomic,retain) IBOutlet UIView *alertView;
+@property (nonatomic,retain) IBOutlet UIView *uplinkView;
 @property (nonatomic,retain) IBOutlet UILabel *alertMessageLabel;
 
 
@@ -127,6 +131,8 @@
 @property (nonatomic,retain) IBOutlet UIImageView *_34Outlet;
 @property (nonatomic,retain) IBOutlet UIImageView *_35Outlet;
 
+@property (nonatomic,retain) IBOutlet UITextView *uplinkDataText;
+
 
 
 // action delegates for dsky keyboard click
@@ -150,4 +156,9 @@
 - (IBAction) pressed9: (id) sender;
 - (IBAction) pressed0: (id) sender;
 
+- (IBAction) closeUplinkDataView: (id) sender;
+- (IBAction) showUplinkDataView: (id) sender;
+- (IBAction) monitorTimeUplink: (id) sender;
+
+- (IBAction) sendCustomUplinkData: (id) sender;
 @end
