@@ -15,6 +15,7 @@
 
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * uplink_data;
+@property (nonatomic, retain) NSDate * dateAdded;
 
 @end
 

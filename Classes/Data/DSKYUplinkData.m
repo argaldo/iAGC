@@ -13,5 +13,6 @@
 
 @dynamic title;
 @dynamic uplink_data;
+@dynamic dateAdded;
 
 @end

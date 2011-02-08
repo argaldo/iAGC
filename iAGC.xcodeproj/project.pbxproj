@@ -263,7 +263,6 @@
 		0FA82E0212FEA9AF00B08B34 /* VerbOff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D6F12FEA9AF00B08B34 /* VerbOff.jpg */; };
 		0FA82E0312FEA9AF00B08B34 /* VerbOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */; };
 		0FD122551301A6AC005941E1 /* iAGC.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122541301A6AC005941E1 /* iAGC.xcdatamodel */; };
-		0FD122641301B51B005941E1 /* DSKYUplinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122621301B51B005941E1 /* DSKYUplinkData.m */; };
 		0FD122691301B56C005941E1 /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122651301B56C005941E1 /* MTStatusBarOverlay.m */; };
 		0FD1226A1301B56C005941E1 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122671301B56C005941E1 /* CoreDataTableViewController.m */; };
 		0FD1226F1301B594005941E1 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1226B1301B594005941E1 /* Queue.m */; };
@@ -285,6 +284,7 @@
 		0FD1229D1301B601005941E1 /* IPhoneSimulationConfigurationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1228F1301B601005941E1 /* IPhoneSimulationConfigurationView.m */; };
 		0FD1229E1301B601005941E1 /* IPhoneSimulationConfigurationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD122901301B601005941E1 /* IPhoneSimulationConfigurationView.xib */; };
 		0FD122C31301B8A4005941E1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD122C21301B8A4005941E1 /* CoreData.framework */; };
+		0FD122E51301C9FA005941E1 /* DSKYUplinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122E41301C9FA005941E1 /* DSKYUplinkData.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -559,8 +559,6 @@
 		0FA82D6F12FEA9AF00B08B34 /* VerbOff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbOff.jpg; sourceTree = "<group>"; };
 		0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbOn.jpg; sourceTree = "<group>"; };
 		0FD122541301A6AC005941E1 /* iAGC.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = iAGC.xcdatamodel; sourceTree = "<group>"; };
-		0FD122621301B51B005941E1 /* DSKYUplinkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSKYUplinkData.m; path = Classes/Data/DSKYUplinkData.m; sourceTree = "<group>"; };
-		0FD122631301B51B005941E1 /* DSKYUplinkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSKYUplinkData.h; path = Classes/Data/DSKYUplinkData.h; sourceTree = "<group>"; };
 		0FD122651301B56C005941E1 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTStatusBarOverlay.m; path = Classes/Util/MTStatusBarOverlay.m; sourceTree = "<group>"; };
 		0FD122661301B56C005941E1 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarOverlay.h; path = Classes/Util/MTStatusBarOverlay.h; sourceTree = "<group>"; };
 		0FD122671301B56C005941E1 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataTableViewController.m; path = Classes/Util/CoreDataTableViewController.m; sourceTree = "<group>"; };
@@ -596,6 +594,8 @@
 		0FD1228F1301B601005941E1 /* IPhoneSimulationConfigurationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPhoneSimulationConfigurationView.m; sourceTree = "<group>"; };
 		0FD122901301B601005941E1 /* IPhoneSimulationConfigurationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPhoneSimulationConfigurationView.xib; sourceTree = "<group>"; };
 		0FD122C21301B8A4005941E1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0FD122E31301C9FA005941E1 /* DSKYUplinkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSKYUplinkData.h; sourceTree = "<group>"; };
+		0FD122E41301C9FA005941E1 /* DSKYUplinkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSKYUplinkData.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* iAGC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAGC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -975,8 +975,8 @@
 		0FD1225E1301B3D5005941E1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0FD122621301B51B005941E1 /* DSKYUplinkData.m */,
-				0FD122631301B51B005941E1 /* DSKYUplinkData.h */,
+				0FD122E31301C9FA005941E1 /* DSKYUplinkData.h */,
+				0FD122E41301C9FA005941E1 /* DSKYUplinkData.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -1409,7 +1409,6 @@
 				0F59BB7F12F336BD00E04292 /* rfopen.c in Sources */,
 				0F59BB8012F336BD00E04292 /* SocketAPI.c in Sources */,
 				0FD122551301A6AC005941E1 /* iAGC.xcdatamodel in Sources */,
-				0FD122641301B51B005941E1 /* DSKYUplinkData.m in Sources */,
 				0FD122691301B56C005941E1 /* MTStatusBarOverlay.m in Sources */,
 				0FD1226A1301B56C005941E1 /* CoreDataTableViewController.m in Sources */,
 				0FD1226F1301B594005941E1 /* Queue.m in Sources */,
@@ -1423,6 +1422,7 @@
 				0FD1229A1301B601005941E1 /* AGCTelemetryUIIphoneViewController.m in Sources */,
 				0FD1229C1301B601005941E1 /* DSKYUIIphoneViewController.m in Sources */,
 				0FD1229D1301B601005941E1 /* IPhoneSimulationConfigurationView.m in Sources */,
+				0FD122E51301C9FA005941E1 /* DSKYUplinkData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

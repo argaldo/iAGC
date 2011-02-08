@@ -268,15 +268,19 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>0FD1225D1301B38A005941E1</string>
 								<string>0FD122781301B601005941E1</string>
+								<string>0FD1227C1301B601005941E1</string>
 								<string>0FD122831301B601005941E1</string>
+								<string>0FD122871301B601005941E1</string>
+								<string>0FD1225E1301B3D5005941E1</string>
+								<string>28EEBF621118D79A00187D67</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
-								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>20</integer>
+									<integer>27</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -316,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>iAGC_Prefix.pch</string>
+								<string>DSKYUplinkData.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>iAGC_Prefix.pch</string>
+										<string>DSKYUplinkData.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0FD122CF1301B8BA005941E1</string>
+										<string>0FD122EA1301CA05005941E1</string>
 										<key>history</key>
 										<array>
 											<string>0F3768B412C32BD80029C25E</string>
@@ -424,13 +428,14 @@
 											<string>0FA831F1130070F600B08B34</string>
 											<string>0FA8321513013BCD00B08B34</string>
 											<string>0FA8321613013BCD00B08B34</string>
-											<string>0FD122C81301B8BA005941E1</string>
 											<string>0FD122C91301B8BA005941E1</string>
 											<string>0FD122CA1301B8BA005941E1</string>
-											<string>0FD122CB1301B8BA005941E1</string>
 											<string>0FD122CC1301B8BA005941E1</string>
 											<string>0FD122CD1301B8BA005941E1</string>
-											<string>0FD122CE1301B8BA005941E1</string>
+											<string>0FD122E61301CA05005941E1</string>
+											<string>0FD122E71301CA05005941E1</string>
+											<string>0FD122E81301CA05005941E1</string>
+											<string>0FD122E91301CA05005941E1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -628,9 +633,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>0F005CDC123751FB0037035B</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/argaldo/git/iAGC/iAGC.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -960,6 +965,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1005,7 +1012,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
