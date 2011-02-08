@@ -8,18 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F005C4D123751190037035B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F005C4C123751190037035B /* Settings.bundle */; };
-		0F29581712FB0B86009FAA3A /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F29581612FB0B86009FAA3A /* MTStatusBarOverlay.m */; };
 		0F4AA68812FAB48F00BA81BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */; };
 		0F4AA6B212FAB5E400BA81BB /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA6B112FAB5E400BA81BB /* alert.png */; };
-		0F4AA6C512FAB72900BA81BB /* IPhoneSimulationConfigurationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA6C312FAB72900BA81BB /* IPhoneSimulationConfigurationView.m */; };
-		0F4AA6C612FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA6C412FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib */; };
-		0F59B69C12F14B7100E04292 /* AGCTelemetryUIIphoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B69612F14B7100E04292 /* AGCTelemetryUIIphoneView.xib */; };
-		0F59B69D12F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B69812F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m */; };
-		0F59B69E12F14B7100E04292 /* DSKYUIIphoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B69912F14B7100E04292 /* DSKYUIIphoneView.xib */; };
-		0F59B69F12F14B7100E04292 /* DSKYUIIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */; };
-		0F59B6A612F14BA700E04292 /* AGCSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B6A212F14BA700E04292 /* AGCSimulator.m */; };
-		0F59B6A712F14BA700E04292 /* DSKYSimulationClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */; };
-		0F59B6AB12F14BDB00E04292 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B6AA12F14BDB00E04292 /* Util.m */; };
 		0F59B79B12F14C0500E04292 /* 0Up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6AD12F14C0500E04292 /* 0Up.jpg */; };
 		0F59B79C12F14C0500E04292 /* 1Up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6AE12F14C0500E04292 /* 1Up.jpg */; };
 		0F59B79D12F14C0500E04292 /* 2Up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6AF12F14C0500E04292 /* 2Up.jpg */; };
@@ -272,43 +262,39 @@
 		0FA82E0112FEA9AF00B08B34 /* VelOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D6E12FEA9AF00B08B34 /* VelOn.jpg */; };
 		0FA82E0212FEA9AF00B08B34 /* VerbOff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D6F12FEA9AF00B08B34 /* VerbOff.jpg */; };
 		0FA82E0312FEA9AF00B08B34 /* VerbOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */; };
-		0FA830AF12FFFBAD00B08B34 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA830AE12FFFBAD00B08B34 /* Queue.m */; };
-		0FA831C613006E4900B08B34 /* DSKYUIIPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA831C113006E4900B08B34 /* DSKYUIIPadViewController.m */; };
-		0FA831C713006E4900B08B34 /* DSKYUIIPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA831C213006E4900B08B34 /* DSKYUIIPadViewController.xib */; };
-		0FA831C813006E4900B08B34 /* IPadSimulationMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA831C413006E4900B08B34 /* IPadSimulationMenuController.m */; };
-		0FA831C913006E4900B08B34 /* IPadSimulationMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA831C513006E4900B08B34 /* IPadSimulationMenuController.xib */; };
+		0FD122551301A6AC005941E1 /* iAGC.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122541301A6AC005941E1 /* iAGC.xcdatamodel */; };
+		0FD122641301B51B005941E1 /* DSKYUplinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122621301B51B005941E1 /* DSKYUplinkData.m */; };
+		0FD122691301B56C005941E1 /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122651301B56C005941E1 /* MTStatusBarOverlay.m */; };
+		0FD1226A1301B56C005941E1 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122671301B56C005941E1 /* CoreDataTableViewController.m */; };
+		0FD1226F1301B594005941E1 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1226B1301B594005941E1 /* Queue.m */; };
+		0FD122701301B594005941E1 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1226D1301B594005941E1 /* Util.m */; };
+		0FD122761301B5DC005941E1 /* DSKYSimulationClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122711301B5DC005941E1 /* DSKYSimulationClient.m */; };
+		0FD122771301B5DC005941E1 /* AGCSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122741301B5DC005941E1 /* AGCSimulator.m */; };
+		0FD122911301B601005941E1 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1227A1301B601005941E1 /* AppDelegate_iPad.m */; };
+		0FD122921301B601005941E1 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1227B1301B601005941E1 /* MainWindow_iPad.xib */; };
+		0FD122931301B601005941E1 /* DSKYUIIPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */; };
+		0FD122941301B601005941E1 /* DSKYUIIPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1227F1301B601005941E1 /* DSKYUIIPadViewController.xib */; };
+		0FD122951301B601005941E1 /* IPadSimulationMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122811301B601005941E1 /* IPadSimulationMenuController.m */; };
+		0FD122961301B601005941E1 /* IPadSimulationMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD122821301B601005941E1 /* IPadSimulationMenuController.xib */; };
+		0FD122971301B601005941E1 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122851301B601005941E1 /* AppDelegate_iPhone.m */; };
+		0FD122981301B601005941E1 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD122861301B601005941E1 /* MainWindow_iPhone.xib */; };
+		0FD122991301B601005941E1 /* AGCTelemetryUIIphoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD122881301B601005941E1 /* AGCTelemetryUIIphoneView.xib */; };
+		0FD1229A1301B601005941E1 /* AGCTelemetryUIIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1228A1301B601005941E1 /* AGCTelemetryUIIphoneViewController.m */; };
+		0FD1229B1301B601005941E1 /* DSKYUIIphoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1228B1301B601005941E1 /* DSKYUIIphoneView.xib */; };
+		0FD1229C1301B601005941E1 /* DSKYUIIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1228D1301B601005941E1 /* DSKYUIIphoneViewController.m */; };
+		0FD1229D1301B601005941E1 /* IPhoneSimulationConfigurationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1228F1301B601005941E1 /* IPhoneSimulationConfigurationView.m */; };
+		0FD1229E1301B601005941E1 /* IPhoneSimulationConfigurationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD122901301B601005941E1 /* IPhoneSimulationConfigurationView.xib */; };
+		0FD122C31301B8A4005941E1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD122C21301B8A4005941E1 /* CoreData.framework */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */; };
-		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
-		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
-		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F005C4C123751190037035B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		0F29581512FB0B86009FAA3A /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlay.h; sourceTree = "<group>"; };
-		0F29581612FB0B86009FAA3A /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlay.m; sourceTree = "<group>"; };
 		0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F4AA6B112FAB5E400BA81BB /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alert.png; path = Shared/Resources/Images/alert.png; sourceTree = "<group>"; };
-		0F4AA6C212FAB72900BA81BB /* IPhoneSimulationConfigurationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhoneSimulationConfigurationView.h; sourceTree = "<group>"; };
-		0F4AA6C312FAB72900BA81BB /* IPhoneSimulationConfigurationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPhoneSimulationConfigurationView.m; sourceTree = "<group>"; };
-		0F4AA6C412FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPhoneSimulationConfigurationView.xib; sourceTree = "<group>"; };
-		0F59B69612F14B7100E04292 /* AGCTelemetryUIIphoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AGCTelemetryUIIphoneView.xib; sourceTree = "<group>"; };
-		0F59B69712F14B7100E04292 /* AGCTelemetryUIIphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCTelemetryUIIphoneViewController.h; sourceTree = "<group>"; };
-		0F59B69812F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCTelemetryUIIphoneViewController.m; sourceTree = "<group>"; };
-		0F59B69912F14B7100E04292 /* DSKYUIIphoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSKYUIIphoneView.xib; sourceTree = "<group>"; };
-		0F59B69A12F14B7100E04292 /* DSKYUIIphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSKYUIIphoneViewController.h; sourceTree = "<group>"; };
-		0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSKYUIIphoneViewController.m; sourceTree = "<group>"; };
-		0F59B6A112F14BA700E04292 /* AGCSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGCSimulator.h; path = AGCSimulation/AGCSimulator.h; sourceTree = "<group>"; };
-		0F59B6A212F14BA700E04292 /* AGCSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGCSimulator.m; path = AGCSimulation/AGCSimulator.m; sourceTree = "<group>"; };
-		0F59B6A312F14BA700E04292 /* DSKYSimulationClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSKYSimulationClient.h; path = AGCSimulation/DSKYSimulationClient.h; sourceTree = "<group>"; };
-		0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSKYSimulationClient.m; path = AGCSimulation/DSKYSimulationClient.m; sourceTree = "<group>"; };
-		0F59B6A512F14BA700E04292 /* UpdateDSKYUserInterfaceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdateDSKYUserInterfaceDelegate.h; path = AGCSimulation/UpdateDSKYUserInterfaceDelegate.h; sourceTree = "<group>"; };
-		0F59B6A912F14BDB00E04292 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = Util/Util.h; sourceTree = "<group>"; };
-		0F59B6AA12F14BDB00E04292 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Util.m; path = Util/Util.m; sourceTree = "<group>"; };
 		0F59B6AD12F14C0500E04292 /* 0Up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0Up.jpg; sourceTree = "<group>"; };
 		0F59B6AE12F14C0500E04292 /* 1Up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1Up.jpg; sourceTree = "<group>"; };
 		0F59B6AF12F14C0500E04292 /* 2Up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2Up.jpg; sourceTree = "<group>"; };
@@ -572,23 +558,47 @@
 		0FA82D6E12FEA9AF00B08B34 /* VelOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VelOn.jpg; sourceTree = "<group>"; };
 		0FA82D6F12FEA9AF00B08B34 /* VerbOff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbOff.jpg; sourceTree = "<group>"; };
 		0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbOn.jpg; sourceTree = "<group>"; };
-		0FA830AD12FFFBAD00B08B34 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = Util/Queue.h; sourceTree = "<group>"; };
-		0FA830AE12FFFBAD00B08B34 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Queue.m; path = Util/Queue.m; sourceTree = "<group>"; };
-		0FA831C013006E4900B08B34 /* DSKYUIIPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSKYUIIPadViewController.h; path = Views/DSKYUIIPadViewController.h; sourceTree = "<group>"; };
-		0FA831C113006E4900B08B34 /* DSKYUIIPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSKYUIIPadViewController.m; path = Views/DSKYUIIPadViewController.m; sourceTree = "<group>"; };
-		0FA831C213006E4900B08B34 /* DSKYUIIPadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DSKYUIIPadViewController.xib; path = Views/DSKYUIIPadViewController.xib; sourceTree = "<group>"; };
-		0FA831C313006E4900B08B34 /* IPadSimulationMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPadSimulationMenuController.h; path = Views/IPadSimulationMenuController.h; sourceTree = "<group>"; };
-		0FA831C413006E4900B08B34 /* IPadSimulationMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPadSimulationMenuController.m; path = Views/IPadSimulationMenuController.m; sourceTree = "<group>"; };
-		0FA831C513006E4900B08B34 /* IPadSimulationMenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = IPadSimulationMenuController.xib; path = Views/IPadSimulationMenuController.xib; sourceTree = "<group>"; };
+		0FD122541301A6AC005941E1 /* iAGC.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = iAGC.xcdatamodel; sourceTree = "<group>"; };
+		0FD122621301B51B005941E1 /* DSKYUplinkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSKYUplinkData.m; path = Classes/Data/DSKYUplinkData.m; sourceTree = "<group>"; };
+		0FD122631301B51B005941E1 /* DSKYUplinkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSKYUplinkData.h; path = Classes/Data/DSKYUplinkData.h; sourceTree = "<group>"; };
+		0FD122651301B56C005941E1 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTStatusBarOverlay.m; path = Classes/Util/MTStatusBarOverlay.m; sourceTree = "<group>"; };
+		0FD122661301B56C005941E1 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarOverlay.h; path = Classes/Util/MTStatusBarOverlay.h; sourceTree = "<group>"; };
+		0FD122671301B56C005941E1 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataTableViewController.m; path = Classes/Util/CoreDataTableViewController.m; sourceTree = "<group>"; };
+		0FD122681301B56C005941E1 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataTableViewController.h; path = Classes/Util/CoreDataTableViewController.h; sourceTree = "<group>"; };
+		0FD1226B1301B594005941E1 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Queue.m; path = Classes/Util/Queue.m; sourceTree = "<group>"; };
+		0FD1226C1301B594005941E1 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = Classes/Util/Queue.h; sourceTree = "<group>"; };
+		0FD1226D1301B594005941E1 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Util.m; path = Classes/Util/Util.m; sourceTree = "<group>"; };
+		0FD1226E1301B594005941E1 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = Classes/Util/Util.h; sourceTree = "<group>"; };
+		0FD122711301B5DC005941E1 /* DSKYSimulationClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSKYSimulationClient.m; path = Classes/AGCSimulation/DSKYSimulationClient.m; sourceTree = "<group>"; };
+		0FD122721301B5DC005941E1 /* DSKYSimulationClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSKYSimulationClient.h; path = Classes/AGCSimulation/DSKYSimulationClient.h; sourceTree = "<group>"; };
+		0FD122731301B5DC005941E1 /* UpdateDSKYUserInterfaceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdateDSKYUserInterfaceDelegate.h; path = Classes/AGCSimulation/UpdateDSKYUserInterfaceDelegate.h; sourceTree = "<group>"; };
+		0FD122741301B5DC005941E1 /* AGCSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGCSimulator.m; path = Classes/AGCSimulation/AGCSimulator.m; sourceTree = "<group>"; };
+		0FD122751301B5DC005941E1 /* AGCSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGCSimulator.h; path = Classes/AGCSimulation/AGCSimulator.h; sourceTree = "<group>"; };
+		0FD122791301B601005941E1 /* AppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPad.h; sourceTree = "<group>"; };
+		0FD1227A1301B601005941E1 /* AppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPad.m; sourceTree = "<group>"; };
+		0FD1227B1301B601005941E1 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
+		0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSKYUIIPadViewController.h; sourceTree = "<group>"; };
+		0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSKYUIIPadViewController.m; sourceTree = "<group>"; };
+		0FD1227F1301B601005941E1 /* DSKYUIIPadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSKYUIIPadViewController.xib; sourceTree = "<group>"; };
+		0FD122801301B601005941E1 /* IPadSimulationMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPadSimulationMenuController.h; sourceTree = "<group>"; };
+		0FD122811301B601005941E1 /* IPadSimulationMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPadSimulationMenuController.m; sourceTree = "<group>"; };
+		0FD122821301B601005941E1 /* IPadSimulationMenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPadSimulationMenuController.xib; sourceTree = "<group>"; };
+		0FD122841301B601005941E1 /* AppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPhone.h; sourceTree = "<group>"; };
+		0FD122851301B601005941E1 /* AppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPhone.m; sourceTree = "<group>"; };
+		0FD122861301B601005941E1 /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		0FD122881301B601005941E1 /* AGCTelemetryUIIphoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AGCTelemetryUIIphoneView.xib; sourceTree = "<group>"; };
+		0FD122891301B601005941E1 /* AGCTelemetryUIIphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCTelemetryUIIphoneViewController.h; sourceTree = "<group>"; };
+		0FD1228A1301B601005941E1 /* AGCTelemetryUIIphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCTelemetryUIIphoneViewController.m; sourceTree = "<group>"; };
+		0FD1228B1301B601005941E1 /* DSKYUIIphoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSKYUIIphoneView.xib; sourceTree = "<group>"; };
+		0FD1228C1301B601005941E1 /* DSKYUIIphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSKYUIIphoneViewController.h; sourceTree = "<group>"; };
+		0FD1228D1301B601005941E1 /* DSKYUIIphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSKYUIIphoneViewController.m; sourceTree = "<group>"; };
+		0FD1228E1301B601005941E1 /* IPhoneSimulationConfigurationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhoneSimulationConfigurationView.h; sourceTree = "<group>"; };
+		0FD1228F1301B601005941E1 /* IPhoneSimulationConfigurationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPhoneSimulationConfigurationView.m; sourceTree = "<group>"; };
+		0FD122901301B601005941E1 /* IPhoneSimulationConfigurationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPhoneSimulationConfigurationView.xib; sourceTree = "<group>"; };
+		0FD122C21301B8A4005941E1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* iAGC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAGC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2860E325111B887F00E27156 /* AppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPhone.h; sourceTree = "<group>"; };
-		2860E326111B887F00E27156 /* AppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPhone.m; sourceTree = "<group>"; };
-		2860E327111B887F00E27156 /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		2860E32B111B888700E27156 /* AppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPad.h; sourceTree = "<group>"; };
-		2860E32C111B888700E27156 /* AppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPad.m; sourceTree = "<group>"; };
-		2860E32D111B888700E27156 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iAGC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAGC_Prefix.pch; sourceTree = "<group>"; };
@@ -604,6 +614,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				0F4AA68812FAB48F00BA81BB /* QuartzCore.framework in Frameworks */,
+				0FD122C31301B8A4005941E1 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,11 +642,11 @@
 		0F005CC7123751890037035B /* AGCSimulation */ = {
 			isa = PBXGroup;
 			children = (
-				0F59B6A112F14BA700E04292 /* AGCSimulator.h */,
-				0F59B6A212F14BA700E04292 /* AGCSimulator.m */,
-				0F59B6A312F14BA700E04292 /* DSKYSimulationClient.h */,
-				0F59B6A412F14BA700E04292 /* DSKYSimulationClient.m */,
-				0F59B6A512F14BA700E04292 /* UpdateDSKYUserInterfaceDelegate.h */,
+				0FD122711301B5DC005941E1 /* DSKYSimulationClient.m */,
+				0FD122721301B5DC005941E1 /* DSKYSimulationClient.h */,
+				0FD122731301B5DC005941E1 /* UpdateDSKYUserInterfaceDelegate.h */,
+				0FD122741301B5DC005941E1 /* AGCSimulator.m */,
+				0FD122751301B5DC005941E1 /* AGCSimulator.h */,
 			);
 			name = AGCSimulation;
 			sourceTree = "<group>";
@@ -643,10 +654,14 @@
 		0F005DD01238AEFF0037035B /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				0FA830AD12FFFBAD00B08B34 /* Queue.h */,
-				0FA830AE12FFFBAD00B08B34 /* Queue.m */,
-				0F59B6A912F14BDB00E04292 /* Util.h */,
-				0F59B6AA12F14BDB00E04292 /* Util.m */,
+				0FD1226B1301B594005941E1 /* Queue.m */,
+				0FD1226C1301B594005941E1 /* Queue.h */,
+				0FD1226D1301B594005941E1 /* Util.m */,
+				0FD1226E1301B594005941E1 /* Util.h */,
+				0FD122651301B56C005941E1 /* MTStatusBarOverlay.m */,
+				0FD122661301B56C005941E1 /* MTStatusBarOverlay.h */,
+				0FD122671301B56C005941E1 /* CoreDataTableViewController.m */,
+				0FD122681301B56C005941E1 /* CoreDataTableViewController.h */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -657,22 +672,6 @@
 				0F4AA6B112FAB5E400BA81BB /* alert.png */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		0F59B69512F14B7100E04292 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				0F59B69612F14B7100E04292 /* AGCTelemetryUIIphoneView.xib */,
-				0F59B69712F14B7100E04292 /* AGCTelemetryUIIphoneViewController.h */,
-				0F59B69812F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m */,
-				0F59B69912F14B7100E04292 /* DSKYUIIphoneView.xib */,
-				0F59B69A12F14B7100E04292 /* DSKYUIIphoneViewController.h */,
-				0F59B69B12F14B7100E04292 /* DSKYUIIphoneViewController.m */,
-				0F4AA6C212FAB72900BA81BB /* IPhoneSimulationConfigurationView.h */,
-				0F4AA6C312FAB72900BA81BB /* IPhoneSimulationConfigurationView.m */,
-				0F4AA6C412FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		0F59B6AC12F14C0500E04292 /* Images */ = {
@@ -961,17 +960,78 @@
 			path = yaAGC;
 			sourceTree = "<group>";
 		};
-		0FA831A513006BDA00B08B34 /* Views */ = {
+		0FD1225D1301B38A005941E1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0FA831C013006E4900B08B34 /* DSKYUIIPadViewController.h */,
-				0FA831C113006E4900B08B34 /* DSKYUIIPadViewController.m */,
-				0FA831C213006E4900B08B34 /* DSKYUIIPadViewController.xib */,
-				0FA831C313006E4900B08B34 /* IPadSimulationMenuController.h */,
-				0FA831C413006E4900B08B34 /* IPadSimulationMenuController.m */,
-				0FA831C513006E4900B08B34 /* IPadSimulationMenuController.xib */,
+				0FD122781301B601005941E1 /* iPad */,
+				0FD122831301B601005941E1 /* iPhone */,
+				0FD1225E1301B3D5005941E1 /* Data */,
+				0F005DD01238AEFF0037035B /* Util */,
+				0F005CC7123751890037035B /* AGCSimulation */,
 			);
-			name = Views;
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		0FD1225E1301B3D5005941E1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0FD122621301B51B005941E1 /* DSKYUplinkData.m */,
+				0FD122631301B51B005941E1 /* DSKYUplinkData.h */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		0FD122781301B601005941E1 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				0FD122791301B601005941E1 /* AppDelegate_iPad.h */,
+				0FD1227A1301B601005941E1 /* AppDelegate_iPad.m */,
+				0FD1227B1301B601005941E1 /* MainWindow_iPad.xib */,
+				0FD1227C1301B601005941E1 /* Views */,
+			);
+			name = iPad;
+			path = Classes/iPad;
+			sourceTree = "<group>";
+		};
+		0FD1227C1301B601005941E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */,
+				0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */,
+				0FD1227F1301B601005941E1 /* DSKYUIIPadViewController.xib */,
+				0FD122801301B601005941E1 /* IPadSimulationMenuController.h */,
+				0FD122811301B601005941E1 /* IPadSimulationMenuController.m */,
+				0FD122821301B601005941E1 /* IPadSimulationMenuController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0FD122831301B601005941E1 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				0FD122841301B601005941E1 /* AppDelegate_iPhone.h */,
+				0FD122851301B601005941E1 /* AppDelegate_iPhone.m */,
+				0FD122861301B601005941E1 /* MainWindow_iPhone.xib */,
+				0FD122871301B601005941E1 /* Views */,
+			);
+			name = iPhone;
+			path = Classes/iPhone;
+			sourceTree = "<group>";
+		};
+		0FD122871301B601005941E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FD122881301B601005941E1 /* AGCTelemetryUIIphoneView.xib */,
+				0FD122891301B601005941E1 /* AGCTelemetryUIIphoneViewController.h */,
+				0FD1228A1301B601005941E1 /* AGCTelemetryUIIphoneViewController.m */,
+				0FD1228B1301B601005941E1 /* DSKYUIIphoneView.xib */,
+				0FD1228C1301B601005941E1 /* DSKYUIIphoneViewController.h */,
+				0FD1228D1301B601005941E1 /* DSKYUIIphoneViewController.m */,
+				0FD1228E1301B601005941E1 /* IPhoneSimulationConfigurationView.h */,
+				0FD1228F1301B601005941E1 /* IPhoneSimulationConfigurationView.m */,
+				0FD122901301B601005941E1 /* IPhoneSimulationConfigurationView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -980,28 +1040,6 @@
 				1D6058910D05DD3D006BFB54 /* iAGC.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2860E324111B887F00E27156 /* iPhone */ = {
-			isa = PBXGroup;
-			children = (
-				0F59B69512F14B7100E04292 /* Views */,
-				2860E325111B887F00E27156 /* AppDelegate_iPhone.h */,
-				2860E326111B887F00E27156 /* AppDelegate_iPhone.m */,
-				2860E327111B887F00E27156 /* MainWindow_iPhone.xib */,
-			);
-			path = iPhone;
-			sourceTree = "<group>";
-		};
-		2860E32A111B888700E27156 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				0FA831A513006BDA00B08B34 /* Views */,
-				2860E32B111B888700E27156 /* AppDelegate_iPad.h */,
-				2860E32C111B888700E27156 /* AppDelegate_iPad.m */,
-				2860E32D111B888700E27156 /* MainWindow_iPad.xib */,
-			);
-			path = iPad;
 			sourceTree = "<group>";
 		};
 		28EEBF621118D79A00187D67 /* Shared */ = {
@@ -1017,16 +1055,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				0F29581512FB0B86009FAA3A /* MTStatusBarOverlay.h */,
-				0F29581612FB0B86009FAA3A /* MTStatusBarOverlay.m */,
-				0F005DD01238AEFF0037035B /* Util */,
-				0F005CC7123751890037035B /* AGCSimulation */,
-				2860E32A111B888700E27156 /* iPad */,
-				2860E324111B887F00E27156 /* iPhone */,
+				0FD1225D1301B38A005941E1 /* Classes */,
 				28EEBF621118D79A00187D67 /* Shared */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				0FD122541301A6AC005941E1 /* iAGC.xcdatamodel */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1048,6 +1082,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */,
+				0FD122C21301B8A4005941E1 /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1101,11 +1136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */,
-				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
 				0F005C4D123751190037035B /* Settings.bundle in Resources */,
-				0F59B69C12F14B7100E04292 /* AGCTelemetryUIIphoneView.xib in Resources */,
-				0F59B69E12F14B7100E04292 /* DSKYUIIphoneView.xib in Resources */,
 				0F59B79B12F14C0500E04292 /* 0Up.jpg in Resources */,
 				0F59B79C12F14C0500E04292 /* 1Up.jpg in Resources */,
 				0F59B79D12F14C0500E04292 /* 2Up.jpg in Resources */,
@@ -1165,7 +1196,6 @@
 				0F60610012F9D55C00725DAD /* Colossus249.bin in Resources */,
 				0F60610112F9D55C00725DAD /* Comanche055.bin in Resources */,
 				0F4AA6B212FAB5E400BA81BB /* alert.png in Resources */,
-				0F4AA6C612FAB72900BA81BB /* IPhoneSimulationConfigurationView.xib in Resources */,
 				0FA82C9712FEA1C100B08B34 /* GimbalLockOn.jpg in Resources */,
 				0FA82CBC12FEA57700B08B34 /* digit-off.jpg in Resources */,
 				0FA82CBD12FEA57700B08B34 /* digit0.jpg in Resources */,
@@ -1344,8 +1374,13 @@
 				0FA82E0112FEA9AF00B08B34 /* VelOn.jpg in Resources */,
 				0FA82E0212FEA9AF00B08B34 /* VerbOff.jpg in Resources */,
 				0FA82E0312FEA9AF00B08B34 /* VerbOn.jpg in Resources */,
-				0FA831C713006E4900B08B34 /* DSKYUIIPadViewController.xib in Resources */,
-				0FA831C913006E4900B08B34 /* IPadSimulationMenuController.xib in Resources */,
+				0FD122921301B601005941E1 /* MainWindow_iPad.xib in Resources */,
+				0FD122941301B601005941E1 /* DSKYUIIPadViewController.xib in Resources */,
+				0FD122961301B601005941E1 /* IPadSimulationMenuController.xib in Resources */,
+				0FD122981301B601005941E1 /* MainWindow_iPhone.xib in Resources */,
+				0FD122991301B601005941E1 /* AGCTelemetryUIIphoneView.xib in Resources */,
+				0FD1229B1301B601005941E1 /* DSKYUIIphoneView.xib in Resources */,
+				0FD1229E1301B601005941E1 /* IPhoneSimulationConfigurationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1357,13 +1392,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */,
-				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
-				0F59B69D12F14B7100E04292 /* AGCTelemetryUIIphoneViewController.m in Sources */,
-				0F59B69F12F14B7100E04292 /* DSKYUIIphoneViewController.m in Sources */,
-				0F59B6A612F14BA700E04292 /* AGCSimulator.m in Sources */,
-				0F59B6A712F14BA700E04292 /* DSKYSimulationClient.m in Sources */,
-				0F59B6AB12F14BDB00E04292 /* Util.m in Sources */,
 				0F59BB7112F336BD00E04292 /* agc_cli.c in Sources */,
 				0F59BB7212F336BD00E04292 /* agc_debugger.c in Sources */,
 				0F59BB7312F336BD00E04292 /* agc_disassembler.c in Sources */,
@@ -1380,11 +1408,21 @@
 				0F59BB7E12F336BD00E04292 /* NormalizeSourceName.c in Sources */,
 				0F59BB7F12F336BD00E04292 /* rfopen.c in Sources */,
 				0F59BB8012F336BD00E04292 /* SocketAPI.c in Sources */,
-				0F4AA6C512FAB72900BA81BB /* IPhoneSimulationConfigurationView.m in Sources */,
-				0F29581712FB0B86009FAA3A /* MTStatusBarOverlay.m in Sources */,
-				0FA830AF12FFFBAD00B08B34 /* Queue.m in Sources */,
-				0FA831C613006E4900B08B34 /* DSKYUIIPadViewController.m in Sources */,
-				0FA831C813006E4900B08B34 /* IPadSimulationMenuController.m in Sources */,
+				0FD122551301A6AC005941E1 /* iAGC.xcdatamodel in Sources */,
+				0FD122641301B51B005941E1 /* DSKYUplinkData.m in Sources */,
+				0FD122691301B56C005941E1 /* MTStatusBarOverlay.m in Sources */,
+				0FD1226A1301B56C005941E1 /* CoreDataTableViewController.m in Sources */,
+				0FD1226F1301B594005941E1 /* Queue.m in Sources */,
+				0FD122701301B594005941E1 /* Util.m in Sources */,
+				0FD122761301B5DC005941E1 /* DSKYSimulationClient.m in Sources */,
+				0FD122771301B5DC005941E1 /* AGCSimulator.m in Sources */,
+				0FD122911301B601005941E1 /* AppDelegate_iPad.m in Sources */,
+				0FD122931301B601005941E1 /* DSKYUIIPadViewController.m in Sources */,
+				0FD122951301B601005941E1 /* IPadSimulationMenuController.m in Sources */,
+				0FD122971301B601005941E1 /* AppDelegate_iPhone.m in Sources */,
+				0FD1229A1301B601005941E1 /* AGCTelemetryUIIphoneViewController.m in Sources */,
+				0FD1229C1301B601005941E1 /* DSKYUIIphoneViewController.m in Sources */,
+				0FD1229D1301B601005941E1 /* IPhoneSimulationConfigurationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
