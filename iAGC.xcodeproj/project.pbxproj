@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F005C4D123751190037035B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F005C4C123751190037035B /* Settings.bundle */; };
+		0F4310591302AD5300B5002E /* AppDelegate_Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4310571302AD5300B5002E /* AppDelegate_Shared.m */; };
 		0F4AA68812FAB48F00BA81BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */; };
 		0F4AA6B212FAB5E400BA81BB /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA6B112FAB5E400BA81BB /* alert.png */; };
 		0F59B79B12F14C0500E04292 /* 0Up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6AD12F14C0500E04292 /* 0Up.jpg */; };
@@ -262,7 +263,6 @@
 		0FA82E0112FEA9AF00B08B34 /* VelOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D6E12FEA9AF00B08B34 /* VelOn.jpg */; };
 		0FA82E0212FEA9AF00B08B34 /* VerbOff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D6F12FEA9AF00B08B34 /* VerbOff.jpg */; };
 		0FA82E0312FEA9AF00B08B34 /* VerbOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */; };
-		0FD122551301A6AC005941E1 /* iAGC.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122541301A6AC005941E1 /* iAGC.xcdatamodel */; };
 		0FD122691301B56C005941E1 /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122651301B56C005941E1 /* MTStatusBarOverlay.m */; };
 		0FD1226A1301B56C005941E1 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122671301B56C005941E1 /* CoreDataTableViewController.m */; };
 		0FD1226F1301B594005941E1 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1226B1301B594005941E1 /* Queue.m */; };
@@ -281,10 +281,10 @@
 		0FD1229A1301B601005941E1 /* AGCTelemetryUIIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1228A1301B601005941E1 /* AGCTelemetryUIIphoneViewController.m */; };
 		0FD1229B1301B601005941E1 /* DSKYUIIphoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1228B1301B601005941E1 /* DSKYUIIphoneView.xib */; };
 		0FD1229C1301B601005941E1 /* DSKYUIIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1228D1301B601005941E1 /* DSKYUIIphoneViewController.m */; };
-		0FD1229D1301B601005941E1 /* IPhoneSimulationConfigurationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1228F1301B601005941E1 /* IPhoneSimulationConfigurationView.m */; };
-		0FD1229E1301B601005941E1 /* IPhoneSimulationConfigurationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD122901301B601005941E1 /* IPhoneSimulationConfigurationView.xib */; };
 		0FD122C31301B8A4005941E1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD122C21301B8A4005941E1 /* CoreData.framework */; };
 		0FD122EF13027397005941E1 /* DSKYUplinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD122ED13027397005941E1 /* DSKYUplinkData.m */; };
+		0FD124811302A353005941E1 /* iAGC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FD124801302A353005941E1 /* iAGC.xcdatamodeld */; };
+		0FD124871302A434005941E1 /* UplinkDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD124861302A434005941E1 /* UplinkDataViewController.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -293,6 +293,8 @@
 
 /* Begin PBXFileReference section */
 		0F005C4C123751190037035B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		0F4310571302AD5300B5002E /* AppDelegate_Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate_Shared.m; path = Shared/AppDelegate_Shared.m; sourceTree = "<group>"; };
+		0F4310581302AD5300B5002E /* AppDelegate_Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate_Shared.h; path = Shared/AppDelegate_Shared.h; sourceTree = "<group>"; };
 		0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F4AA6B112FAB5E400BA81BB /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alert.png; path = Shared/Resources/Images/alert.png; sourceTree = "<group>"; };
 		0F59B6AD12F14C0500E04292 /* 0Up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0Up.jpg; sourceTree = "<group>"; };
@@ -558,7 +560,6 @@
 		0FA82D6E12FEA9AF00B08B34 /* VelOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VelOn.jpg; sourceTree = "<group>"; };
 		0FA82D6F12FEA9AF00B08B34 /* VerbOff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbOff.jpg; sourceTree = "<group>"; };
 		0FA82D7012FEA9AF00B08B34 /* VerbOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerbOn.jpg; sourceTree = "<group>"; };
-		0FD122541301A6AC005941E1 /* iAGC.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = iAGC.xcdatamodel; sourceTree = "<group>"; };
 		0FD122651301B56C005941E1 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTStatusBarOverlay.m; path = Classes/Util/MTStatusBarOverlay.m; sourceTree = "<group>"; };
 		0FD122661301B56C005941E1 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarOverlay.h; path = Classes/Util/MTStatusBarOverlay.h; sourceTree = "<group>"; };
 		0FD122671301B56C005941E1 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataTableViewController.m; path = Classes/Util/CoreDataTableViewController.m; sourceTree = "<group>"; };
@@ -590,12 +591,12 @@
 		0FD1228B1301B601005941E1 /* DSKYUIIphoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSKYUIIphoneView.xib; sourceTree = "<group>"; };
 		0FD1228C1301B601005941E1 /* DSKYUIIphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSKYUIIphoneViewController.h; sourceTree = "<group>"; };
 		0FD1228D1301B601005941E1 /* DSKYUIIphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSKYUIIphoneViewController.m; sourceTree = "<group>"; };
-		0FD1228E1301B601005941E1 /* IPhoneSimulationConfigurationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhoneSimulationConfigurationView.h; sourceTree = "<group>"; };
-		0FD1228F1301B601005941E1 /* IPhoneSimulationConfigurationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPhoneSimulationConfigurationView.m; sourceTree = "<group>"; };
-		0FD122901301B601005941E1 /* IPhoneSimulationConfigurationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPhoneSimulationConfigurationView.xib; sourceTree = "<group>"; };
 		0FD122C21301B8A4005941E1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0FD122ED13027397005941E1 /* DSKYUplinkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSKYUplinkData.m; path = Classes/Data/DSKYUplinkData.m; sourceTree = "<group>"; };
 		0FD122EE13027397005941E1 /* DSKYUplinkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSKYUplinkData.h; path = Classes/Data/DSKYUplinkData.h; sourceTree = "<group>"; };
+		0FD1242013029DEC005941E1 /* iAGC.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = iAGC.xcdatamodel; sourceTree = "<group>"; };
+		0FD124851302A434005941E1 /* UplinkDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UplinkDataViewController.h; sourceTree = "<group>"; };
+		0FD124861302A434005941E1 /* UplinkDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UplinkDataViewController.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* iAGC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAGC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -658,10 +659,10 @@
 				0FD1226C1301B594005941E1 /* Queue.h */,
 				0FD1226D1301B594005941E1 /* Util.m */,
 				0FD1226E1301B594005941E1 /* Util.h */,
-				0FD122651301B56C005941E1 /* MTStatusBarOverlay.m */,
 				0FD122661301B56C005941E1 /* MTStatusBarOverlay.h */,
-				0FD122671301B56C005941E1 /* CoreDataTableViewController.m */,
+				0FD122651301B56C005941E1 /* MTStatusBarOverlay.m */,
 				0FD122681301B56C005941E1 /* CoreDataTableViewController.h */,
+				0FD122671301B56C005941E1 /* CoreDataTableViewController.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -975,8 +976,8 @@
 		0FD1225E1301B3D5005941E1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0FD122ED13027397005941E1 /* DSKYUplinkData.m */,
 				0FD122EE13027397005941E1 /* DSKYUplinkData.h */,
+				0FD122ED13027397005941E1 /* DSKYUplinkData.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -1027,9 +1028,8 @@
 				0FD1228B1301B601005941E1 /* DSKYUIIphoneView.xib */,
 				0FD1228C1301B601005941E1 /* DSKYUIIphoneViewController.h */,
 				0FD1228D1301B601005941E1 /* DSKYUIIphoneViewController.m */,
-				0FD1228E1301B601005941E1 /* IPhoneSimulationConfigurationView.h */,
-				0FD1228F1301B601005941E1 /* IPhoneSimulationConfigurationView.m */,
-				0FD122901301B601005941E1 /* IPhoneSimulationConfigurationView.xib */,
+				0FD124851302A434005941E1 /* UplinkDataViewController.h */,
+				0FD124861302A434005941E1 /* UplinkDataViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1045,6 +1045,9 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0F4310571302AD5300B5002E /* AppDelegate_Shared.m */,
+				0F4310581302AD5300B5002E /* AppDelegate_Shared.h */,
+				0FD124801302A353005941E1 /* iAGC.xcdatamodeld */,
 				0F005CC6123751570037035B /* Resources */,
 				0F005C4C123751190037035B /* Settings.bundle */,
 				8D1107310486CEB800E47090 /* iAGC-Info.plist */,
@@ -1060,7 +1063,6 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				0FD122541301A6AC005941E1 /* iAGC.xcdatamodel */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1380,7 +1382,6 @@
 				0FD122981301B601005941E1 /* MainWindow_iPhone.xib in Resources */,
 				0FD122991301B601005941E1 /* AGCTelemetryUIIphoneView.xib in Resources */,
 				0FD1229B1301B601005941E1 /* DSKYUIIphoneView.xib in Resources */,
-				0FD1229E1301B601005941E1 /* IPhoneSimulationConfigurationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1408,7 +1409,6 @@
 				0F59BB7E12F336BD00E04292 /* NormalizeSourceName.c in Sources */,
 				0F59BB7F12F336BD00E04292 /* rfopen.c in Sources */,
 				0F59BB8012F336BD00E04292 /* SocketAPI.c in Sources */,
-				0FD122551301A6AC005941E1 /* iAGC.xcdatamodel in Sources */,
 				0FD122691301B56C005941E1 /* MTStatusBarOverlay.m in Sources */,
 				0FD1226A1301B56C005941E1 /* CoreDataTableViewController.m in Sources */,
 				0FD1226F1301B594005941E1 /* Queue.m in Sources */,
@@ -1421,8 +1421,10 @@
 				0FD122971301B601005941E1 /* AppDelegate_iPhone.m in Sources */,
 				0FD1229A1301B601005941E1 /* AGCTelemetryUIIphoneViewController.m in Sources */,
 				0FD1229C1301B601005941E1 /* DSKYUIIphoneViewController.m in Sources */,
-				0FD1229D1301B601005941E1 /* IPhoneSimulationConfigurationView.m in Sources */,
 				0FD122EF13027397005941E1 /* DSKYUplinkData.m in Sources */,
+				0FD124811302A353005941E1 /* iAGC.xcdatamodeld in Sources */,
+				0FD124871302A434005941E1 /* UplinkDataViewController.m in Sources */,
+				0F4310591302AD5300B5002E /* AppDelegate_Shared.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1529,6 +1531,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0FD124801302A353005941E1 /* iAGC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0FD1242013029DEC005941E1 /* iAGC.xcdatamodel */,
+			);
+			currentVersion = 0FD1242013029DEC005941E1 /* iAGC.xcdatamodel */;
+			path = iAGC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }

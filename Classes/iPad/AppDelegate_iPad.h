@@ -10,24 +10,11 @@
 #import <CoreData/CoreData.h>
 
 #import "UpdateDSKYUserInterfaceDelegate.h"
+#import "AppDelegate_Shared.h"
 
-@interface AppDelegate_iPad : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
+@interface AppDelegate_iPad : AppDelegate_Shared {
 	
-@private
-    NSManagedObjectContext *managedObjectContext_;
-    NSManagedObjectModel *managedObjectModel_;
-    NSPersistentStoreCoordinator *persistentStoreCoordinator_;
 }
-
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
-@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-- (NSURL *)applicationDocumentsDirectory;
-- (void)saveContext;
 
 @end
 

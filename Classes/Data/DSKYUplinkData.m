@@ -13,6 +13,26 @@
 
 @dynamic title;
 @dynamic uplink_data;
-@dynamic dateAdded;
+@dynamic date_added;
+
+
++ (DSKYUplinkData * )createDSKYUplinkDataWithTitle:(NSString *) title withData:(NSString *) uplinkData inManagedObjectContext:(NSManagedObjectContext *) managedObjectContext
+{
+	DSKYUplinkData *data = nil;
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	request.entity = [NSEntityDescription entityForName:@"DSKYUplinkData" inManagedObjectContext:managedObjectContext];
+	request.predicate = [NSPredicate predicateWithFormat:@"title = %@",title];
+	NSError *error;
+	data = [[managedObjectContext executeFetchRequest:request error:&error] lastObject];
+	if (!error & !data)
+	{
+		data = [NSEntityDescription insertNewObjectForEntityForName:@"DSKYUplinkData" inManagedObjectContext:managedObjectContext];
+		data.title = title;
+		data.uplink_data = uplinkData;
+		data.date_added = [NSDate date];
+	}
+	[request release];
+	return data;
+}
 
 @end

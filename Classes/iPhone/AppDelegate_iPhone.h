@@ -11,34 +11,21 @@
 
 #import "DSKYUIIphoneViewController.h"
 #import "AGCSimulator.h"
+#import "AppDelegate_Shared.h"
 
-@interface AppDelegate_iPhone : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
+@interface AppDelegate_iPhone : AppDelegate_Shared{
 	UITabBarController *tabBarController;
 	DSKYUIIphoneViewController *dskyUIIPhoneViewController;
 @private
 	AGCSimulator *simulator;
 @private
 	DSKYSimulationClient *dskyClient;
-	
-@private
-    NSManagedObjectContext *managedObjectContext_;
-    NSManagedObjectModel *managedObjectModel_;
-    NSPersistentStoreCoordinator *persistentStoreCoordinator_;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 @property (nonatomic, retain) IBOutlet DSKYUIIphoneViewController *dskyUIIPhoneViewController;
 @property (nonatomic, retain) AGCSimulator *simulator;
 @property (nonatomic, retain) DSKYSimulationClient *dskyClient;
-
-@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
-@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-- (NSURL *)applicationDocumentsDirectory;
-- (void)saveContext;
 
 @end
 
