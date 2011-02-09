@@ -1495,6 +1495,12 @@
 		vrLoc = 0;
 	};
 	0FD122E31301C9FA005941E1 /* DSKYUplinkData.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = DSKYUplinkData.h;
+		path = /Users/argaldo/git/iAGC/DSKYUplinkData.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {902, 521}}";
 			sepNavSelRange = "{0, 0}";
