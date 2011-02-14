@@ -16,6 +16,7 @@
 @synthesize dskySimulationClient;
 @synthesize alertView,uplinkView,alertMessageLabel;
 @synthesize uplinkDataText;
+@synthesize dskyHelpImageScrollView,dskyHelpImageView;
 
 
 @synthesize M1Outlet,M2Outlet,V1Outlet,V2Outlet,N1Outlet,N2Outlet,CompActIndOutlet,uplinkActivity,noAttitude,standBy,keyRelease,operationError,priorityDisplay,noDAP,temp,gimbalLock,prog,restart,tracker,alt,vel,_r1plusminus,_11Outlet,	_12Outlet,_13Outlet,_14Outlet,_15Outlet,_r2plusminus,_21Outlet,_22Outlet,_23Outlet,_24Outlet,_25Outlet,_r3plusminus,_31Outlet,_32Outlet,_33Outlet,_34Outlet,_35Outlet;
@@ -173,6 +174,11 @@
 	self._33Outlet = nil;
 	self._34Outlet = nil;
 	self._35Outlet = nil;
+	
+	self.uplinkDataText = nil;
+	self.dskyHelpImageScrollView = nil;
+	self.dskyHelpImageView = nil;
+	
 }
 
 
@@ -202,9 +208,20 @@
 	[dskySimulationClient sendDSKYCode:code];
 }
 
+- (UIView *) viewForZoomingInScrollView:(UIScrollView *)scrollView {
+	return self.dskyHelpImageView;
+}
+
 
 - (void)showUplinkView
 {
+	//self.dskyHelpImageView = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DSKY_285x450" ofType:@"jpg"]]];
+	self.dskyHelpImageScrollView.contentSize = CGSizeMake(self.dskyHelpImageView.frame.size.width, self.dskyHelpImageView.frame.size.height);
+	self.dskyHelpImageScrollView.maximumZoomScale = 5.0;
+	self.dskyHelpImageScrollView.minimumZoomScale = 1.0;
+	self.dskyHelpImageScrollView.clipsToBounds = YES;
+	self.dskyHelpImageScrollView.delegate = self;
+	
 	[self.view addSubview:uplinkView];
 	uplinkView.backgroundColor = [UIColor clearColor];
     uplinkView.center = self.view.superview.center;

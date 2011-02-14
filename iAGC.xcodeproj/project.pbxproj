@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F005C4D123751190037035B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F005C4C123751190037035B /* Settings.bundle */; };
 		0F4310591302AD5300B5002E /* AppDelegate_Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4310571302AD5300B5002E /* AppDelegate_Shared.m */; };
+		0F43107F1303EE0C00B5002E /* DSKY_285x450.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F43107E1303EE0C00B5002E /* DSKY_285x450.jpg */; };
 		0F4AA68812FAB48F00BA81BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */; };
 		0F4AA6B212FAB5E400BA81BB /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA6B112FAB5E400BA81BB /* alert.png */; };
 		0F59B79B12F14C0500E04292 /* 0Up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6AD12F14C0500E04292 /* 0Up.jpg */; };
@@ -295,6 +296,7 @@
 		0F005C4C123751190037035B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		0F4310571302AD5300B5002E /* AppDelegate_Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate_Shared.m; path = Shared/AppDelegate_Shared.m; sourceTree = "<group>"; };
 		0F4310581302AD5300B5002E /* AppDelegate_Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate_Shared.h; path = Shared/AppDelegate_Shared.h; sourceTree = "<group>"; };
+		0F43107E1303EE0C00B5002E /* DSKY_285x450.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DSKY_285x450.jpg; path = Shared/Resources/Images/DSKY_285x450.jpg; sourceTree = "<group>"; };
 		0F4AA68712FAB48F00BA81BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F4AA6B112FAB5E400BA81BB /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alert.png; path = Shared/Resources/Images/alert.png; sourceTree = "<group>"; };
 		0F59B6AD12F14C0500E04292 /* 0Up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0Up.jpg; sourceTree = "<group>"; };
@@ -670,6 +672,7 @@
 		0F4AA6B012FAB5CF00BA81BB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0F43107E1303EE0C00B5002E /* DSKY_285x450.jpg */,
 				0F4AA6B112FAB5E400BA81BB /* alert.png */,
 			);
 			name = Images;
@@ -1382,6 +1385,7 @@
 				0FD122981301B601005941E1 /* MainWindow_iPhone.xib in Resources */,
 				0FD122991301B601005941E1 /* AGCTelemetryUIIphoneView.xib in Resources */,
 				0FD1229B1301B601005941E1 /* DSKYUIIphoneView.xib in Resources */,
+				0F43107F1303EE0C00B5002E /* DSKY_285x450.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@
 #import "DSKYSimulationClient.h"
 
 
-@interface DSKYUIIphoneViewController : UIViewController <UpdateDSKYUserInterfaceDelegate>{
+@interface DSKYUIIphoneViewController : UIViewController <UpdateDSKYUserInterfaceDelegate,UIScrollViewDelegate>{
 	UIView *alertView;
 	UIView *uplinkView;
 	UILabel *alertMessageLabel;
@@ -72,6 +72,8 @@
 	IBOutlet UIImageView *_35Outlet;
 	
 	IBOutlet UITextView *uplinkDataText;
+	IBOutlet UIScrollView *dskyHelpImageScrollView;
+	IBOutlet UIImageView *dskyHelpImageView;
 	
 }
 
@@ -132,6 +134,8 @@
 @property (nonatomic,retain) IBOutlet UIImageView *_35Outlet;
 
 @property (nonatomic,retain) IBOutlet UITextView *uplinkDataText;
+@property (nonatomic,retain) IBOutlet UIScrollView *dskyHelpImageScrollView;
+@property (nonatomic,retain) IBOutlet UIImageView *dskyHelpImageView;
 
 
 
