@@ -67,7 +67,6 @@
 	
     // Override point for customization after application launch.
 	
-	
 	[window addSubview:self.dskyUIIPhoneViewController.view];
     [window makeKeyAndVisible];
 	return YES;
