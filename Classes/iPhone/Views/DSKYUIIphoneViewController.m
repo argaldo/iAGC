@@ -7,6 +7,7 @@
 //
 
 #import "DSKYUIIphoneViewController.h"
+#import "UplinkDataViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "Util.h"
 
@@ -17,6 +18,7 @@
 @synthesize alertView,uplinkView,alertMessageLabel;
 @synthesize uplinkDataText;
 @synthesize dskyHelpImageScrollView,dskyHelpImageView;
+@synthesize managedObjectContext;
 
 
 @synthesize M1Outlet,M2Outlet,V1Outlet,V2Outlet,N1Outlet,N2Outlet,CompActIndOutlet,uplinkActivity,noAttitude,standBy,keyRelease,operationError,priorityDisplay,noDAP,temp,gimbalLock,prog,restart,tracker,alt,vel,_r1plusminus,_11Outlet,	_12Outlet,_13Outlet,_14Outlet,_15Outlet,_r2plusminus,_21Outlet,_22Outlet,_23Outlet,_24Outlet,_25Outlet,_r3plusminus,_31Outlet,_32Outlet,_33Outlet,_34Outlet,_35Outlet;
@@ -73,6 +75,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self initSegmentDictionary];
+	self.uplinkView = [[UplinkDataViewController alloc] initInManagedObjectContext:self.managedObjectContext];
 }
 
 
@@ -179,6 +182,8 @@
 	self.dskyHelpImageScrollView = nil;
 	self.dskyHelpImageView = nil;
 	
+	self.uplinkView = nil;
+	
 }
 
 
@@ -213,38 +218,6 @@
 }
 
 
-- (void)showUplinkView
-{
-	//self.dskyHelpImageView = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DSKY_285x450" ofType:@"jpg"]]];
-	self.dskyHelpImageScrollView.contentSize = CGSizeMake(self.dskyHelpImageView.frame.size.width, self.dskyHelpImageView.frame.size.height);
-	self.dskyHelpImageScrollView.maximumZoomScale = 5.0;
-	self.dskyHelpImageScrollView.minimumZoomScale = 1.0;
-	self.dskyHelpImageScrollView.clipsToBounds = YES;
-	self.dskyHelpImageScrollView.delegate = self;
-	
-	[self.view addSubview:uplinkView];
-	uplinkView.backgroundColor = [UIColor clearColor];
-    uplinkView.center = self.view.superview.center;
-    
-    CALayer *viewLayer = self.uplinkView.layer;
-    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-    
-    animation.duration = 0.35555555;
-    animation.values = [NSArray arrayWithObjects:
-                        [NSNumber numberWithFloat:0.6],
-                        [NSNumber numberWithFloat:1.1],
-                        [NSNumber numberWithFloat:.9],
-                        [NSNumber numberWithFloat:1],
-                        nil];
-    animation.keyTimes = [NSArray arrayWithObjects:
-                          [NSNumber numberWithFloat:0.0],
-                          [NSNumber numberWithFloat:0.6],
-                          [NSNumber numberWithFloat:0.8],
-                          [NSNumber numberWithFloat:1.0], 
-                          nil];    
-    
-    [viewLayer addAnimation:animation forKey:@"transform.scale"];
-}
 
 - (void)showAlert
 {
@@ -397,13 +370,9 @@
 }
 
 - (IBAction) showUplinkDataView: (id) sender {
-	[self showUplinkView];
+	[self presentModalViewController:self.uplinkView animated:YES];
 }
 
-- (IBAction) closeUplinkDataView: (id) sender {
-	[self.uplinkView removeFromSuperview];
-    self.uplinkView.alpha = 1.0;
-}
 
 
 

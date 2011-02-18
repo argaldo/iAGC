@@ -11,10 +11,11 @@
 #import "AGCSimulator.h"
 #import "DSKYUplinkData.h"
 #import "UplinkDataViewController.h"
+#import "DSKYUIIphoneViewController.h"
 
 @implementation AppDelegate_iPhone
 
-@synthesize tabBarController,dskyUIIPhoneViewController,simulator,dskyClient;
+@synthesize dskyUIIPhoneViewController,simulator,dskyClient;
 
 
 
@@ -27,18 +28,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	// wiring dataviewcontroller
-	NSMutableArray *tabBarViewControllers = [NSMutableArray arrayWithArray:[self.tabBarController viewControllers]];
+	/*NSMutableArray *tabBarViewControllers = [NSMutableArray arrayWithArray:[self.tabBarController viewControllers]];
 	[tabBarViewControllers removeLastObject];
 	UplinkDataViewController *uplinkDataViewController = [[UplinkDataViewController alloc] initInManagedObjectContext:self.managedObjectContext];
 	[tabBarViewControllers addObject:uplinkDataViewController];
-	[self.tabBarController setViewControllers:tabBarViewControllers];
+	[self.tabBarController setViewControllers:tabBarViewControllers];*/
+
 	
 	
+	
+	self.dskyUIIPhoneViewController = [[DSKYUIIphoneViewController alloc] initWithNibName:@"DSKYUIIphoneView" bundle:[NSBundle mainBundle]];
+	self.dskyUIIPhoneViewController.managedObjectContext = self.managedObjectContext;
 	// Setting default data uplink entries
-	
 	[DSKYUplinkData createDSKYUplinkDataWithTitle:@"Monitor mission time" withData:@"V16N36E" inManagedObjectContext:self.managedObjectContext];
-	
-	
+	[DSKYUplinkData createDSKYUplinkDataWithTitle:@"Set mission time" withData:@"V25N26E" inManagedObjectContext:self.managedObjectContext];
+	NSError *error = [[NSError alloc] init];
+	[self.managedObjectContext save:&error];
 	// Launching simulator
 	
 	NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
@@ -58,17 +63,17 @@
 	}
 	
 	
-	dskyUIIPhoneViewController.dskySimulationClient = self.dskyClient;
+	self.dskyUIIPhoneViewController.dskySimulationClient = self.dskyClient;
 	
     // Override point for customization after application launch.
-	[window addSubview:tabBarController.view];
-    [window makeKeyAndVisible];
 	
+	
+	[window addSubview:self.dskyUIIPhoneViewController.view];
+    [window makeKeyAndVisible];
 	return YES;
 }
 
-- (void)dealloc {    
-	[tabBarController release];
+- (void)dealloc {  
 	[dskyUIIPhoneViewController release];
 	[simulator release];
 	[dskyClient release];

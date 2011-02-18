@@ -14,8 +14,9 @@
 
 @interface DSKYUIIphoneViewController : UIViewController <UpdateDSKYUserInterfaceDelegate,UIScrollViewDelegate>{
 	UIView *alertView;
-	UIView *uplinkView;
+	UIViewController *uplinkView;
 	UILabel *alertMessageLabel;
+	NSManagedObjectContext *managedObjectContext;
 	DSKYSimulationClient *dskySimulationClient;
 @private	
 	NSMutableDictionary *segments;
@@ -79,9 +80,10 @@
 
 @property (nonatomic,retain) NSMutableDictionary *segments;
 @property (nonatomic,retain) DSKYSimulationClient *dskySimulationClient;
+@property (nonatomic,retain) NSManagedObjectContext *managedObjectContext;
 
 @property (nonatomic,retain) IBOutlet UIView *alertView;
-@property (nonatomic,retain) IBOutlet UIView *uplinkView;
+@property (nonatomic,retain) IBOutlet UIViewController *uplinkView;
 @property (nonatomic,retain) IBOutlet UILabel *alertMessageLabel;
 
 

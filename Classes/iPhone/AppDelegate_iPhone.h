@@ -14,16 +14,13 @@
 #import "AppDelegate_Shared.h"
 
 @interface AppDelegate_iPhone : AppDelegate_Shared {
-	UITabBarController *tabBarController;
 	DSKYUIIphoneViewController *dskyUIIPhoneViewController;
-
 @private
 	AGCSimulator *simulator;
 @private
 	DSKYSimulationClient *dskyClient;
 }
 
-@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 @property (nonatomic, retain) IBOutlet DSKYUIIphoneViewController *dskyUIIPhoneViewController;
 @property (nonatomic, retain) AGCSimulator *simulator;
 @property (nonatomic, retain) DSKYSimulationClient *dskyClient;
