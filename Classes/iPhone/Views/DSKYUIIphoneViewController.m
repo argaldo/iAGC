@@ -68,6 +68,12 @@
 	[segments setObject:self.keyRelease forKey:@"keyRel"];
 	[segments setObject:self.uplinkActivity forKey:@"uplinkActivity"];
 	[segments setObject:self.temp forKey:@"tempCaution"];
+	[segments setObject:self.vel forKey:@"VelInd"];
+	[segments setObject:self.noAttitude forKey:@"NoAttInd"];
+	[segments setObject:self.alt forKey:@"AltInd"];
+	[segments setObject:self.gimbalLock forKey:@"GimbalLockInd"];
+	[segments setObject:self.tracker forKey:@"TrackerInd"];
+	[segments setObject:self.prog forKey:@"ProgInd"];
 }
 
 

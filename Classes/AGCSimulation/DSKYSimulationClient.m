@@ -48,7 +48,7 @@ Queue *dataUplinkQueue;
 	return self;
 }
 
-- (int) parseIOPacket:(unsigned char *) packet withChannel:(int *)channel withValue:(int *)value withUBit:(int *)uBit withLeftSegmentKey:(NSString **) leftSegmentKey withRightSegmentKey:(NSString **) rightSegmentKey withSignComponent:(NSString **) sign  withSignValue:(int *) signValue {
+- (int) parseIOPacket:(unsigned char *) packet withChannel:(int *)channel withValue:(int *)value withIndicatorBits:(int *)indicatorBits withUBit:(int *)uBit withLeftSegmentKey:(NSString **) leftSegmentKey withRightSegmentKey:(NSString **) rightSegmentKey withSignComponent:(NSString **) sign  withSignValue:(int *) signValue {
 	// Pick the channel number and value from the packet.
 	if (0x00 != (0xc0 & packet[0]))
 		return (1);
@@ -66,8 +66,7 @@ Queue *dataUplinkQueue;
 	switch (*value & 0x7800){
 		// 7-segment display control
 		case 0x6000:
-			NSLog(@"indicatorooororororororororororororororrororororoor");
-			return 1;
+			*indicatorBits = *value;break;
 		case 0x5800:    // AAAA=11
 			//NSLog(@"M1,M2");
 			*leftSegmentKey = @"M1";*rightSegmentKey = @"M2";break;
@@ -169,22 +168,52 @@ Queue *dataUplinkQueue;
 	}
 	
 	int channel, value, uBit, signValue = 0;
+	int indicatorBits = -1;
 	NSString *leftSegmentKey, *rightSegmentKey, *sign = NULL;
 	
-	if ([self parseIOPacket:packet withChannel:&channel withValue:&value withUBit:&uBit withLeftSegmentKey:&leftSegmentKey withRightSegmentKey:&rightSegmentKey withSignComponent:&sign withSignValue:&signValue]){
+	if ([self parseIOPacket:packet withChannel:&channel withValue:&value withIndicatorBits:&indicatorBits withUBit:&uBit withLeftSegmentKey:&leftSegmentKey withRightSegmentKey:&rightSegmentKey withSignComponent:&sign withSignValue:&signValue]){
 		// discard packet
 		return;
 	}
 	
 	// channel = 010 ( octal ) segment value changes
 	if ( channel == 8 ) {
-		// calling delegate with an interpretation of the received packet as a sign or segment value change
-		if ( sign != NULL )
-			[self.delegate updateUserInterface:&sign withValue:signValue withComponentType:SIGN];
-		if ( leftSegmentKey != NULL )
-			[self.delegate updateUserInterface:&leftSegmentKey withValue:[self getLeftSegmentValue:&value] withComponentType:SEGMENT];
-		if ( rightSegmentKey != NULL )
-			[self.delegate updateUserInterface:&rightSegmentKey withValue:[self getRightSegmentValue:&value] withComponentType:SEGMENT];
+		// calling delegate with an interpretation of the received packet as a sign, segment or indicator value change
+		if ( indicatorBits != -1) {
+			
+			if (indicatorBits & (1<<2)){
+				NSString *imagen = @"VelInd";
+				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:5];
+			}
+			if (indicatorBits & (1<<3)){
+				NSString *imagen = @"NoAttInd";
+				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:6];
+			}
+			if (indicatorBits & (1<<4)){
+				NSString *imagen = @"AltInd";
+				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:7];
+			}
+			if (indicatorBits & (1<<5)){
+				NSString *imagen = @"GimbalLockInd";
+				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:8];
+			}
+			if (indicatorBits & (1<<7)){
+				NSString *imagen = @"TrackerInd";
+				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:9];
+			}
+			if (indicatorBits & (1<<8)){
+				NSString *imagen = @"ProgInd";
+				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:10];
+			}
+			
+		} else {
+			if ( sign != NULL )
+				[self.delegate updateUserInterface:&sign withValue:signValue withComponentType:SIGN];
+			if ( leftSegmentKey != NULL )
+				[self.delegate updateUserInterface:&leftSegmentKey withValue:[self getLeftSegmentValue:&value] withComponentType:SEGMENT];
+			if ( rightSegmentKey != NULL )
+				[self.delegate updateUserInterface:&rightSegmentKey withValue:[self getRightSegmentValue:&value] withComponentType:SEGMENT];
+		}
 	}
 	
 	// channel = 011 ( octal ) indicator value changes

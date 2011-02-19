@@ -91,7 +91,54 @@
 				return @"TempOn.jpg";
 			}
 			break;
-			
+		// vel indicator
+		case 5:
+			if ((indicatorValue & (1<<2)) == 0){
+				return @"VelOff.jpg";
+			} else {
+				return @"VelOn.jpg";
+			}
+			break;
+		// no att indicator
+		case 6:
+			if ((indicatorValue & (1<<3)) == 0){
+				return @"NoAttOff.jpg";
+			} else {
+				return @"NoAttOn.jpg";
+			}
+			break;
+		// alt indicator
+		case 7:
+			if ((indicatorValue & (1<<4)) == 0){
+				return @"AltOff.jpg";
+			} else {
+				return @"AltOn.jpg";
+			}
+			break;
+			// gimbal lock indicator
+		case 8:
+			if ((indicatorValue & (1<<5)) == 0){
+				return @"GimbalLockOff.jpg";
+			} else {
+				return @"GimbalLockOn.jpg";
+			}
+			break;
+			// tracker indicator
+		case 9:
+			if ((indicatorValue & (1<<7)) == 0){
+				return @"TrackerOff.jpg";
+			} else {
+				return @"TrackerOn.jpg";
+			}
+			break;
+			// prog indicator
+		case 10:
+			if ((indicatorValue & (1<<8)) == 0){
+				return @"ProgOff.jpg";
+			} else {
+				return @"ProgOn.jpg";
+			}
+			break;
 		default:
 			break;
 	}
