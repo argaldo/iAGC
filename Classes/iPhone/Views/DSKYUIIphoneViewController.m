@@ -101,7 +101,6 @@
 }
 
 - (void) changeValue: (NSMutableArray *) args {
-	NSLog(@"intentando actualizar la interfaz");
 	NSString *component = [args objectAtIndex:0];
 	NSString *imageName = (NSString *)[args objectAtIndex:1];
 	if ([imageName compare:@""] != NSOrderedSame)
@@ -113,7 +112,6 @@
 }
 
 - (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType withComponentSubtype:(int) componentSubtype{
-	NSLog(@"Recibido update!");
 	switch (componentType){
 		case SEGMENT:
 			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSegmentValue:value],nil] waitUntilDone:YES];

@@ -28,6 +28,7 @@ int R2Sign = 0;
 int R3Sign = 0;
 
 static int lastValue = 0;
+static int indicatorLastValue = 0;
 static int verbNounFlashing = 0;
 
 NSString *agcSimulatorHost = @"localhost";
@@ -181,30 +182,31 @@ Queue *dataUplinkQueue;
 		// calling delegate with an interpretation of the received packet as a sign, segment or indicator value change
 		if ( indicatorBits != -1) {
 			
-			if (indicatorBits & (1<<2)){
+			if ((indicatorBits & (1<<2)) != (indicatorLastValue & (1<<2))){
 				NSString *imagen = @"VelInd";
 				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:5];
 			}
-			if (indicatorBits & (1<<3)){
+			if ((indicatorBits & (1<<3)) != (indicatorLastValue & (1<<3))){
 				NSString *imagen = @"NoAttInd";
 				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:6];
 			}
-			if (indicatorBits & (1<<4)){
+			if ((indicatorBits & (1<<4)) != (indicatorLastValue & (1<<4))){
 				NSString *imagen = @"AltInd";
 				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:7];
 			}
-			if (indicatorBits & (1<<5)){
+			if ((indicatorBits & (1<<5)) != (indicatorLastValue & (1<<5))){
 				NSString *imagen = @"GimbalLockInd";
 				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:8];
 			}
-			if (indicatorBits & (1<<7)){
+			if ((indicatorBits & (1<<7)) != (indicatorLastValue & (1<<7))){
 				NSString *imagen = @"TrackerInd";
 				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:9];
 			}
-			if (indicatorBits & (1<<8)){
+			if ((indicatorBits & (1<<8)) != (indicatorLastValue & (1<<8))){
 				NSString *imagen = @"ProgInd";
 				[self.delegate updateUserInterface:&imagen withValue:indicatorBits withComponentType:INDICATOR withComponentSubtype:10];
 			}
+			indicatorLastValue = indicatorBits;
 			
 		} else {
 			if ( sign != NULL )
