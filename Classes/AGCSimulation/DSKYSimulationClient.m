@@ -121,7 +121,7 @@ Queue *dataUplinkQueue;
 			*leftSegmentKey = @"23"; *rightSegmentKey = @"24";
 			break;
 		case 0x1800:	// AAAA=3
-			NSLog(@"25,31");
+			//NSLog(@"25,31");
 			*leftSegmentKey = @"25"; *rightSegmentKey = @"31";break;
 		case 0x1000:	// AAAA=2	
 			//NSLog(@"32,33");
