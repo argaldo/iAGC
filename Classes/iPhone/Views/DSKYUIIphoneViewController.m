@@ -103,7 +103,7 @@ static BOOL verbNounVisible = YES;
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void) changeValue: (NSMutableArray *) args {
+- (void) changeSegmentValue: (NSMutableArray *) args {
 	NSString *component = [args objectAtIndex:0];
 	NSString *imageName = (NSString *)[args objectAtIndex:1];
 	if ([imageName compare:@""] != NSOrderedSame) {
@@ -118,6 +118,36 @@ static BOOL verbNounVisible = YES;
 	}
 }
 
+- (void) changeSignValue: (NSMutableArray *) args {
+	NSString *component = [args objectAtIndex:0];
+	NSString *imageName = (NSString *)[args objectAtIndex:1];
+	if ([imageName compare:@""] != NSOrderedSame) {
+		UIImageView *segmentImage = [segments objectForKey:component];
+		[segmentImage setImage:[UIImage imageNamed:imageName]];
+	}
+}
+
+- (void) changeIndicatorValue: (NSMutableArray *) args {
+	NSString *component = [args objectAtIndex:0];
+	NSString *imageName = (NSString *)[args objectAtIndex:1];
+	int indicator = [(NSNumber *)[args objectAtIndex:2] intValue];
+	if ([imageName compare:@""] != NSOrderedSame) {
+		UIImageView *segmentImage = [segments objectForKey:component];
+		[segmentImage setImage:[UIImage imageNamed:imageName]];
+		if (indicator == 1){
+			// OppErr
+			segmentImage.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:imageName],[UIImage imageNamed:@"OprErrOff.jpg"],nil];
+			segmentImage.animationDuration = 0.666;
+			[segmentImage startAnimating];
+		} else if( indicator == 2) {
+			// Key rel
+			segmentImage.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:imageName],[UIImage imageNamed:@"KeyRelOff.jpg"],nil];
+			segmentImage.animationDuration = 0.666;
+			[segmentImage startAnimating];
+		}
+	}
+}
+
 - (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType {
 	[self updateUserInterface:component withValue:value withComponentType:componentType withComponentSubtype:0];
 }
@@ -125,13 +155,13 @@ static BOOL verbNounVisible = YES;
 - (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType withComponentSubtype:(int) componentSubtype{
 	switch (componentType){
 		case SEGMENT:
-			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSegmentValue:value],nil] waitUntilDone:YES];
+			[self performSelectorOnMainThread:@selector(changeSegmentValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSegmentValue:value],nil] waitUntilDone:YES];
 			break;
 		case SIGN:
-			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSignValue:value],nil] waitUntilDone:YES];
+			[self performSelectorOnMainThread:@selector(changeSignValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSignValue:value],nil] waitUntilDone:YES];
 			break;
 		case INDICATOR:
-			[self performSelectorOnMainThread:@selector(changeValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForIndicatorType:componentSubtype withValue:value],nil] waitUntilDone:YES];
+			[self performSelectorOnMainThread:@selector(changeIndicatorValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForIndicatorType:componentSubtype withValue:value],[NSNumber numberWithInt:componentSubtype], nil] waitUntilDone:YES];
 			break;
 		default:
 			break;
@@ -413,9 +443,6 @@ static BOOL verbNounVisible = YES;
     self.alertView.alpha = 1.0;
 }
 
-- (void) verbNounFlash {
-	
-}
 
 - (void) toggleVerbNounFlashStatus:(BOOL)flash {
 	if (flash){
