@@ -250,11 +250,16 @@ Queue *dataUplinkQueue;
 			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:4];
 		}
 		
-		int flashStatus = (0 != (value & 32));
-		if (verbNounFlashing && flashStatus){
-			
+		if ((value & (1<<5)) != (lastValue & (1<<5))){
+			if ( value & (1<<5)){
+				[self.delegate toggleVerbNounFlashStatus:YES];
+			} else {
+				[self.delegate toggleVerbNounFlashStatus:NO];
+			}
 		}
-		verbNounFlashing = flashStatus;
+		
+		
+		//verbNounFlashing = flashStatus;
 		lastValue = value;
 		
 	}

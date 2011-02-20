@@ -19,9 +19,12 @@
 @synthesize uplinkDataText;
 @synthesize dskyHelpImageScrollView,dskyHelpImageView;
 @synthesize managedObjectContext;
+@synthesize flashingSegments;
 
 
 @synthesize M1Outlet,M2Outlet,V1Outlet,V2Outlet,N1Outlet,N2Outlet,CompActIndOutlet,uplinkActivity,noAttitude,standBy,keyRelease,operationError,priorityDisplay,noDAP,temp,gimbalLock,prog,restart,tracker,alt,vel,_r1plusminus,_11Outlet,	_12Outlet,_13Outlet,_14Outlet,_15Outlet,_r2plusminus,_21Outlet,_22Outlet,_23Outlet,_24Outlet,_25Outlet,_r3plusminus,_31Outlet,_32Outlet,_33Outlet,_34Outlet,_35Outlet;
+
+static BOOL verbNounVisible = YES;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -103,8 +106,16 @@
 - (void) changeValue: (NSMutableArray *) args {
 	NSString *component = [args objectAtIndex:0];
 	NSString *imageName = (NSString *)[args objectAtIndex:1];
-	if ([imageName compare:@""] != NSOrderedSame)
-		[[segments objectForKey:component] setImage:[UIImage imageNamed:imageName]];
+	if ([imageName compare:@""] != NSOrderedSame) {
+		UIImageView *segmentImage = [segments objectForKey:component];
+		BOOL wasAnimating = [segmentImage isAnimating];
+		[segmentImage setImage:[UIImage imageNamed:imageName]];
+		segmentImage.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:imageName],[UIImage imageNamed:@"digit-off.jpg"],nil];
+		segmentImage.animationDuration = 1.5;
+		if (wasAnimating){
+			[segmentImage startAnimating];
+		}
+	}
 }
 
 - (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType {
@@ -401,6 +412,25 @@
     [self.alertView removeFromSuperview];
     self.alertView.alpha = 1.0;
 }
+
+- (void) verbNounFlash {
+	
+}
+
+- (void) toggleVerbNounFlashStatus:(BOOL)flash {
+	if (flash){
+		[self.V1Outlet startAnimating];
+		[self.V2Outlet startAnimating];
+		[self.N1Outlet startAnimating];
+		[self.N2Outlet startAnimating];
+	} else {
+		[self.V1Outlet stopAnimating];
+		[self.V2Outlet stopAnimating];
+		[self.N1Outlet stopAnimating];
+		[self.N2Outlet stopAnimating];
+	}
+}
+
 
 
 @end

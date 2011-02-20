@@ -20,6 +20,7 @@
 	DSKYSimulationClient *dskySimulationClient;
 @private	
 	NSMutableDictionary *segments;
+	NSArray *flashingSegments;
 	
 	// segment display outlets
 	
@@ -79,6 +80,7 @@
 }
 
 @property (nonatomic,retain) NSMutableDictionary *segments;
+@property (nonatomic,retain) NSArray *flashingSegments;
 @property (nonatomic,retain) DSKYSimulationClient *dskySimulationClient;
 @property (nonatomic,retain) NSManagedObjectContext *managedObjectContext;
 

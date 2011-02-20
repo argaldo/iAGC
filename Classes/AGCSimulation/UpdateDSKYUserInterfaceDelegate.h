@@ -8,5 +8,6 @@
 
 - (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType;
 - (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType withComponentSubtype:(int) componentSubtype;
+- (void) toggleVerbNounFlashStatus:(BOOL)flash;
 
 @end
