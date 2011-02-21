@@ -52,17 +52,6 @@ BOOL verbNounVisible = YES;
     // Release any cached data, images, etc. that aren't in use.
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-
-- (void)dealloc {
-    [super dealloc];
-}
-
 
 - (void) initSegmentDictionary {	
 	//TODO change this to use a NSDictionary ... 
@@ -167,6 +156,14 @@ BOOL verbNounVisible = YES;
 }
 - (IBAction) pressedPlus: (id) sender{
 	[self sendDSKYCode:26];
+}
+
+- (IBAction) pressedReset: (id) sender {
+	[self sendDSKYCode:18];
+}
+
+- (IBAction) pressedMinus: (id) sender {
+	[self sendDSKYCode:27];
 }
 
 - (void) changeSegmentValue: (NSMutableArray *) args {
@@ -307,5 +304,14 @@ BOOL verbNounVisible = YES;
 	self._35Outlet = nil;
 }
 
+- (void)viewDidUnload {
+    [super viewDidUnload];
+	[self releaseOutlets];
+}
+
+- (void)dealloc {
+    [super dealloc];
+	[self releaseOutlets];
+}
 
 @end
