@@ -16,6 +16,7 @@
 @synthesize dskySimulationClient;
 @synthesize M1Outlet,M2Outlet,V1Outlet,V2Outlet,N1Outlet,N2Outlet,CompActIndOutlet,uplinkActivity,noAttitude,standBy,keyRelease,operationError,priorityDisplay,noDAP,temp,gimbalLock,prog,restart,tracker,alt,vel,_r1plusminus,_11Outlet,	_12Outlet,_13Outlet,_14Outlet,_15Outlet,_r2plusminus,_21Outlet,_22Outlet,_23Outlet,_24Outlet,_25Outlet,_r3plusminus,_31Outlet,_32Outlet,_33Outlet,_34Outlet,_35Outlet;
 
+BOOL verbNounVisible = YES;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -179,27 +180,75 @@
 	}
 }
 
+- (void) changeSignValue: (NSMutableArray *) args {
+	NSString *component = [args objectAtIndex:0];
+	NSString *imageName = (NSString *)[args objectAtIndex:1];
+	if ([imageName compare:@""] != NSOrderedSame) {
+		UIImageView *segmentImage = [segments objectForKey:component];
+		[segmentImage setImage:[UIImage imageNamed:imageName]];
+	}
+}
+
+- (void) changeIndicatorValue: (NSMutableArray *) args {
+	NSString *component = [args objectAtIndex:0];
+	NSString *imageName = (NSString *)[args objectAtIndex:1];
+	int indicator = [(NSNumber *)[args objectAtIndex:2] intValue];
+	if ([imageName compare:@""] != NSOrderedSame) {
+		UIImageView *segmentImage = [segments objectForKey:component];
+		[segmentImage setImage:[UIImage imageNamed:imageName]];
+		if (indicator == 1){
+			// OppErr
+			segmentImage.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:imageName],[UIImage imageNamed:@"OprErrOff.jpg"],nil];
+			segmentImage.animationDuration = 0.666;
+			[segmentImage startAnimating];
+		} else if( indicator == 2) {
+			// Key rel
+			segmentImage.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:imageName],[UIImage imageNamed:@"KeyRelOff.jpg"],nil];
+			segmentImage.animationDuration = 0.666;
+			[segmentImage startAnimating];
+		}
+	}
+}
+
 - (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType {
 	[self updateUserInterface:component withValue:value withComponentType:componentType withComponentSubtype:0];
 }
+
 - (void) updateUserInterface:(NSString **)component withValue:(int) value withComponentType:(int) componentType withComponentSubtype:(int) componentSubtype {
 	switch (componentType){
 		case SEGMENT:
 			[self performSelectorOnMainThread:@selector(changeSegmentValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSegmentValue:value],nil] waitUntilDone:YES];
 			break;
-		/*case SIGN:
+		case SIGN:
 			[self performSelectorOnMainThread:@selector(changeSignValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSignValue:value],nil] waitUntilDone:YES];
 			break;
 		case INDICATOR:
 			 [self performSelectorOnMainThread:@selector(changeIndicatorValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForIndicatorType:componentSubtype withValue:value],[NSNumber numberWithInt:componentSubtype], nil] waitUntilDone:YES];
-			 break;*/
+			 break;
 		default:
 			break;
 	}
 }
 
-- (void) toggleVerbNounFlashStatus:(BOOL)flash{
-	NSLog(@"toggleVerbNounFlashStatus");
+- (void) flashVerbNoun {
+	verbNounVisible = !verbNounVisible;
+	[self.V1Outlet setImage:[self.V1Outlet.animationImages objectAtIndex:verbNounVisible]];
+	[self.V2Outlet setImage:[self.V2Outlet.animationImages objectAtIndex:verbNounVisible]];
+	[self.N1Outlet setImage:[self.N1Outlet.animationImages objectAtIndex:verbNounVisible]];
+	[self.N2Outlet setImage:[self.N2Outlet.animationImages objectAtIndex:verbNounVisible]];
+}
+
+
+- (void) triggerVerbNounFlashTimer {
+	verbNounFlashTimer = [NSTimer scheduledTimerWithTimeInterval:0.666 target:self selector:@selector(flashVerbNoun) userInfo:nil repeats:YES];
+}
+
+- (void) toggleVerbNounFlashStatus:(BOOL)flash {
+	if (flash){
+		[self performSelectorOnMainThread:@selector(triggerVerbNounFlashTimer) withObject:nil waitUntilDone:NO];
+	} else {
+		[verbNounFlashTimer invalidate];
+	}
 }
 
 - (void)viewDidLoad {

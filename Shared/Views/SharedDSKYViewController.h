@@ -13,7 +13,7 @@
 
 @interface SharedDSKYViewController : UIViewController <UpdateDSKYUserInterfaceDelegate> {
 	DSKYSimulationClient *dskySimulationClient;
-@private
+
 	NSMutableDictionary *segments;
 	
 	IBOutlet UIImageView *M1Outlet;
@@ -63,6 +63,8 @@
 	IBOutlet UIImageView *_33Outlet;
 	IBOutlet UIImageView *_34Outlet;
 	IBOutlet UIImageView *_35Outlet;
+	
+	NSTimer *verbNounFlashTimer;
 }
 
 @property (nonatomic,retain) DSKYSimulationClient *dskySimulationClient;
@@ -116,5 +118,6 @@
 @property (nonatomic,retain) IBOutlet UIImageView *_35Outlet;
 
 @property (nonatomic,retain) NSMutableDictionary *segments;
+@property (nonatomic,retain) NSTimer *verbNounFlashTimer;
 
 @end

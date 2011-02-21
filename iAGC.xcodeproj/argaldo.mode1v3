@@ -284,7 +284,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 434}, {295, 612}}</string>
+							<string>{{0, 453}, {295, 612}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -333,7 +333,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0F60E7FD1312C68200EBCBF9</string>
+										<string>0F60E82D1312CCA400EBCBF9</string>
 										<key>history</key>
 										<array>
 											<string>0F3768C012C32BD80029C25E</string>
@@ -449,19 +449,20 @@
 											<string>0F60E73913128C6F00EBCBF9</string>
 											<string>0F60E73A13128C6F00EBCBF9</string>
 											<string>0F60E73B13128C6F00EBCBF9</string>
-											<string>0F60E75413128D3500EBCBF9</string>
 											<string>0F60E76B13128E0400EBCBF9</string>
 											<string>0F60E77113128E2B00EBCBF9</string>
 											<string>0F60E77213128E2B00EBCBF9</string>
-											<string>0F60E7AC1312AF3D00EBCBF9</string>
 											<string>0F60E7E41312C5A200EBCBF9</string>
 											<string>0F60E7E51312C5A200EBCBF9</string>
-											<string>0F60E7E61312C5A200EBCBF9</string>
 											<string>0F60E7E71312C5A200EBCBF9</string>
-											<string>0F60E7EA1312C5A200EBCBF9</string>
-											<string>0F60E7F11312C5D600EBCBF9</string>
-											<string>0F60E7F21312C5D600EBCBF9</string>
-											<string>0F60E7E91312C5A200EBCBF9</string>
+											<string>0F60E81E1312CB6200EBCBF9</string>
+											<string>0F60E8261312CCA400EBCBF9</string>
+											<string>0F60E8271312CCA400EBCBF9</string>
+											<string>0F60E8281312CCA400EBCBF9</string>
+											<string>0F60E8291312CCA400EBCBF9</string>
+											<string>0F60E82A1312CCA400EBCBF9</string>
+											<string>0F60E82B1312CCA400EBCBF9</string>
+											<string>0F60E82C1312CCA400EBCBF9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -663,9 +664,9 @@
 		<string>0F60E62F13103DE600EBCBF9</string>
 		<string>0F60E62C13103DDF00EBCBF9</string>
 		<string>0F005CDC123751FB0037035B</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/argaldo/git/iAGC/iAGC.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 	</array>
 	<key>WindowString</key>
 	<string>-1 103 1280 671 0 0 1280 778 </string>
@@ -689,7 +690,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DSKYUIIPadViewController.m</string>
+								<string>DSKYUIIphoneViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
