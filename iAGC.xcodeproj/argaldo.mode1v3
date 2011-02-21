@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,14 +279,15 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>44</integer>
-									<integer>43</integer>
-									<integer>42</integer>
+									<integer>8</integer>
+									<integer>6</integer>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 453}, {295, 612}}</string>
+							<string>{{0, 0}, {295, 612}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -314,14 +317,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SharedDSKYViewController.m</string>
+								<string>DSKYUIIPadViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SharedDSKYViewController.m</string>
+										<string>DSKYUIIPadViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0F60E82D1312CCA400EBCBF9</string>
+										<string>0F60E83B1312D5E800EBCBF9</string>
 										<key>history</key>
 										<array>
 											<string>0F3768C012C32BD80029C25E</string>
@@ -457,12 +458,12 @@
 											<string>0F60E7E71312C5A200EBCBF9</string>
 											<string>0F60E81E1312CB6200EBCBF9</string>
 											<string>0F60E8261312CCA400EBCBF9</string>
-											<string>0F60E8271312CCA400EBCBF9</string>
-											<string>0F60E8281312CCA400EBCBF9</string>
-											<string>0F60E8291312CCA400EBCBF9</string>
 											<string>0F60E82A1312CCA400EBCBF9</string>
-											<string>0F60E82B1312CCA400EBCBF9</string>
-											<string>0F60E82C1312CCA400EBCBF9</string>
+											<string>0F60E8361312D5E800EBCBF9</string>
+											<string>0F60E8371312D5E800EBCBF9</string>
+											<string>0F60E8381312D5E800EBCBF9</string>
+											<string>0F60E8391312D5E800EBCBF9</string>
+											<string>0F60E83A1312D5E800EBCBF9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
