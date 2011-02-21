@@ -40,13 +40,7 @@
 		[simulator launchSimulatorThread];
 	}
 	
-	
-	/*if ( [preferences boolForKey:@"autoconnect_preference"] ) {
-		NSLog(@"Lanzando DSKY thread");
-		//DSKYSimulationClient *dskyClient = [[DSKYSimulationClient alloc] initWithHost:@"localhost" withPort:19700];
-		DSKYSimulationClient *dskyClient = [[DSKYSimulationClient alloc] initWithDelegate:self];
-		[dskyClient launchDSKYIOListeningThread];
-	}*/
+
 	UINavigationController *navcon = [[UINavigationController alloc] init];
 	DSKYUIIPadViewController *dskyViewController = [[DSKYUIIPadViewController alloc] init];
 	IPadSimulationMenuController *iPadSimulationMenuController = [[IPadSimulationMenuController alloc] init];
@@ -58,6 +52,14 @@
 	svc.viewControllers = [NSArray arrayWithObjects:navcon,rightNav,nil];
 	[window addSubview:svc.view];
     [window makeKeyAndVisible];
+	
+	if ( [preferences boolForKey:@"autoconnect_preference"] ) {
+		NSLog(@"Lanzando DSKY thread");
+		DSKYSimulationClient *dskyClient = [[DSKYSimulationClient alloc] initWithDelegate:dskyViewController];
+		[dskyClient launchDSKYIOListeningThread];
+		dskyViewController.dskySimulationClient = dskyClient;
+	}
+	
 	
 	[dskyViewController release];
 	[iPadSimulationMenuController release];
