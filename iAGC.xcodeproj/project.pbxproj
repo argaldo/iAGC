@@ -86,6 +86,7 @@
 		0F6060FF12F9D55C00725DAD /* Artemis072.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F6060FC12F9D55C00725DAD /* Artemis072.bin */; };
 		0F60610012F9D55C00725DAD /* Colossus249.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F6060FD12F9D55C00725DAD /* Colossus249.bin */; };
 		0F60610112F9D55C00725DAD /* Comanche055.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F6060FE12F9D55C00725DAD /* Comanche055.bin */; };
+		0F60E7C51312C30C00EBCBF9 /* SharedDSKYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F60E7C31312C30C00EBCBF9 /* SharedDSKYViewController.m */; };
 		0FA82C9712FEA1C100B08B34 /* GimbalLockOn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82C9612FEA1C100B08B34 /* GimbalLockOn.jpg */; };
 		0FA82CBC12FEA57700B08B34 /* digit-off.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82C9D12FEA57700B08B34 /* digit-off.jpg */; };
 		0FA82CBD12FEA57700B08B34 /* digit0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA82C9E12FEA57700B08B34 /* digit0.jpg */; };
@@ -384,6 +385,8 @@
 		0F6060FC12F9D55C00725DAD /* Artemis072.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = Artemis072.bin; sourceTree = "<group>"; };
 		0F6060FD12F9D55C00725DAD /* Colossus249.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = Colossus249.bin; sourceTree = "<group>"; };
 		0F6060FE12F9D55C00725DAD /* Comanche055.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = Comanche055.bin; sourceTree = "<group>"; };
+		0F60E7C31312C30C00EBCBF9 /* SharedDSKYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SharedDSKYViewController.m; path = Shared/Views/SharedDSKYViewController.m; sourceTree = "<group>"; };
+		0F60E7C41312C30C00EBCBF9 /* SharedDSKYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharedDSKYViewController.h; path = Shared/Views/SharedDSKYViewController.h; sourceTree = "<group>"; };
 		0FA82C9612FEA1C100B08B34 /* GimbalLockOn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GimbalLockOn.jpg; sourceTree = "<group>"; };
 		0FA82C9D12FEA57700B08B34 /* digit-off.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "digit-off.jpg"; sourceTree = "<group>"; };
 		0FA82C9E12FEA57700B08B34 /* digit0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = digit0.jpg; sourceTree = "<group>"; };
@@ -964,6 +967,15 @@
 			path = yaAGC;
 			sourceTree = "<group>";
 		};
+		0F60E7C21312C2F000EBCBF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F60E7C31312C30C00EBCBF9 /* SharedDSKYViewController.m */,
+				0F60E7C41312C30C00EBCBF9 /* SharedDSKYViewController.h */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		0FD1225D1301B38A005941E1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1048,6 +1060,7 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0F60E7C21312C2F000EBCBF9 /* Views */,
 				0F4310571302AD5300B5002E /* AppDelegate_Shared.m */,
 				0F4310581302AD5300B5002E /* AppDelegate_Shared.h */,
 				0FD124801302A353005941E1 /* iAGC.xcdatamodeld */,
@@ -1429,6 +1442,7 @@
 				0FD124811302A353005941E1 /* iAGC.xcdatamodeld in Sources */,
 				0FD124871302A434005941E1 /* UplinkDataViewController.m in Sources */,
 				0F4310591302AD5300B5002E /* AppDelegate_Shared.m in Sources */,
+				0F60E7C51312C30C00EBCBF9 /* SharedDSKYViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

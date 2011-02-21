@@ -428,7 +428,7 @@
 		ignoreCount = 0;
 		lineNumber = 70;
 		location = iAGC;
-		modificationTime = 319991614.21505;
+		modificationTime = 319997349.169458;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -506,7 +506,7 @@
 		ignoreCount = 0;
 		lineNumber = 186;
 		location = iAGC;
-		modificationTime = 319991614.216125;
+		modificationTime = 319997349.170229;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -817,6 +817,20 @@
 		path = "/Users/argaldo/virtualagc/svn/virtualagc-read-only/yaAGC/DecodeDigitalDownlink.c";
 		sourceTree = "<absolute>";
 	};
+	0F4310571302AD5300B5002E /* AppDelegate_Shared.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2371, 2314}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 824}";
+		};
+	};
+	0F4310581302AD5300B5002E /* AppDelegate_Shared.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {902, 493}}";
+			sepNavSelRange = "{234, 21}";
+			sepNavVisRange = "{0, 859}";
+		};
+	};
 	0F4310941303F47D00B5002E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0FD122711301B5DC005941E1 /* DSKYSimulationClient.m */;
@@ -1071,7 +1085,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 301;
-		modificationTime = 319991614.206342;
+		modificationTime = 319997349.166682;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -1088,7 +1102,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 300;
-		modificationTime = 319991614.208235;
+		modificationTime = 319997349.168487;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -1893,8 +1907,8 @@
 		comments = "Cannot find protocol declaration for 'UpdateDSKYUserInterfaceDelegate'";
 		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 17;
+		rLen = 0;
+		rLoc = 13;
 		rType = 1;
 	};
 	0F60E71A13127C6500EBCBF9 /* PBXTextBookmark */ = {
@@ -1902,7 +1916,7 @@
 		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
 		name = "DSKYUIIPadViewController.h: 12";
 		rLen = 0;
-		rLoc = 246;
+		rLoc = 207;
 		rType = 0;
 		vrLen = 260;
 		vrLoc = 0;
@@ -1912,7 +1926,7 @@
 		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
 		name = "DSKYUIIPadViewController.h: 13";
 		rLen = 0;
-		rLoc = 246;
+		rLoc = 207;
 		rType = 0;
 		vrLen = 304;
 		vrLoc = 0;
@@ -1922,8 +1936,8 @@
 		comments = "'Util' undeclared (first use in this function)";
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 185;
+		rLen = 0;
+		rLoc = 56;
 		rType = 1;
 	};
 	0F60E73313128C6200EBCBF9 /* PBXTextBookmark */ = {
@@ -1931,7 +1945,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 180";
 		rLen = 0;
-		rLoc = 5985;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 5656;
@@ -2041,7 +2055,7 @@
 		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
 		name = "DSKYUIIPadViewController.h: 116";
 		rLen = 0;
-		rLoc = 4333;
+		rLoc = 275;
 		rType = 0;
 		vrLen = 1982;
 		vrLoc = 2201;
@@ -2051,8 +2065,8 @@
 		comments = "'Util' undeclared (first use in this function)";
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 185;
+		rLen = 0;
+		rLoc = 56;
 		rType = 1;
 	};
 	0F60E74413128C6F00EBCBF9 /* PBXTextBookmark */ = {
@@ -2060,7 +2074,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 10";
 		rLen = 0;
-		rLoc = 200;
+		rLoc = 145;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 0;
@@ -2099,8 +2113,8 @@
 		isa = PBXTextBookmark;
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 16";
-		rLen = 20;
-		rLoc = 279;
+		rLen = 0;
+		rLoc = 227;
 		rType = 0;
 		vrLen = 1678;
 		vrLoc = 0;
@@ -2109,8 +2123,8 @@
 		isa = PBXTextBookmark;
 		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
 		name = "DSKYUIIPadViewController.h: 69";
-		rLen = 20;
-		rLoc = 1824;
+		rLen = 0;
+		rLoc = 275;
 		rType = 0;
 		vrLen = 1573;
 		vrLoc = 1423;
@@ -2120,7 +2134,7 @@
 		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
 		name = "DSKYUIIPadViewController.h: 11";
 		rLen = 0;
-		rLoc = 243;
+		rLoc = 204;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 143;
@@ -2130,7 +2144,7 @@
 		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
 		name = "DSKYUIIPadViewController.h: 11";
 		rLen = 0;
-		rLoc = 243;
+		rLoc = 204;
 		rType = 0;
 		vrLen = 1034;
 		vrLoc = 143;
@@ -2169,8 +2183,8 @@
 		isa = PBXTextBookmark;
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 16";
-		rLen = 20;
-		rLoc = 279;
+		rLen = 0;
+		rLoc = 227;
 		rType = 0;
 		vrLen = 1678;
 		vrLoc = 0;
@@ -2180,7 +2194,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 62";
 		rLen = 0;
-		rLoc = 2850;
+		rLoc = 227;
 		rType = 0;
 		vrLen = 1319;
 		vrLoc = 2222;
@@ -2190,7 +2204,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 62";
 		rLen = 0;
-		rLoc = 2850;
+		rLoc = 227;
 		rType = 0;
 		vrLen = 1378;
 		vrLoc = 2222;
@@ -2200,7 +2214,7 @@
 		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
 		name = "DSKYUIIPadViewController.h: 11";
 		rLen = 0;
-		rLoc = 243;
+		rLoc = 204;
 		rType = 0;
 		vrLen = 997;
 		vrLoc = 143;
@@ -2270,7 +2284,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 185";
 		rLen = 0;
-		rLoc = 6173;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1749;
 		vrLoc = 5114;
@@ -2280,7 +2294,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 169";
 		rLen = 0;
-		rLoc = 5106;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 5116;
@@ -2289,8 +2303,8 @@
 		isa = PBXTextBookmark;
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 173";
-		rLen = 39;
-		rLoc = 5322;
+		rLen = 0;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 5116;
@@ -2300,7 +2314,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5242;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1810;
 		vrLoc = 5117;
@@ -2310,7 +2324,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5242;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1783;
 		vrLoc = 5117;
@@ -2320,7 +2334,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5242;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 5117;
@@ -2330,7 +2344,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5242;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1783;
 		vrLoc = 5117;
@@ -2340,12 +2354,12 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5242;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1783;
 		vrLoc = 5117;
 	};
-	0F60E7971312ACF900EBCBF9 /* DSKYUIIPadViewController.m:173 */ = {
+	0F60E7971312ACF900EBCBF9 /* DSKYUIIPadViewController.m:57 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2357,18 +2371,18 @@
 		functionName = "-changeSegmentValue:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 173;
+		lineNumber = 57;
 		location = iAGC;
-		modificationTime = 319991614.216858;
+		modificationTime = 319997349.171089;
 		originalNumberOfMultipleMatches = 1;
-		state = 1;
+		state = 0;
 	};
 	0F60E79B1312ACFD00EBCBF9 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 177";
 		rLen = 0;
-		rLoc = 5556;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1783;
 		vrLoc = 5117;
@@ -2378,7 +2392,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 177";
 		rLen = 0;
-		rLoc = 5556;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 5117;
@@ -2388,7 +2402,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 174";
 		rLen = 0;
-		rLoc = 5328;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1450;
 		vrLoc = 4833;
@@ -2408,7 +2422,7 @@
 		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
 		name = "DSKYUIIPadViewController.h: 18";
 		rLen = 0;
-		rLoc = 423;
+		rLoc = 271;
 		rType = 0;
 		vrLen = 997;
 		vrLoc = 143;
@@ -2418,7 +2432,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 174";
 		rLen = 0;
-		rLoc = 5328;
+		rLoc = 1224;
 		rType = 0;
 		vrLen = 1465;
 		vrLoc = 4833;
@@ -2428,10 +2442,241 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 80";
 		rLen = 0;
-		rLoc = 3374;
+		rLoc = 674;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 2728;
+	};
+	0F60E7C31312C30C00EBCBF9 /* SharedDSKYViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1909, 2977}}";
+			sepNavSelRange = "{7043, 0}";
+			sepNavVisRange = "{5242, 1802}";
+		};
+	};
+	0F60E7C41312C30C00EBCBF9 /* SharedDSKYViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {902, 1755}}";
+			sepNavSelRange = "{211, 0}";
+			sepNavVisRange = "{0, 987}";
+		};
+	};
+	0F60E7CC1312C48C00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227A1301B601005941E1 /* AppDelegate_iPad.m */;
+		name = "AppDelegate_iPad.m: 60";
+		rLen = 0;
+		rLoc = 2212;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 1934;
+	};
+	0F60E7CD1312C48C00EBCBF9 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No super class declared in @interface for 'DSKYUIIPadViewController'";
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 26;
+		rType = 1;
+	};
+	0F60E7CE1312C48C00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 26";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 213;
+		vrLoc = 567;
+	};
+	0F60E7CF1312C49800EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227A1301B601005941E1 /* AppDelegate_iPad.m */;
+		name = "AppDelegate_iPad.m: 60";
+		rLen = 0;
+		rLoc = 2212;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 1934;
+	};
+	0F60E7D01312C49800EBCBF9 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No super class declared in @interface for 'DSKYUIIPadViewController'";
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 26;
+		rType = 1;
+	};
+	0F60E7D11312C49800EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 26";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 213;
+		vrLoc = 567;
+	};
+	0F60E7D41312C4CA00EBCBF9 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No super class declared in @interface for 'DSKYUIIPadViewController'";
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 26;
+		rType = 1;
+	};
+	0F60E7D51312C4CA00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 26";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 213;
+		vrLoc = 567;
+	};
+	0F60E7E41312C5A200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F4310571302AD5300B5002E /* AppDelegate_Shared.m */;
+		name = "AppDelegate_Shared.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	0F60E7E51312C5A200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F4310581302AD5300B5002E /* AppDelegate_Shared.h */;
+		name = "AppDelegate_Shared.h: 12";
+		rLen = 21;
+		rLoc = 234;
+		rType = 0;
+		vrLen = 859;
+		vrLoc = 0;
+	};
+	0F60E7E61312C5A200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD122791301B601005941E1 /* AppDelegate_iPad.h */;
+		name = "AppDelegate_iPad.h: 17";
+		rLen = 0;
+		rLoc = 320;
+		rType = 0;
+		vrLen = 328;
+		vrLoc = 0;
+	};
+	0F60E7E71312C5A200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227A1301B601005941E1 /* AppDelegate_iPad.m */;
+		name = "AppDelegate_iPad.m: 60";
+		rLen = 0;
+		rLoc = 2212;
+		rType = 0;
+		vrLen = 1211;
+		vrLoc = 1244;
+	};
+	0F60E7E81312C5A200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F60E7C41312C30C00EBCBF9 /* SharedDSKYViewController.h */;
+		name = "SharedDSKYViewController.h: 10";
+		rLen = 0;
+		rLoc = 211;
+		rType = 0;
+		vrLen = 987;
+		vrLoc = 0;
+	};
+	0F60E7E91312C5A200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F60E7C31312C30C00EBCBF9 /* SharedDSKYViewController.m */;
+		name = "SharedDSKYViewController.m: 11";
+		rLen = 0;
+		rLoc = 238;
+		rType = 0;
+		vrLen = 1302;
+		vrLoc = 0;
+	};
+	0F60E7EA1312C5A200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
+		name = "DSKYUIIPadViewController.h: 16";
+		rLen = 0;
+		rLoc = 275;
+		rType = 0;
+		vrLen = 282;
+		vrLoc = 0;
+	};
+	0F60E7EB1312C5A200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 26";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 891;
+		vrLoc = 0;
+	};
+	0F60E7EC1312C5A200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 9";
+		rLen = 0;
+		rLoc = 183;
+		rType = 0;
+		vrLen = 837;
+		vrLoc = 0;
+	};
+	0F60E7F11312C5D600EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 9";
+		rLen = 0;
+		rLoc = 183;
+		rType = 0;
+		vrLen = 871;
+		vrLoc = 0;
+	};
+	0F60E7F21312C5D600EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F60E7C41312C30C00EBCBF9 /* SharedDSKYViewController.h */;
+		name = "SharedDSKYViewController.h: 10";
+		rLen = 0;
+		rLoc = 211;
+		rType = 0;
+		vrLen = 987;
+		vrLoc = 0;
+	};
+	0F60E7F31312C5D600EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F60E7C31312C30C00EBCBF9 /* SharedDSKYViewController.m */;
+		name = "SharedDSKYViewController.m: 195";
+		rLen = 0;
+		rLoc = 6350;
+		rType = 0;
+		vrLen = 1705;
+		vrLoc = 5396;
+	};
+	0F60E7FA1312C62E00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F60E7C31312C30C00EBCBF9 /* SharedDSKYViewController.m */;
+		name = "SharedDSKYViewController.m: 195";
+		rLen = 0;
+		rLoc = 6350;
+		rType = 0;
+		vrLen = 1705;
+		vrLoc = 5396;
+	};
+	0F60E7FD1312C68200EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F60E7C31312C30C00EBCBF9 /* SharedDSKYViewController.m */;
+		name = "SharedDSKYViewController.m: 208";
+		rLen = 0;
+		rLoc = 7043;
+		rType = 0;
+		vrLen = 1802;
+		vrLoc = 5242;
 	};
 	0F7532B3130EEE3200DADC14 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -2834,7 +3079,7 @@
 	};
 	0FD122791301B601005941E1 /* AppDelegate_iPad.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 521}}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 493}}";
 			sepNavSelRange = "{320, 0}";
 			sepNavVisRange = "{0, 328}";
 		};
@@ -2842,22 +3087,22 @@
 	0FD1227A1301B601005941E1 /* AppDelegate_iPad.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1349, 1027}}";
-			sepNavSelRange = "{1246, 0}";
-			sepNavVisRange = "{1247, 1208}";
+			sepNavSelRange = "{2212, 0}";
+			sepNavVisRange = "{1244, 1211}";
 		};
 	};
 	0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 1807}}";
-			sepNavSelRange = "{423, 0}";
-			sepNavVisRange = "{143, 997}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 493}}";
+			sepNavSelRange = "{275, 0}";
+			sepNavVisRange = "{0, 282}";
 		};
 	};
 	0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1902, 2405}}";
-			sepNavSelRange = "{5985, 0}";
-			sepNavVisRange = "{5985, 752}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 728}}";
+			sepNavSelRange = "{183, 0}";
+			sepNavVisRange = "{0, 871}";
 			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
 		};
 	};
@@ -3258,7 +3503,7 @@
 			0F6060A912F9CEFE00725DAD /* DSKYSimulationClient.m:300 */,
 			0F30E920130FA67500AE599A /* DSKYSimulationClient.m:70 */,
 			0F30E93C130FA89A00AE599A /* DSKYSimulationClient.m:186 */,
-			0F60E7971312ACF900EBCBF9 /* DSKYUIIPadViewController.m:173 */,
+			0F60E7971312ACF900EBCBF9 /* DSKYUIIPadViewController.m:57 */,
 		);
 		codeSenseManager = 0F005C18123750CF0037035B /* Code sense */;
 		executables = (
@@ -3582,6 +3827,28 @@
 			0F60E7AD1312AF3D00EBCBF9 /* PBXTextBookmark */ = 0F60E7AD1312AF3D00EBCBF9 /* PBXTextBookmark */;
 			0F60E7AE1312AF3D00EBCBF9 /* PBXTextBookmark */ = 0F60E7AE1312AF3D00EBCBF9 /* PBXTextBookmark */;
 			0F60E7AF1312AF3D00EBCBF9 /* PBXTextBookmark */ = 0F60E7AF1312AF3D00EBCBF9 /* PBXTextBookmark */;
+			0F60E7CC1312C48C00EBCBF9 /* PBXTextBookmark */ = 0F60E7CC1312C48C00EBCBF9 /* PBXTextBookmark */;
+			0F60E7CD1312C48C00EBCBF9 /* XCBuildMessageTextBookmark */ = 0F60E7CD1312C48C00EBCBF9 /* XCBuildMessageTextBookmark */;
+			0F60E7CE1312C48C00EBCBF9 /* PBXTextBookmark */ = 0F60E7CE1312C48C00EBCBF9 /* PBXTextBookmark */;
+			0F60E7CF1312C49800EBCBF9 /* PBXTextBookmark */ = 0F60E7CF1312C49800EBCBF9 /* PBXTextBookmark */;
+			0F60E7D01312C49800EBCBF9 /* XCBuildMessageTextBookmark */ = 0F60E7D01312C49800EBCBF9 /* XCBuildMessageTextBookmark */;
+			0F60E7D11312C49800EBCBF9 /* PBXTextBookmark */ = 0F60E7D11312C49800EBCBF9 /* PBXTextBookmark */;
+			0F60E7D41312C4CA00EBCBF9 /* XCBuildMessageTextBookmark */ = 0F60E7D41312C4CA00EBCBF9 /* XCBuildMessageTextBookmark */;
+			0F60E7D51312C4CA00EBCBF9 /* PBXTextBookmark */ = 0F60E7D51312C4CA00EBCBF9 /* PBXTextBookmark */;
+			0F60E7E41312C5A200EBCBF9 /* PBXTextBookmark */ = 0F60E7E41312C5A200EBCBF9 /* PBXTextBookmark */;
+			0F60E7E51312C5A200EBCBF9 /* PBXTextBookmark */ = 0F60E7E51312C5A200EBCBF9 /* PBXTextBookmark */;
+			0F60E7E61312C5A200EBCBF9 /* PBXTextBookmark */ = 0F60E7E61312C5A200EBCBF9 /* PBXTextBookmark */;
+			0F60E7E71312C5A200EBCBF9 /* PBXTextBookmark */ = 0F60E7E71312C5A200EBCBF9 /* PBXTextBookmark */;
+			0F60E7E81312C5A200EBCBF9 /* PBXTextBookmark */ = 0F60E7E81312C5A200EBCBF9 /* PBXTextBookmark */;
+			0F60E7E91312C5A200EBCBF9 /* PBXTextBookmark */ = 0F60E7E91312C5A200EBCBF9 /* PBXTextBookmark */;
+			0F60E7EA1312C5A200EBCBF9 /* PBXTextBookmark */ = 0F60E7EA1312C5A200EBCBF9 /* PBXTextBookmark */;
+			0F60E7EB1312C5A200EBCBF9 /* PBXTextBookmark */ = 0F60E7EB1312C5A200EBCBF9 /* PBXTextBookmark */;
+			0F60E7EC1312C5A200EBCBF9 /* PBXTextBookmark */ = 0F60E7EC1312C5A200EBCBF9 /* PBXTextBookmark */;
+			0F60E7F11312C5D600EBCBF9 /* PBXTextBookmark */ = 0F60E7F11312C5D600EBCBF9 /* PBXTextBookmark */;
+			0F60E7F21312C5D600EBCBF9 /* PBXTextBookmark */ = 0F60E7F21312C5D600EBCBF9 /* PBXTextBookmark */;
+			0F60E7F31312C5D600EBCBF9 /* PBXTextBookmark */ = 0F60E7F31312C5D600EBCBF9 /* PBXTextBookmark */;
+			0F60E7FA1312C62E00EBCBF9 /* PBXTextBookmark */ = 0F60E7FA1312C62E00EBCBF9 /* PBXTextBookmark */;
+			0F60E7FD1312C68200EBCBF9 /* PBXTextBookmark */ = 0F60E7FD1312C68200EBCBF9 /* PBXTextBookmark */;
 			0F7532B3130EEE3200DADC14 = 0F7532B3130EEE3200DADC14 /* PBXTextBookmark */;
 			0F8E6582130EEA090047CC1E = 0F8E6582130EEA090047CC1E /* PBXTextBookmark */;
 			0F8E6583130EEA090047CC1E = 0F8E6583130EEA090047CC1E /* PBXTextBookmark */;
