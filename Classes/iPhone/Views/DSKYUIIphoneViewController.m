@@ -63,55 +63,6 @@
 	self.alertView = nil;
 	self.alertMessageLabel = nil;
 	
-	
-	self.M1Outlet = nil;
-	self.M2Outlet = nil;
-	
-	self.V1Outlet = nil;
-	self.V2Outlet = nil;
-	
-	self.N1Outlet = nil;
-	self.N2Outlet = nil;
-	
-	self.CompActIndOutlet = nil;
-	
-	self.uplinkActivity = nil;
-	self.noAttitude = nil;
-	self.standBy = nil;
-	self.keyRelease = nil;
-	self.operationError = nil;
-	self.priorityDisplay = nil;
-	self.noDAP = nil;
-	self.temp = nil;
-	self.gimbalLock = nil;
-	self.prog = nil;
-	self.restart = nil;
-	self.tracker = nil;
-	self.alt = nil;
-	self.vel = nil;
-	
-	
-	self._r1plusminus = nil;
-	self._11Outlet = nil;	
-	self._12Outlet = nil;
-	self._13Outlet = nil;
-	self._14Outlet = nil;
-	self._15Outlet = nil;
-	
-	self._r2plusminus = nil;
-	self._21Outlet = nil;	
-	self._22Outlet = nil;
-	self._23Outlet = nil;
-	self._24Outlet = nil;
-	self._25Outlet = nil;
-	
-	self._r3plusminus = nil;
-	self._31Outlet = nil;	
-	self._32Outlet = nil;
-	self._33Outlet = nil;
-	self._34Outlet = nil;
-	self._35Outlet = nil;
-	
 	self.uplinkDataText = nil;
 	self.dskyHelpImageScrollView = nil;
 	self.dskyHelpImageView = nil;
@@ -142,10 +93,6 @@
 	[dskySimulationClient sendUplinkCode:code];
 }
 
-- (void) sendDSKYCode:(int) code {
-	// wrapper over DSKYSimulationClient instance to send dsky data
-	[dskySimulationClient sendDSKYCode:code];
-}
 
 - (UIView *) viewForZoomingInScrollView:(UIScrollView *)scrollView {
 	return self.dskyHelpImageView;
@@ -210,15 +157,6 @@
 		}
 		[self sendUplinkCode:code];
 	}
-}
-
-- (IBAction) pressedMinus: (id) sender{
-	[self sendDSKYCode:27];
-	//[self showAlert];
-}
-
-- (IBAction) pressedReset: (id) sender{
-	[self sendDSKYCode:18];
 }
 
 

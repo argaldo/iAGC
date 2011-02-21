@@ -15,7 +15,7 @@
 @synthesize segments;
 @synthesize dskySimulationClient;
 @synthesize M1Outlet,M2Outlet,V1Outlet,V2Outlet,N1Outlet,N2Outlet,CompActIndOutlet,uplinkActivity,noAttitude,standBy,keyRelease,operationError,priorityDisplay,noDAP,temp,gimbalLock,prog,restart,tracker,alt,vel,_r1plusminus,_11Outlet,	_12Outlet,_13Outlet,_14Outlet,_15Outlet,_r2plusminus,_21Outlet,_22Outlet,_23Outlet,_24Outlet,_25Outlet,_r3plusminus,_31Outlet,_32Outlet,_33Outlet,_34Outlet,_35Outlet;
-
+@synthesize verbNounFlashTimer;
 BOOL verbNounVisible = YES;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -256,6 +256,56 @@ BOOL verbNounVisible = YES;
 	[self initSegmentDictionary];
 }
 
+
+- (void) releaseOutlets {
+	self.M1Outlet = nil;
+	self.M2Outlet = nil;
+	
+	self.V1Outlet = nil;
+	self.V2Outlet = nil;
+	
+	self.N1Outlet = nil;
+	self.N2Outlet = nil;
+	
+	self.CompActIndOutlet = nil;
+	
+	self.uplinkActivity = nil;
+	self.noAttitude = nil;
+	self.standBy = nil;
+	self.keyRelease = nil;
+	self.operationError = nil;
+	self.priorityDisplay = nil;
+	self.noDAP = nil;
+	self.temp = nil;
+	self.gimbalLock = nil;
+	self.prog = nil;
+	self.restart = nil;
+	self.tracker = nil;
+	self.alt = nil;
+	self.vel = nil;
+	
+	
+	self._r1plusminus = nil;
+	self._11Outlet = nil;	
+	self._12Outlet = nil;
+	self._13Outlet = nil;
+	self._14Outlet = nil;
+	self._15Outlet = nil;
+	
+	self._r2plusminus = nil;
+	self._21Outlet = nil;	
+	self._22Outlet = nil;
+	self._23Outlet = nil;
+	self._24Outlet = nil;
+	self._25Outlet = nil;
+	
+	self._r3plusminus = nil;
+	self._31Outlet = nil;	
+	self._32Outlet = nil;
+	self._33Outlet = nil;
+	self._34Outlet = nil;
+	self._35Outlet = nil;
+}
 
 
 @end
