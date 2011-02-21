@@ -7,7 +7,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -428,7 +428,7 @@
 		ignoreCount = 0;
 		lineNumber = 70;
 		location = iAGC;
-		modificationTime = 319983439.88766;
+		modificationTime = 319991614.21505;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -506,7 +506,7 @@
 		ignoreCount = 0;
 		lineNumber = 186;
 		location = iAGC;
-		modificationTime = 319983439.888182;
+		modificationTime = 319991614.216125;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1071,7 +1071,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 301;
-		modificationTime = 319983439.886177;
+		modificationTime = 319991614.206342;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -1088,7 +1088,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 300;
-		modificationTime = 319983439.887175;
+		modificationTime = 319991614.208235;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -1931,7 +1931,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 180";
 		rLen = 0;
-		rLoc = 6047;
+		rLoc = 5985;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 5656;
@@ -2270,7 +2270,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 185";
 		rLen = 0;
-		rLoc = 6267;
+		rLoc = 6173;
 		rType = 0;
 		vrLen = 1749;
 		vrLoc = 5114;
@@ -2280,7 +2280,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 169";
 		rLen = 0;
-		rLoc = 5173;
+		rLoc = 5106;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 5116;
@@ -2289,8 +2289,8 @@
 		isa = PBXTextBookmark;
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 173";
-		rLen = 34;
-		rLoc = 5389;
+		rLen = 39;
+		rLoc = 5322;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 5116;
@@ -2300,7 +2300,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5309;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 1810;
 		vrLoc = 5117;
@@ -2310,7 +2310,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5309;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 1783;
 		vrLoc = 5117;
@@ -2320,7 +2320,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5309;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 5117;
@@ -2330,7 +2330,7 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5309;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 1783;
 		vrLoc = 5117;
@@ -2340,10 +2340,98 @@
 		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
 		name = "DSKYUIIPadViewController.m: 172";
 		rLen = 0;
-		rLoc = 5309;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 1783;
 		vrLoc = 5117;
+	};
+	0F60E7971312ACF900EBCBF9 /* DSKYUIIPadViewController.m:173 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		functionName = "-changeSegmentValue:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 173;
+		location = iAGC;
+		modificationTime = 319991614.216858;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	0F60E79B1312ACFD00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 177";
+		rLen = 0;
+		rLoc = 5556;
+		rType = 0;
+		vrLen = 1783;
+		vrLoc = 5117;
+	};
+	0F60E79C1312ACFD00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 177";
+		rLen = 0;
+		rLoc = 5556;
+		rType = 0;
+		vrLen = 1778;
+		vrLoc = 5117;
+	};
+	0F60E7A71312AED400EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 174";
+		rLen = 0;
+		rLoc = 5328;
+		rType = 0;
+		vrLen = 1450;
+		vrLoc = 4833;
+	};
+	0F60E7AC1312AF3D00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1228C1301B601005941E1 /* DSKYUIIphoneViewController.h */;
+		name = "DSKYUIIphoneViewController.h: 84";
+		rLen = 73;
+		rLoc = 2232;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 0;
+	};
+	0F60E7AD1312AF3D00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */;
+		name = "DSKYUIIPadViewController.h: 18";
+		rLen = 0;
+		rLoc = 423;
+		rType = 0;
+		vrLen = 997;
+		vrLoc = 143;
+	};
+	0F60E7AE1312AF3D00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 174";
+		rLen = 0;
+		rLoc = 5328;
+		rType = 0;
+		vrLen = 1465;
+		vrLoc = 4833;
+	};
+	0F60E7AF1312AF3D00EBCBF9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */;
+		name = "DSKYUIIPadViewController.m: 80";
+		rLen = 0;
+		rLoc = 3374;
+		rType = 0;
+		vrLen = 942;
+		vrLoc = 2728;
 	};
 	0F7532B3130EEE3200DADC14 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -2761,15 +2849,15 @@
 	0FD1227D1301B601005941E1 /* DSKYUIIPadViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {902, 1807}}";
-			sepNavSelRange = "{243, 0}";
+			sepNavSelRange = "{423, 0}";
 			sepNavVisRange = "{143, 997}";
 		};
 	};
 	0FD1227E1301B601005941E1 /* DSKYUIIPadViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1902, 2899}}";
-			sepNavSelRange = "{5309, 0}";
-			sepNavVisRange = "{5117, 1783}";
+			sepNavIntBoundsRect = "{{0, 0}, {1902, 2405}}";
+			sepNavSelRange = "{5985, 0}";
+			sepNavVisRange = "{5985, 752}";
 			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
 		};
 	};
@@ -2810,9 +2898,9 @@
 	};
 	0FD1228C1301B601005941E1 /* DSKYUIIphoneViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {902, 2262}}";
+			sepNavIntBoundsRect = "{{0, 0}, {902, 2392}}";
 			sepNavSelRange = "{2232, 73}";
-			sepNavVisRange = "{2069, 1799}";
+			sepNavVisRange = "{0, 924}";
 			sepNavWindowFrame = "{{15, 58}, {750, 715}}";
 		};
 	};
@@ -3170,6 +3258,7 @@
 			0F6060A912F9CEFE00725DAD /* DSKYSimulationClient.m:300 */,
 			0F30E920130FA67500AE599A /* DSKYSimulationClient.m:70 */,
 			0F30E93C130FA89A00AE599A /* DSKYSimulationClient.m:186 */,
+			0F60E7971312ACF900EBCBF9 /* DSKYUIIPadViewController.m:173 */,
 		);
 		codeSenseManager = 0F005C18123750CF0037035B /* Code sense */;
 		executables = (
@@ -3486,6 +3575,13 @@
 			0F60E78A13128F4E00EBCBF9 /* PBXTextBookmark */ = 0F60E78A13128F4E00EBCBF9 /* PBXTextBookmark */;
 			0F60E79013128F7300EBCBF9 /* PBXTextBookmark */ = 0F60E79013128F7300EBCBF9 /* PBXTextBookmark */;
 			0F60E79313128F8000EBCBF9 /* PBXTextBookmark */ = 0F60E79313128F8000EBCBF9 /* PBXTextBookmark */;
+			0F60E79B1312ACFD00EBCBF9 /* PBXTextBookmark */ = 0F60E79B1312ACFD00EBCBF9 /* PBXTextBookmark */;
+			0F60E79C1312ACFD00EBCBF9 /* PBXTextBookmark */ = 0F60E79C1312ACFD00EBCBF9 /* PBXTextBookmark */;
+			0F60E7A71312AED400EBCBF9 /* PBXTextBookmark */ = 0F60E7A71312AED400EBCBF9 /* PBXTextBookmark */;
+			0F60E7AC1312AF3D00EBCBF9 /* PBXTextBookmark */ = 0F60E7AC1312AF3D00EBCBF9 /* PBXTextBookmark */;
+			0F60E7AD1312AF3D00EBCBF9 /* PBXTextBookmark */ = 0F60E7AD1312AF3D00EBCBF9 /* PBXTextBookmark */;
+			0F60E7AE1312AF3D00EBCBF9 /* PBXTextBookmark */ = 0F60E7AE1312AF3D00EBCBF9 /* PBXTextBookmark */;
+			0F60E7AF1312AF3D00EBCBF9 /* PBXTextBookmark */ = 0F60E7AF1312AF3D00EBCBF9 /* PBXTextBookmark */;
 			0F7532B3130EEE3200DADC14 = 0F7532B3130EEE3200DADC14 /* PBXTextBookmark */;
 			0F8E6582130EEA090047CC1E = 0F8E6582130EEA090047CC1E /* PBXTextBookmark */;
 			0F8E6583130EEA090047CC1E = 0F8E6583130EEA090047CC1E /* PBXTextBookmark */;

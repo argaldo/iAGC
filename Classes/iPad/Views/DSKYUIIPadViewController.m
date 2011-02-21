@@ -74,12 +74,12 @@
 }
 */
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self initSegmentDictionary];
 }
-*/
+
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -171,7 +171,7 @@
 	NSString *imageName = (NSString *)[args objectAtIndex:1];
 
 	if ([imageName compare:@""] != NSOrderedSame) {
-		UIImageView *segmentImage = [segments objectForKey:component];
+		UIImageView *segmentImage = [self.segments objectForKey:component];
 		[segmentImage setImage:[UIImage imageNamed:imageName]];
 		segmentImage.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:imageName],[UIImage imageNamed:@"digit-off.jpg"],nil];
 	}
@@ -184,12 +184,11 @@
 	switch (componentType){
 		case SEGMENT:
 			[self performSelectorOnMainThread:@selector(changeSegmentValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSegmentValue:value],nil] waitUntilDone:YES];
-			NSLog(@"Cambiado segmento");
 			break;
-		/*case SIGN:
+		case SIGN:
 			[self performSelectorOnMainThread:@selector(changeSignValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForSignValue:value],nil] waitUntilDone:YES];
 			break;
-		case INDICATOR:
+		/*case INDICATOR:
 			[self performSelectorOnMainThread:@selector(changeIndicatorValue:) withObject:[NSMutableArray arrayWithObjects:*component,[Util getImageNameForIndicatorType:componentSubtype withValue:value],[NSNumber numberWithInt:componentSubtype], nil] waitUntilDone:YES];
 			break;*/
 		default:
