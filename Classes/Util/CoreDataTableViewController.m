@@ -145,7 +145,7 @@
 
 - (BOOL)canDeleteManagedObject:(NSManagedObject *)managedObject
 {
-	return NO;
+	return YES;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -156,6 +156,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	NSLog(@"deleting...");
 	NSManagedObject *managedObject = [[self fetchedResultsControllerForTableView:tableView] objectAtIndexPath:indexPath];
 	[self deleteManagedObject:managedObject];
 }

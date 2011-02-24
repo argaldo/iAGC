@@ -286,7 +286,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 459}, {295, 612}}</string>
+							<string>{{0, 0}, {295, 612}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -305,7 +305,7 @@
 							<real>295</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-2 103 1280 671 0 0 1280 778 </string>
+						<string>0 107 1280 671 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -330,10 +330,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>SharedDSKYViewController.h</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>0F60E8731312DE5700EBCBF9</string>
 										<key>history</key>
 										<array>
 											<string>0F3768C012C32BD80029C25E</string>
@@ -459,11 +455,6 @@
 											<string>0F60E8601312DD1E00EBCBF9</string>
 											<string>0F60E8611312DD1E00EBCBF9</string>
 											<string>0F60E8631312DD1E00EBCBF9</string>
-											<string>0F60E86B1312DE5000EBCBF9</string>
-											<string>0F60E86C1312DE5000EBCBF9</string>
-											<string>0F60E86D1312DE5000EBCBF9</string>
-											<string>0F60E86E1312DE5000EBCBF9</string>
-											<string>0F60E86F1312DE5000EBCBF9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -475,14 +466,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {963, 525}}</string>
+								<string>{{0, 0}, {963, 522}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-2 103 1280 671 0 0 1280 778 </string>
+								<string>0 107 1280 671 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>525pt</string>
+							<string>522pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -495,14 +486,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 530}, {963, 100}}</string>
+								<string>{{0, 527}, {963, 103}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-2 103 1280 671 0 0 1280 778 </string>
+								<string>0 107 1280 671 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>100pt</string>
+							<string>103pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -521,9 +512,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>0F60E5FE131036A500EBCBF9</string>
+				<string>0F89A528131414830082DC7F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>0F60E5FF131036A500EBCBF9</string>
+				<string>0F89A529131414830082DC7F</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -661,14 +652,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0F60E6EE1312757400EBCBF9</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>0F005CDC123751FB0037035B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/argaldo/git/iAGC/iAGC.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>-2 103 1280 671 0 0 1280 778 </string>
+	<string>0 107 1280 671 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -689,7 +678,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DSKYUIIphoneViewController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -706,8 +695,6 @@
 							<string>190pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -747,7 +734,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>0F005CDC123751FB0037035B</string>
-				<string>0F60E5E21310320000EBCBF9</string>
+				<string>0F89A52A131414830082DC7F</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -869,13 +856,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>0F60E5E31310320000EBCBF9</string>
+				<string>0F89A52B131414830082DC7F</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>0F60E5E41310320000EBCBF9</string>
-				<string>0F60E5E51310320000EBCBF9</string>
-				<string>0F60E5E61310320000EBCBF9</string>
-				<string>0F60E5E71310320000EBCBF9</string>
-				<string>0F60E5E81310320000EBCBF9</string>
+				<string>0F89A52C131414830082DC7F</string>
+				<string>0F89A52D131414830082DC7F</string>
+				<string>0F89A52E131414830082DC7F</string>
+				<string>0F89A52F131414830082DC7F</string>
+				<string>0F89A530131414830082DC7F</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
