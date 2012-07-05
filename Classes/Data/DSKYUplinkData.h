@@ -13,9 +13,9 @@
 {
 }
 
-@property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSString *uplink_data;
-@property (nonatomic, retain) NSDate *date_added;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *uplink_data;
+@property (nonatomic, strong) NSDate *date_added;
 
 + (DSKYUplinkData * )createDSKYUplinkDataWithTitle:(NSString *) title withData:(NSString *) uplinkData inManagedObjectContext:(NSManagedObjectContext *) managedObjectContext;
 

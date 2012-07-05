@@ -22,7 +22,7 @@
 - (id)takeObject { 
 	id object = nil;
 	if ([objects count] > 0) {
-		object = [[[objects objectAtIndex:0] retain] autorelease];
+		object = [objects objectAtIndex:0];
 		[objects removeObjectAtIndex:0];
 	}
 	return object;

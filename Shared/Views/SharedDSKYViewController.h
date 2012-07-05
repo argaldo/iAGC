@@ -67,58 +67,58 @@
 	NSTimer *verbNounFlashTimer;
 }
 
-@property (nonatomic,retain) DSKYSimulationClient *dskySimulationClient;
+@property (nonatomic,strong) DSKYSimulationClient *dskySimulationClient;
 
-@property (nonatomic,retain) IBOutlet UIImageView *M1Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *M2Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *M1Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *M2Outlet;
 
-@property (nonatomic,retain) IBOutlet UIImageView *V1Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *V2Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *V1Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *V2Outlet;
 
-@property (nonatomic,retain) IBOutlet UIImageView *N1Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *N2Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *N1Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *N2Outlet;
 
-@property (nonatomic,retain) IBOutlet UIImageView *CompActIndOutlet;
+@property (nonatomic,strong) IBOutlet UIImageView *CompActIndOutlet;
 
-@property (nonatomic,retain) IBOutlet UIImageView *uplinkActivity;
-@property (nonatomic,retain) IBOutlet UIImageView *noAttitude;
-@property (nonatomic,retain) IBOutlet UIImageView *standBy;
-@property (nonatomic,retain) IBOutlet UIImageView *keyRelease;
-@property (nonatomic,retain) IBOutlet UIImageView *operationError;
-@property (nonatomic,retain) IBOutlet UIImageView *priorityDisplay;
-@property (nonatomic,retain) IBOutlet UIImageView *noDAP;
-@property (nonatomic,retain) IBOutlet UIImageView *temp;
-@property (nonatomic,retain) IBOutlet UIImageView *gimbalLock;
-@property (nonatomic,retain) IBOutlet UIImageView *prog;
-@property (nonatomic,retain) IBOutlet UIImageView *restart;
-@property (nonatomic,retain) IBOutlet UIImageView *tracker;
-@property (nonatomic,retain) IBOutlet UIImageView *alt;
-@property (nonatomic,retain) IBOutlet UIImageView *vel;
+@property (nonatomic,strong) IBOutlet UIImageView *uplinkActivity;
+@property (nonatomic,strong) IBOutlet UIImageView *noAttitude;
+@property (nonatomic,strong) IBOutlet UIImageView *standBy;
+@property (nonatomic,strong) IBOutlet UIImageView *keyRelease;
+@property (nonatomic,strong) IBOutlet UIImageView *operationError;
+@property (nonatomic,strong) IBOutlet UIImageView *priorityDisplay;
+@property (nonatomic,strong) IBOutlet UIImageView *noDAP;
+@property (nonatomic,strong) IBOutlet UIImageView *temp;
+@property (nonatomic,strong) IBOutlet UIImageView *gimbalLock;
+@property (nonatomic,strong) IBOutlet UIImageView *prog;
+@property (nonatomic,strong) IBOutlet UIImageView *restart;
+@property (nonatomic,strong) IBOutlet UIImageView *tracker;
+@property (nonatomic,strong) IBOutlet UIImageView *alt;
+@property (nonatomic,strong) IBOutlet UIImageView *vel;
 
 
-@property (nonatomic,retain) IBOutlet UIImageView *_r1plusminus;
-@property (nonatomic,retain) IBOutlet UIImageView *_11Outlet;	
-@property (nonatomic,retain) IBOutlet UIImageView *_12Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *_13Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *_14Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *_15Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_r1plusminus;
+@property (nonatomic,strong) IBOutlet UIImageView *_11Outlet;	
+@property (nonatomic,strong) IBOutlet UIImageView *_12Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_13Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_14Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_15Outlet;
 
-@property (nonatomic,retain) IBOutlet UIImageView *_r2plusminus;
-@property (nonatomic,retain) IBOutlet UIImageView *_21Outlet;	
-@property (nonatomic,retain) IBOutlet UIImageView *_22Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *_23Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *_24Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *_25Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_r2plusminus;
+@property (nonatomic,strong) IBOutlet UIImageView *_21Outlet;	
+@property (nonatomic,strong) IBOutlet UIImageView *_22Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_23Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_24Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_25Outlet;
 
-@property (nonatomic,retain) IBOutlet UIImageView *_r3plusminus;
-@property (nonatomic,retain) IBOutlet UIImageView *_31Outlet;	
-@property (nonatomic,retain) IBOutlet UIImageView *_32Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *_33Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *_34Outlet;
-@property (nonatomic,retain) IBOutlet UIImageView *_35Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_r3plusminus;
+@property (nonatomic,strong) IBOutlet UIImageView *_31Outlet;	
+@property (nonatomic,strong) IBOutlet UIImageView *_32Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_33Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_34Outlet;
+@property (nonatomic,strong) IBOutlet UIImageView *_35Outlet;
 
-@property (nonatomic,retain) NSMutableDictionary *segments;
-@property (nonatomic,retain) NSTimer *verbNounFlashTimer;
+@property (nonatomic,strong) NSMutableDictionary *segments;
+@property (nonatomic,strong) NSTimer *verbNounFlashTimer;
 
 // action delegates for dsky keyboard click
 - (IBAction) pressedVerb: (id) sender;

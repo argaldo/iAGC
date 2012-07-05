@@ -72,12 +72,5 @@
 	return YES;
 }
 
-- (void)dealloc {  
-	[dskyUIIPhoneViewController release];
-	[simulator release];
-	[dskyClient release];
-    [window release];
-    [super dealloc];
-}
 
 @end

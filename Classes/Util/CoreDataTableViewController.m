@@ -15,7 +15,7 @@
 {
 	if (self.searchKey.length) {
 		if (self.tableView && !self.tableView.tableHeaderView) {
-			UISearchBar *searchBar = [[[UISearchBar alloc] init] autorelease];
+			UISearchBar *searchBar = [[UISearchBar alloc] init];
 			[[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
 			self.searchDisplayController.searchResultsDelegate = self;
 			self.searchDisplayController.searchResultsDataSource = self;
@@ -30,7 +30,6 @@
 
 - (void)setSearchKey:(NSString *)aKey
 {
-	[searchKey release];
 	searchKey = [aKey copy];
 	[self createSearchBar];
 }
@@ -67,10 +66,8 @@
 			self.fetchedResultsController.fetchRequest.predicate = normalPredicate;
 			[self performFetchForTableView:tableView];
 		}
-		[currentSearchText release];
 		currentSearchText = nil;
 	} else if ((tableView == self.searchDisplayController.searchResultsTableView) && self.searchKey && ![currentSearchText isEqual:self.searchDisplayController.searchBar.text]) {
-		[currentSearchText release];
 		currentSearchText = [self.searchDisplayController.searchBar.text copy];
 		NSString *searchPredicateFormat = [NSString stringWithFormat:@"%@ contains[c] %@", self.searchKey, @"%@"];
 		NSPredicate *searchPredicate = [NSPredicate predicateWithFormat:searchPredicateFormat, self.searchDisplayController.searchBar.text];
@@ -90,10 +87,9 @@
 - (void)setFetchedResultsController:(NSFetchedResultsController *)controller
 {
 	fetchedResultsController.delegate = nil;
-	[fetchedResultsController release];
-	fetchedResultsController = [controller retain];
+	fetchedResultsController = controller;
 	controller.delegate = self;
-	normalPredicate = [self.fetchedResultsController.fetchRequest.predicate retain];
+	normalPredicate = self.fetchedResultsController.fetchRequest.predicate;
 	if (!self.title) self.title = controller.fetchRequest.entity.name;
 	if (self.view.window) [self performFetchForTableView:self.tableView];
 }
@@ -119,7 +115,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (cell == nil) {
 		UITableViewCellStyle cellStyle = self.subtitleKey ? UITableViewCellStyleSubtitle : UITableViewCellStyleDefault;
-        cell = [[[UITableViewCell alloc] initWithStyle:cellStyle reuseIdentifier:ReuseIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:cellStyle reuseIdentifier:ReuseIdentifier];
     }
 	
 	if (self.titleKey) cell.textLabel.text = [managedObject valueForKey:self.titleKey];
@@ -278,12 +274,6 @@
 - (void)dealloc
 {
 	fetchedResultsController.delegate = nil;
-	[fetchedResultsController release];
-	[searchKey release];
-	[titleKey release];
-	[currentSearchText release];
-	[normalPredicate release];
-    [super dealloc];
 }
 
 @end

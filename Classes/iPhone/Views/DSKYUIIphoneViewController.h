@@ -31,17 +31,17 @@
 	
 }
 
-@property (nonatomic,retain) NSArray *flashingSegments;
-@property (nonatomic,retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic,strong) NSArray *flashingSegments;
+@property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
 
-@property (nonatomic,retain) IBOutlet UIView *alertView;
-@property (nonatomic,retain) IBOutlet UIViewController *uplinkView;
-@property (nonatomic,retain) IBOutlet UILabel *alertMessageLabel;
+@property (nonatomic,strong) IBOutlet UIView *alertView;
+@property (nonatomic,strong) IBOutlet UIViewController *uplinkView;
+@property (nonatomic,strong) IBOutlet UILabel *alertMessageLabel;
 
 
-@property (nonatomic,retain) IBOutlet UITextView *uplinkDataText;
-@property (nonatomic,retain) IBOutlet UIScrollView *dskyHelpImageScrollView;
-@property (nonatomic,retain) IBOutlet UIImageView *dskyHelpImageView;
+@property (nonatomic,strong) IBOutlet UITextView *uplinkDataText;
+@property (nonatomic,strong) IBOutlet UIScrollView *dskyHelpImageScrollView;
+@property (nonatomic,strong) IBOutlet UIImageView *dskyHelpImageView;
 
 
 

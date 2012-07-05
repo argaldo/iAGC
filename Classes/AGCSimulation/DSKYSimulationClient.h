@@ -12,7 +12,7 @@
 
 
 @interface DSKYSimulationClient : NSObject {
-	id<UpdateDSKYUserInterfaceDelegate> delegate;
+	id<UpdateDSKYUserInterfaceDelegate> __unsafe_unretained delegate;
 }
 
 - (id) initWithHost:(NSString *)host withPort:(u_short) port;
@@ -21,6 +21,6 @@
 - (void) sendDSKYCode:(int) code;
 - (void) sendUplinkCode:(int) code;
 
-@property (assign) id<UpdateDSKYUserInterfaceDelegate> delegate;
+@property (unsafe_unretained) id<UpdateDSKYUserInterfaceDelegate> delegate;
 
 @end

@@ -310,7 +310,6 @@ BOOL verbNounVisible = YES;
 }
 
 - (void)dealloc {
-    [super dealloc];
 	[self releaseOutlets];
 }
 

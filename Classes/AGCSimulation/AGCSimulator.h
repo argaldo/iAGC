@@ -16,8 +16,8 @@
 	NSString *coreRopeROM;
 }
 
-@property (nonatomic,retain) NSThread *simulatorThread;
-@property (nonatomic,retain) NSString *coreRopeROM;
+@property (nonatomic,strong) NSThread *simulatorThread;
+@property (nonatomic,strong) NSString *coreRopeROM;
 
 - (id) initWithROM:(NSString *)rom;
 - (void) launchSimulatorThread;

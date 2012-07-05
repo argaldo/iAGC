@@ -27,8 +27,6 @@
 		
 		self.fetchedResultsController = frc;
 		self.titleKey = @"title";
-		[request release];
-		[frc release];
 	}
 	return self;
 }

@@ -36,7 +36,7 @@ u_short agcSimulatorPort = 19700;
 Queue *dataUplinkQueue;
 
 - (id) initWithHost:(NSString *)host withPort:(u_short) port {
-	[super init];
+	self = [super init];
 	agcSimulatorHost = host;
 	agcSimulatorPort = port;
 	return self;
@@ -408,9 +408,5 @@ Queue *dataUplinkQueue;
 	[dataUplinkQueue addObject:[NSNumber numberWithInt:code]];
 }
 
-- (void)dealloc {
-	[dskyThread release];
-    [super dealloc];
-}
 
 @end

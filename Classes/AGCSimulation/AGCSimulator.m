@@ -21,7 +21,7 @@ static int simulating = 0;
 
 
 - (id) initWithROM:(NSString *)rom{
-	[super init];
+	self = [super init];
 	self.coreRopeROM = rom;
 	return self;
 }
@@ -171,10 +171,5 @@ static void _SimManageTime(void) {
 	[self.simulatorThread cancel];
 }
 
-- (void)dealloc {
-	[simulatorThread release];
-	[coreRopeROM release];
-    [super dealloc];
-}
 
 @end

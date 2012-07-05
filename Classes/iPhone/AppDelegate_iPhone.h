@@ -21,9 +21,9 @@
 	DSKYSimulationClient *dskyClient;
 }
 
-@property (nonatomic, retain) IBOutlet DSKYUIIphoneViewController *dskyUIIPhoneViewController;
-@property (nonatomic, retain) AGCSimulator *simulator;
-@property (nonatomic, retain) DSKYSimulationClient *dskyClient;
+@property (nonatomic, strong) IBOutlet DSKYUIIphoneViewController *dskyUIIPhoneViewController;
+@property (nonatomic, strong) AGCSimulator *simulator;
+@property (nonatomic, strong) DSKYSimulationClient *dskyClient;
 
 
 @end

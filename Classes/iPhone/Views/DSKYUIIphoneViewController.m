@@ -81,9 +81,6 @@
 
 - (void)dealloc {
 	[self releaseOutlets];
-	[segments release];
-	[dskySimulationClient release];
-    [super dealloc];
 }
 
 - (void) sendUplinkCode:(int) code {
@@ -179,7 +176,6 @@
 	[date_formatter setDateFormat:@"ss"];
 	[self parseUplinkDataString:[date_formatter stringFromDate:now]];
 	[self parseUplinkDataString:@"00E"];
-	[date_formatter release];
 }
 
 - (IBAction) showUplinkDataView: (id) sender {

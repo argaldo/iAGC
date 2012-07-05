@@ -83,7 +83,7 @@ typedef enum MTMessageType {
 	// for displaying Text information
 	UILabel *statusLabel1_;
 	UILabel *statusLabel2_;
-	UILabel *hiddenStatusLabel_;
+	UILabel *__unsafe_unretained hiddenStatusLabel_;
 	// for displaying activity indication
 	UIActivityIndicatorView *activityIndicator_;
 	UILabel *finishedLabel_;
@@ -121,7 +121,7 @@ typedef enum MTMessageType {
 	UITableView *historyTableView_;
 
 	// the delegate
-	id<MTStatusBarOverlayDelegate> delegate_;
+	id<MTStatusBarOverlayDelegate> __unsafe_unretained delegate_;
 }
 
 //===========================================================
@@ -129,27 +129,27 @@ typedef enum MTMessageType {
 #pragma mark Properties
 //===========================================================
 // the view that holds all the components of the overlay (except for the detailView)
-@property (nonatomic, retain) UIControl *backgroundView;
+@property (nonatomic, strong) UIControl *backgroundView;
 // the detailView is shown when animation is set to "FallDown"
-@property (nonatomic, retain) UIControl *detailView;
+@property (nonatomic, strong) UIControl *detailView;
 // the frame of the status bar when animation is set to "Shrink" and it is shrinked
 @property (nonatomic, assign) CGRect smallFrame;
 // the current active animation
 @property (nonatomic, assign) MTStatusBarOverlayAnimation animation;
 // the label that holds the finished-indicator (either a checkmark, or a error-sign per default)
-@property (nonatomic, retain) UILabel *finishedLabel;
+@property (nonatomic, strong) UILabel *finishedLabel;
 // if this flag is set to YES, neither activityIndicator nor finishedLabel are shown
 @property (nonatomic, assign) BOOL hidesActivity;
 // the image used when the Status Bar Style is Default
-@property (nonatomic, retain) UIImage *defaultStatusBarImage;
+@property (nonatomic, strong) UIImage *defaultStatusBarImage;
 // the image used when the Status Bar Style is Default and the Overlay is shrinked
-@property (nonatomic, retain) UIImage *defaultStatusBarImageShrinked;
+@property (nonatomic, strong) UIImage *defaultStatusBarImageShrinked;
 // detect if status bar is currently shrinked
 @property (nonatomic, readonly, getter=isShrinked) BOOL shrinked;
 // detect if detailView is currently hidden
 @property (nonatomic, readonly, getter=isDetailViewHidden) BOOL detailViewHidden;
 // all messages that were displayed since the last finish-call
-@property (nonatomic, retain, readonly) NSMutableArray *messageHistory;
+@property (nonatomic, strong, readonly) NSMutableArray *messageHistory;
 // DEPRECATED: enable/disable history-tracking of messages
 @property (nonatomic, assign, getter=isHistoryEnabled) BOOL historyEnabled;
 // determines if immediate messages in the queue get removed or stay in the queue, when a new immediate message gets posted
@@ -159,7 +159,7 @@ typedef enum MTMessageType {
 // the text displayed in the detailView (alternative to history)
 @property (nonatomic, copy) NSString *detailText;
 // the delegate of the overlay
-@property (nonatomic, assign) id<MTStatusBarOverlayDelegate> delegate;
+@property (nonatomic, unsafe_unretained) id<MTStatusBarOverlayDelegate> delegate;
 
 
 //===========================================================

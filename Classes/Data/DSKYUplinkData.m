@@ -31,7 +31,6 @@
 		data.uplink_data = uplinkData;
 		data.date_added = [NSDate date];
 	}
-	[request release];
 	return data;
 }
 

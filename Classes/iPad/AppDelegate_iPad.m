@@ -61,18 +61,11 @@
 	}
 	
 	
-	[dskyViewController release];
-	[iPadSimulationMenuController release];
-	[navcon release];
 	
 	return YES;
 }
 
 
-- (void)dealloc {
-    [window release];
-    [super dealloc];
-}
 
 
 @end
