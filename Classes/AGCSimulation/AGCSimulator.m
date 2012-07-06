@@ -143,7 +143,7 @@ static void _SimManageTime(void) {
 		_SimManageTime();
 		while (Simulator.CycleCount < Simulator.DesiredCycles)
 		{
-			// Execute a cyle of the AGC  engine 	
+			// Execute a cycle of the AGC  engine 	
 			_SimExecuteEngine();
 			//Adjust the CycleCount 
 			_SimSetCycleCount(SIM_CYCLECOUNT_INC);
@@ -162,7 +162,7 @@ static void _SimManageTime(void) {
 
 - (void) launchSimulatorThread {
 	
-	// invoking delegate to launch simulator thread on main thread in order to not block the user interface
+	// invoking delegate to launch simulator thread on main thread in order to not freeze the user interface
 
 	[self performSelectorOnMainThread:@selector(launchSimulatorThreadDelegate) withObject:nil waitUntilDone:NO];
 }

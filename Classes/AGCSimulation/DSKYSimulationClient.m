@@ -222,45 +222,56 @@ Queue *dataUplinkQueue;
 	
 	// channel = 011 indicator value changes
 	if (channel == 9 ) {
-		// computer activity indicator, bit 1
+        
+        // bit 0, ISS Warning
+        
+		// bit 1, Light Computer Activity Lamp
 		if ((value & (1<<1)) != (lastValue & (1<<1))) {
 			NSString *imagen = @"CompActInd";
 			[self.delegate updateUserInterface:&imagen withValue:value withComponentType:INDICATOR withComponentSubtype:0];
 		} 
-		
-		// op error indicator, bit 6
-		if ((value & (1<<6)) != (lastValue & (1<<6))){
-			NSString *image = @"opError";
-			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:1];
-		}
-		
-		// key release, bit 4
-		if ((value & (1<<4)) != (lastValue & (1<<4))){
-			NSString *image = @"keyRel";
-			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:2];
-		}
-		
-		// uplink activity, bit 2
+        
+        // bit 2, Light Uplink Activity Lamp
 		if ((value & (1<<2)) != (lastValue & (1<<2))){
 			NSString *image = @"uplinkActivity";
 			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:3];
 		}
 		
-		// temperature caution, bit 3
+        // bit 3, Light Temp Caution Lamp
 		if ((value & (1<<3)) != (lastValue & (1<<3))){
 			NSString *image = @"tempCaution";
 			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:4];
 		}
-		
-		if ((value & (1<<5)) != (lastValue & (1<<5))){
+        
+        // bit 4, Light Keyboard Release
+		if ((value & (1<<4)) != (lastValue & (1<<4))){
+			NSString *image = @"keyRel";
+			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:2];
+		}
+        
+        // bit 5, Flash Verb and Noun Lamps
+        if ((value & (1<<5)) != (lastValue & (1<<5))){
 			if ( value & (1<<5)){
 				[self.delegate toggleVerbNounFlashStatus:YES];
 			} else {
 				[self.delegate toggleVerbNounFlashStatus:NO];
 			}
 		}
+        
+		// bit 6, Light Operator Error Lamp
+		if ((value & (1<<6)) != (lastValue & (1<<6))){
+			NSString *image = @"opError";
+			[self.delegate updateUserInterface:&image withValue:value withComponentType:INDICATOR withComponentSubtype:1];
+		}
 		
-        NSLog(@"Discarded packet on channel 011");
+		// bit 7, spare
+        // bit 8, Test Connector Outbit
+        // bit 9, Caution Reset
+        // bit 10, Spare
+        // bit 11, Spare
+        // bit 12, Engine On/Off
+        // bit 13, Spare
+        // bit 14, Spare
 		
 		//verbNounFlashing = flashStatus;
 		lastValue = value;
@@ -363,7 +374,7 @@ Queue *dataUplinkQueue;
 }
 
 - (void) launchDSKYIOListeningThread {
-	// call thread launching delegate on main thread to avoid bloking user's interface
+	// call thread launching delegate on main thread to avoid freezing user's interface
 	[self performSelectorOnMainThread:@selector(launchDSKYThreadDelegate) withObject:nil waitUntilDone:NO];
 }
 
