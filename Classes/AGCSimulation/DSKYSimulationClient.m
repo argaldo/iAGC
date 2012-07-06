@@ -165,6 +165,7 @@ Queue *dataUplinkQueue;
 	if (0x40 != (packet[1] & 0xc0) ||
 		0x80 != (packet[2] & 0xc0) ||
 		0xc0 != (packet[3] & 0xc0)) {
+        NSLog(@"El paquete no tiene la firma apropiada");
 		return;
 	}
 	
@@ -174,6 +175,7 @@ Queue *dataUplinkQueue;
 	
 	if ([self parseIOPacket:packet withChannel:&channel withValue:&value withIndicatorBits:&indicatorBits withUBit:&uBit withLeftSegmentKey:&leftSegmentKey withRightSegmentKey:&rightSegmentKey withSignComponent:&sign withSignValue:&signValue]){
 		// discard packet
+        //NSLog(@"Descarto paquete");
 		return;
 	}
 	
@@ -218,7 +220,7 @@ Queue *dataUplinkQueue;
 		}
 	}
 	
-	// channel = 011 ( octal ) indicator value changes
+	// channel = 011 indicator value changes
 	if (channel == 9 ) {
 		// computer activity indicator, bit 1
 		if ((value & (1<<1)) != (lastValue & (1<<1))) {
@@ -258,6 +260,7 @@ Queue *dataUplinkQueue;
 			}
 		}
 		
+        NSLog(@"Discarded packet on channel 011");
 		
 		//verbNounFlashing = flashStatus;
 		lastValue = value;
@@ -269,7 +272,7 @@ Queue *dataUplinkQueue;
 	if (channel == 11 || channel == 28 || channel == 29 ) {
 		//NSLog(@"digital downlink");
 	}
-	
+
 	
 	
 }
