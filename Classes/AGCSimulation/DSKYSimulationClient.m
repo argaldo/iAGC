@@ -165,7 +165,7 @@ Queue *dataUplinkQueue;
 	if (0x40 != (packet[1] & 0xc0) ||
 		0x80 != (packet[2] & 0xc0) ||
 		0xc0 != (packet[3] & 0xc0)) {
-        NSLog(@"El paquete no tiene la firma apropiada");
+        NSLog(@"Packet with malformed signature");
 		return;
 	}
 	
