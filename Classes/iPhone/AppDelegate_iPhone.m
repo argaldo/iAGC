@@ -38,6 +38,7 @@
 	
 	
 	self.dskyUIIPhoneViewController = [[DSKYUIIphoneViewController alloc] initWithNibName:@"DSKYUIIphoneView" bundle:[NSBundle mainBundle]];
+    
 	self.dskyUIIPhoneViewController.managedObjectContext = self.managedObjectContext;
 	// Setting default data uplink entries
 	[DSKYUplinkData createDSKYUplinkDataWithTitle:@"Monitor mission time" withData:@"V16N36E" inManagedObjectContext:self.managedObjectContext];
